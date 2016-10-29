@@ -1,0 +1,5940 @@
+t/AU/n,['town']
+fr/i/,"['freelance', 'free']"
+w/A/mp,['whomp']
+sl/AU/tS/,['slouch']
+fl/oU/n,['flown']
+g/&/mp,['gamp']
+fl/oU/t,['float']
+t/AU/z,['touse']
+fl/oU/r,['floor']
+t/AU/t,['tout']
+g/&/mb,['gamb']
+t/AU/s,['taos']
+sl/eI/d,['slade']
+m/O/s,['moss']
+w/&/ft,['waft']
+l/I/mp,['limp']
+sl/eI/t,['slate']
+m/O/m,['maugham']
+m/O/l,['mall']
+l/I/mf,['lymph']
+l/I/md,['limbed']
+b/AU/,"['bough', 'bow']"
+m/O/d,['maud']
+m/E/nt,['meant']
+/dZ/E/b,['jebb']
+w/U/l,['wool']
+br/O/d,['broad']
+m/E/ns,['mense']
+z/u/,['zoo']
+w/U/d,"['wood', 'would', 'wud']"
+p/eI/nt,['paint']
+/dZ/E/m,['gem']
+br/O/n,['brawn']
+m/E/nd,['mend']
+/dZ/E/r,['ger']
+p/&/S/,['pash']
+br/O/t,"['brought', 'brod']"
+/dZ/E/t,['jet']
+p/eI/nd,"['pained', 'paned']"
+str/&/pt,['strapped']
+skw/I/n/tS/,['squinch']
+br/O/Z,['broz']
+m/O/N,['mont']
+r/eI/nz,"['rains', 'reins']"
+gr/AU/tS/,['grouch']
+/tS/O/nt,['chaunt']
+f/&/N/d,['fanged']
+t/S/A/k,['choc']
+kr/O/ft,['croft']
+p/Oi/zd,['poised']
+/S/oU/d,['shoad']
+/S/oU/n,"['shown', 'shone']"
+/S/oU/l,"['shole', 'shoal']"
+b/U/tS/,['butch']
+m/aI/t,"['mite', 'might']"
+/S/oU/v,['shove']
+/S/oU/t,"['shote', 'shoat']"
+/S/oU/s,['chausses']
+/S/oU/r,['shore']
+/tS/oU/z,['chose']
+kl/AU/dz,['clouds']
+w/oU/,"['wo', 'woe', 'whoa']"
+d/j/AU/s,['dyaus']
+sk/E/rm,['scherm']
+sp/j/u/,"['spew', 'spue']"
+sl/eI/k,['slake']
+gl/u/m,"['gloom', 'glume']"
+/A/r/tS/t,['arched']
+sw/@/rv,['swerve']
+str/oU/,['strow']
+sl/eI/n,['slain']
+sw/@/rl,['swirl']
+b/&/dZ/,['badge']
+/j/eI/,['yea']
+b/i/tS/,"['beech', 'beach']"
+n/E/s,['ness']
+/A/A/,['aa']
+n/E/f,['nef']
+kr/A/N/k,['cronk']
+n/E/b,['neb']
+n/E/l,"['nell', 'knell']"
+n/E/k,['neck']
+h/&/st,['hast']
+r/&/N/,['rang']
+/D/AU/,['thou']
+fl/E/kst,['flexed']
+fl/I/nt,['flint']
+/S/ArlmAr/i/,['charles_marie']
+bl/I/N/k,['blink']
+/dZ/E/f,['jeff']
+skw/I/ft,['squiffed']
+sl/aI/,['sly']
+st/I/lb,['stilb']
+kl/eI/v,['clave']
+z/eI/n,['zane']
+kl/eI/m,['claim']
+st/I/lt,['stilt']
+kl/eI/d,['clade']
+b/U/nd,['bund']
+d/oU/dZ/,['doge']
+s/@/rt,"['cert', 'surt']"
+s/@/rv,['serve']
+br/O/l,['brawl']
+m/j/u/,"['meu', 'mu', 'mew']"
+h/A/rst,['harst']
+s/@/rk,['cirque']
+s/@/rd,['surd']
+s/@/rf,"['serf', 'surf']"
+pl/I/m,['plim']
+s/@/rb,['serb']
+/dZ/E/s,"['jess', 'jesse']"
+w/i/r,"[""we're"", 'weir']"
+w/i/p,['weep']
+w/i/v,"[""we've"", 'weave']"
+bl/E/st,['blest']
+w/i/k,"['week', 'weak']"
+kl/&/sp,['clasp']
+w/i/n,"['wean', 'wheen', 'ween']"
+w/i/l,"['wheel', 'huile', 'weal', 'wheal', ""we'll""]"
+s/i/n/j/Ak,['signac']
+bl/&/N/k,['blank']
+w/i/d,"[""we'd"", 'weed']"
+s/I/mp,['simp']
+s/I/mz,"['simms', 'sims']"
+k/&/vz,['calves']
+/A/ntrakt,"[""entr'acte""]"
+b/O/r/S/t,['borscht']
+k/I/tS/,['kitsch']
+b/&/tS/,"['batch', 'bach']"
+/dZ/eI/,"['jeh', 'j', 'jay']"
+/dZ/A/g,['jog']
+m/I/ft,['miffed']
+p/i/z,"['pease', 'pes']"
+p/i/t,"['pete', 'peat', 'piet']"
+p/i/v,['peeve']
+p/i/p,['peep']
+p/i/r,"['peer', 'pire', 'pier']"
+p/i/s,"['peace', 'piece']"
+p/i/l,"['pele', 'peal', 'peale', 'peel', 'peele']"
+p/i/n,"['pean', 'pein', 'peen', 'pien']"
+p/i/k,"['peek', 'peak', 'pique']"
+p/i/g,['peag']
+p/A/rt/S/t,['parched']
+s/i/i/N/,['seeing']
+kl/I/mt,['klimt']
+sn/O/rt,['snort']
+dv/i/nsk,['dvinsk']
+br/&/tS/,['brach']
+b/O/nAr,['bonnard']
+rn,['reiterate']
+Alb/i/,['albi']
+l/@/st,['lust']
+h/eI/,"['hay', 'hae', 'hey']"
+/S/oU/,['show']
+sp/A/r/dZ/,['sparge']
+b/@/n/tS/,"['bunche', 'bunch']"
+r/oU/k,"['roque', 'roke', 'roak']"
+/T/@/rst,['thirst']
+r/oU/n,['roan']
+kW/I/ts,['quits']
+r/oU/l,"['role', 'roll']"
+r/oU/m,"['rome', 'rom', 'roam']"
+r/oU/b,['robe']
+r/oU/g,['rogue']
+r/oU/d,"['rode', 'road']"
+r/oU/z,['rose']
+b/E/l/tS/,['belch']
+l/E/t/S/,['lech']
+r/oU/r,['roar']
+r/oU/p,['rope']
+r/oU/v,['rove']
+r/oU/t,"['rote', 'wrote']"
+p/oU/r,"['pore', 'pour']"
+m/eI/nz,['mains']
+m/eI/nd,['maned']
+w/E/n/tS/,['wench']
+h/O/ns,['haunce']
+h/O/nt,['haunt']
+w/I/lks,['wilkes']
+h/A/rnZ,['harns']
+f/I/dZ/,['fidge']
+d/u/S/,['douche']
+z/&/ks,['zax']
+h/&/gd,['hagged']
+dr/@/dZ/,['drudge']
+gArn/i/,['garni']
+k/@/pt,['cupped']
+n/oU/rk,['nork']
+s/aI/D/,['scythe']
+mAl/E/rb,['malherbe']
+swonzdoun,"[""swan's-down""]"
+fr/oU/j/nd,['freund']
+sk/A/t/S/,['scotch']
+m/&/sk,['mask']
+br/&/n,['bran']
+d/&/S/,['dash']
+str/&/d,['strad']
+kl/Oi/,['cloy']
+str/&/p,['strap']
+str/&/s,['strass']
+h/&/ft,['haft']
+duz/@/nt,"[""doesn't""]"
+pl/aI/,['ply']
+bl/E/b,['bleb']
+bl/E/d,['bled']
+f/A/nd/ju/,['fondue']
+/A/dz,['odds']
+bl/E/s,['bless']
+st/eI/,"['stey', 'stay']"
+g/@/r/dZ/,['gurge']
+h/oU/lt,['holt']
+/T/&/nt,['thant']
+h/oU/lp,['holp']
+kl/u/,"['clou', 'clew', 'clue']"
+h/oU/ld,['hold']
+kr/@/mp,['crump']
+h/oU/lm,['holm']
+/S/r/@/N/k,['shrunk']
+/Z/Yl,['jules']
+kr/@/mz,['crumbs']
+fl/&/k,"['flack', 'flach', 'flak']"
+lAplAs,['laplace']
+fl/&/n,['flan']
+fl/&/m,['flam']
+fl/&/b,['flab']
+bAl/O/Ndese,"[""ballons_d'essai""]"
+fl/&/g,"['flagg', 'flag']"
+b/oU/T/,['both']
+fl/&/p,['flap']
+fl/&/t,['flat']
+br/&/sk,['brasque']
+h/I/l/S/,['hilch']
+h/&/N/k,['hank']
+/eI/t/T/,['eighth']
+br/&/n/tS/,['branch']
+/dZ/E/st,"['gest', 'jest', 'geste']"
+v/A/lt,['volte']
+v/A/ls,['waals']
+/O/b/Z/edAr,"[""objets_d'art"", ""objet_d'art""]"
+l/AU/,['lao']
+f/AU/nt,['fount']
+dr/i/,['dree']
+f/AU/nd,['found']
+/S/t/A/ns,['stans']
+sl/I/N/k,['slink']
+gl/u/mz,['glooms']
+gr/&/nd,['grand']
+/j/&/N/k,['yank']
+gr/&/nt,['grant']
+f/I/l/tS/,['filch']
+fl/E/ks,['flex']
+m/@/st,['must']
+m/I/nsk,['minsk']
+sp/i/l,"['speil', 'spiel']"
+w/I/n/tS/,['winch']
+l/E/ft,['left']
+p/Oi/nd,['poind']
+p/Oi/nt,['point']
+Al/&/N,['alain']
+gr/A/f,['graf']
+gr/A/g,['grog']
+gr/A/k,['grok']
+b/U/rgz,['bourgs']
+gr/A/s,['grasse']
+gr/A/t,['grot']
+gr/eI/vz,['graves']
+skw/A/S/,['squash']
+h/E/k,['heck']
+h/E/l,"['hel', 'hell']"
+h/E/m,['hem']
+h/E/n,['hen']
+h/E/d,['head']
+/dZ/@/dZ/,['judge']
+h/E/p,['hep']
+h/E/r,['herr']
+h/E/s,"['hess', 'heth']"
+h/E/t,"['het', 'cheth']"
+kr/E/S/,['creche']
+d/u/mz,['dooms']
+fr/O/t,['fraught']
+f/A/S/,['foch']
+fr/O/d,['fraud']
+f/I/n/tS/,['finch']
+/S/A/rd,['shard']
+/j/O/d,['yaud']
+/S/A/rk,['shark']
+/j/O/n,"['yonne', 'yawn']"
+/j/O/l,['yawl']
+v/i/ktWAr,['victoire']
+/S/A/rp,['sharp']
+/j/O/p,['yawp']
+/j/O/z,['yaws']
+st/I/nt,['stint']
+h/I/pt,['hipped']
+br/O/,['braw']
+n/I/mf,['nymph']
+/Z/O/r/Z/,['georges']
+r/@/S/,['rush']
+w/A/S/,['wash']
+/j/O/,['yaw']
+k/&/lks,['calx']
+/j/A/rn,['yarn']
+/j/A/rl,['jarl']
+d/i/lz,['diels']
+g/A/r/T/,['garth']
+w/I/S/t,['whisht']
+k/j/A/t,['kyat']
+/S/t/oU/s,['stoss']
+st/U/r,['stour']
+pl/u/m,['plume']
+st/U/d,['stood']
+m/A/rld,['marled']
+v/i/n,['wien']
+v/i/l,['veal']
+f/aI/,"['phi', 'fie']"
+v/i/r,['veer']
+v/i/p,['veep']
+v/i/v,['vive']
+/S/U/dst,['shouldst']
+b/i/n,['bean']
+sk/oU/k,['scoke']
+b/i/l,"['biel', 'bhil']"
+b/i/m,['beam']
+b/i/k,"['beek', 'beak']"
+d/I/ks,['dix']
+b/i/f,['beef']
+b/i/d,"['bead', 'bede']"
+b/i/b,['beeb']
+b/i/z,"['bise', 'bize']"
+b/i/t,"['beat', 'beet', 'bete']"
+b/i/r,"['beer', 'bier']"
+b/i/s,['bies']
+b/i/p,['beep']
+n/I/b,['nib']
+r/&/mp,['ramp']
+sp/E/ks,['specs']
+k/i/,"['ki', 'quay', 'key']"
+l/U/dZ/,['lodz']
+sp/E/kl,['speckle']
+h/i/d,"[""he'd"", 'heed']"
+b/I/tS/,['bitch']
+pr/&/m,['pram']
+h/i/l,"['hele', 'heal', ""he'll"", 'heel']"
+h/i/m,"['haem', 'heme']"
+pr/&/d,['prad']
+h/i/,['he']
+h/i/t,['heat']
+h/i/v,['heave']
+/D/@/rz,"[""there's""]"
+n/I/l,"['nil', 'nill']"
+h/i/r,"['heer', 'hear', 'here']"
+pr/&/t,['prat']
+h/i/z,"['heize', 'heeze', ""he's""]"
+d/j/y/r,['gyor']
+h/O/rnd,['horned']
+kl/aI/v,['clive']
+n/E/t,['net']
+sn/i/S/,['sneesh']
+kl/aI/m,"['climb', 'clime']"
+kl/aI/n,"['cline', 'kleine', 'kline', 'klein']"
+w/A/ts,['watts']
+kl/aI/d,['clyde']
+kl/I/N/k,['clink']
+s/AU/T/,['south']
+/S/r/u/d,['shrewd']
+b/E/st,['best']
+m/eI/ld,['mailed']
+d/eI/zArg,['desargues']
+Alw/E/t,"['alouette', 'alouettes']"
+v/Oi/s,['voice']
+s/u/s,['seuss']
+s/u/p,['soup']
+h/O/lt,['halt']
+s/u/k,"['souk', 'suq']"
+v/j/O/l,['violle']
+s/u/m,['soom']
+s/u/l,['sool']
+r/AU/ns,['rounce']
+n/j/E/ps,['niepce']
+n/E/d,['ned']
+t/@/rs,"['terce', 'terse']"
+t/@/rm,['term']
+t/@/rn,"['tern', 'terne', 'turn']"
+d/E/T/,['death']
+t/@/rk,['turk']
+t/@/rd,['turd']
+t/@/rf,['turf']
+s/O/t,['sought']
+s/O/s,['sauce']
+s/O/m,['somme']
+/D/ats/D/at,"[""that's_that""]"
+s/O/n,['sawn']
+s/O/k,['sauk']
+sw/O/r/T/,['swarth']
+b/@/mf,['bumf']
+b/@/mp,['bump']
+/tS/eI/n/dZ/,['change']
+b/&/S/,['bash']
+gw/I/n,"['gwynne', 'gwyn']"
+sn/I/p,['snip']
+sn/I/t,['snit']
+gw/I/b,['guib']
+sn/I/k,['snick']
+sn/I/f,['sniff']
+sn/I/g,['snig']
+s/u/,"['sue', 'sioux']"
+/j/&/k,['yak']
+g/eI/,"['gey', 'gay', 'guay']"
+z/aI/st,['zeist']
+twelv/@/klok,"[""twelve-o'clock""]"
+tr/&/kt,['tract']
+s/A/NfrwA,['sang-froid']
+d/@/z,['does']
+d/@/p,['dup']
+d/@/r,['dare']
+/A/NbrWAZ,['ambroise']
+d/@/v,['dove']
+d/@/k,['duck']
+d/@/m,['dumb']
+d/@/l,['dull']
+d/@/n,"['donne', 'dunne', 'done', 'dunn', 'dun']"
+d/@/b,['dub']
+/S/ArnY,['charnu']
+d/@/d,['dud']
+d/@/g,"['doug', 'dug']"
+d/@/f,['duff']
+t/eI/lz,['tailles']
+/tS/&/mp,['champ']
+k/U/N/,['kung']
+kl/aI/st,['kleist']
+h/A/r/T/,['hearth']
+sp/eI/,"['spay', 'spae']"
+w/U/dst,['wouldst']
+skw/E/g,['squeg']
+rYd,['rude']
+m/&/S/,['mash']
+sA/i/rA,['ca_ira']
+r/eI/klAm,['reclame']
+/S/r/A/f,['shroff']
+mAr/&/N,['marin']
+sw/aI/p,['swipe']
+st/oU/r,['store']
+st/oU/s,['stoss']
+st/oU/p,"['stope', 'stowp']"
+st/oU/v,['stove']
+st/oU/t,"['stoat', 'stoit']"
+d/E/lft,['delft']
+st/oU/k,['stoke']
+st/oU/n,['stone']
+st/oU/l,['stole']
+sw/aI/n,['swine']
+t/&/ft,['taft']
+k/aI/D/,"['kithe', 'kythe']"
+had/@/nt,"[""hadn't""]"
+/j/u/,"['you', 'u', 'ewe', 'yew']"
+br/AU/,['brow']
+/j/O/rks,['yorks']
+skr/I/k,['schrik']
+sk/@/t/S/,['scutch']
+skr/I/p,['scrip']
+br/I/sk,['brisk']
+f/AU/lz,['fouls']
+trWA/j/O/N,['troyon']
+p/@/N/k,['punk']
+p/&/tS/,['patch']
+p/oU/rn,['porn']
+sw/A/ts,['swats']
+/dZ/i/,"['ge', 'g', 'gee', 'jee']"
+p/oU/rt,"['porte', 'port']"
+tw/I/tS/,['twitch']
+b/@/N/,['bung']
+k/E/mp,['kemp']
+skor/tS/@/r,['scorcher']
+fl/@/b,['flub']
+/eI/p,['ape']
+/eI/s,['ace']
+l/j/O/d,['liod']
+/eI/t,"['ait', 'ate', 'eight']"
+dw/O/rf,['dwarf']
+katsf/U/t,"[""cat's-foot""]"
+/eI/b,['abe']
+sp/@/n/dZ/d,['sponged']
+/eI/k,"['ache', 'ake']"
+pl/@/mp,['plump']
+/eI/l,"['ail', 'ale']"
+/eI/n,"['ane', 'ain', 'aisne']"
+kl/&/p,['clap']
+kl/&/s,['class']
+sw/A/N/k,['swonk']
+/@/sk,['usk']
+/S/A/,['shah']
+kl/&/k,"['clack', 'claque']"
+kl/&/m,['clam']
+kl/&/n,"['clan', 'klan']"
+kl/&/d,['clad']
+l/eI/,"['ley', 'lai', 'lay']"
+vwAlA,['voila']
+s/u/D/,['soothe']
+/S/i/rs,['sheers']
+frogzbit,"[""frog's-bit""]"
+str/eI/nd,['strained']
+/S/i/rd,['sheared']
+n/u/,"['new', 'knew', 'nu', 'gnu']"
+/S/Ar,['char']
+st/@/rps,['stirps']
+b/A/ks,['box']
+d/@/r/dZ/,['dirge']
+l/O/z,['lawes']
+p/i/nd,['piend']
+p/u/rbwAr,['pourboire']
+/&/ft,['aft']
+/D/ats,"[""that's""]"
+h/&/N/,['hang']
+/S/A/pt,['schapped']
+n/I/ks,"['nix', 'nyx']"
+br/A/,"['brahe', 'bra']"
+kl/&/N/,['clang']
+s/AU/nd,['sound']
+d/A/rnd,['darned']
+/Z/A/NbAr,['jambart']
+pl/eI/n,"['plain', 'plane']"
+nWAr,['noir']
+n/i/ss,['nies']
+m/oU/p,['mope']
+t/I/N/kt,['tinct']
+kr/u/T/,['crwth']
+dr/Oi/S/,['drawish']
+b/i/sk,['bisk']
+/D/i/z,['these']
+b/i/st,['beast']
+gr/u/,['grew']
+/oU/ZArm,['aux_armes']
+h/oU/rd,"['hoard', 'horde']"
+w/i/z,['wheeze']
+v/AU/tS/,['vouch']
+bArbYS,['barbusse']
+k/@/t,['cut']
+k/@/r,"['curr', 'cur', 'care']"
+k/@/s,['cuss']
+k/@/p,['cup']
+k/@/z,['coz']
+k/@/f,['cuff']
+k/@/d,['cud']
+k/@/b,['cub']
+/S/w/O/rtz,['schwarz']
+k/@/l,['cull']
+k/@/m,"['cum', 'come']"
+/S/w/O/rts,['schwartz']
+h/E/ld,['held']
+h/E/lm,['helm']
+t/aI/,"['tie', 'thai', 'ty', 'tye']"
+pAl/E/,['palais']
+h/E/lv,['helve']
+h/E/lp,['help']
+w/i/t,['wheat']
+/eI/m,['aim']
+br/eI/s,['brace']
+/Z/Akm/E/l,['jacmel']
+g/E/st,['guest']
+g/E/k,['geck']
+f/aI/vz,['fives']
+g/E/d,"['guesde', 'gedd', 'ged']"
+g/E/b,['geb']
+g/E/t,['get']
+g/E/s,['guess']
+gYd,['gude']
+h/i/ld,"['heald', 'heeled']"
+t/i/tS/,['teach']
+l/E/m,"['lm', 'lem']"
+l/E/n,['len']
+tr/E/v,['treves']
+gr/i/n,"['greene', 'green']"
+l/E/k,['lek']
+l/E/d,"['lead/n', 'led', 'lead']"
+l/E/f,['lev']
+l/E/g,['leg']
+gr/i/d,['greed']
+gr/i/f,['grief']
+gr/i/g,['grieg']
+tr/E/d,['tread']
+gr/i/s,['grease/v']
+l/E/t,"['let', 'lett']"
+b/eI/D/,['bathe']
+gr/i/s,"['gris', 'grease', 'grease/n', 'greece']"
+gr/i/t,['greet']
+gr/i/v,"['greave', 'grieve']"
+l/E/s,['less']
+/dZ/Oi/n,['join']
+h/I/nt,['hint']
+/dZ/Oi/s,['joyce']
+b/AU/t,['bout']
+b/AU/s,['bouse']
+/j/O/rt,['hjort']
+b/AU/n,"['boun', 'bown']"
+g/&/T/,['gath']
+h/A/rv,['harve']
+s/i/D/,['seethe']
+h/A/rp,['harp']
+l/i/tS/,"['leach', 'leech']"
+r/aI/ts,['rights']
+dr/I/l,['drill']
+dr/I/p,['drip']
+h/A/rd,['hard']
+h/A/rm,['harm']
+h/A/rl,"['harl', 'harle']"
+h/A/rk,['hark']
+g/oU/d,['goad']
+kl/I/N/,['cling']
+g/oU/f,['goaf']
+spl/A/S/,['splosh']
+g/oU/l,['goal']
+g/oU/r,['gore']
+g/oU/t,['goat']
+sp/&/N/k,['spank']
+/tS/A/ps,['chops']
+/O/ft,['oft']
+d/I/dst,['didst']
+r/oU/rk,['roark']
+m/O/rn,['morn']
+l/E/dZ/,['ledge']
+f/O/lk,['volk']
+f/O/ld,['fauld']
+/tS/aI/ld,"['childe', 'child']"
+sp/I/N/k,['spink']
+hou/@/r,"[""howe'er""]"
+r/O/,['raw']
+h/E/st,['hest']
+v/aI/vz,['vives']
+str/@/t,['strut']
+str/@/k,['struck']
+str/@/m,['strum']
+/@/r/dZ/,['urge']
+bl/O/,['blaw']
+t/eI/nt,['taint']
+k/&/s,['cass']
+sl/@/N/,['slung']
+kl/E/ft,"['cleft', 'klepht']"
+r/u/Z/,['rouge']
+h/&/dZ/,"['hadj', 'hajj']"
+p/@/rld,['pearled']
+g/O/,['gaw']
+h/&/S/,['hash']
+/S/I/m,['shim']
+m/O/nd,['maund']
+r/I/p,['rip']
+/S/I/n,['shin']
+r/I/n,['rin']
+/S/I/p,['ship']
+r/I/l,['rill']
+r/I/m,['rim']
+r/I/k,"['wrick', 'rick']"
+/S/I/v,"['chiv', 'shiv', 'sheave']"
+r/I/f,['riff']
+r/I/g,['rig']
+r/I/d,['rid']
+r/I/b,['rib']
+sw/E/t,['sweat']
+/dZ/oU/gz,['egan']
+br/i/ks,['breeks']
+sw/E/l,['swell']
+bl/@/dZ/,['bludge']
+gr/U/z,['groesz']
+spl/I/nt,['splint']
+t/AU/nz,['townes']
+tr/u/D/z,['truths']
+spr/E/d,['spread']
+st/oU/nd,['stoned']
+r/oU/j/s,['reuss']
+r/i/p,['reap']
+/S/I/k,['schick']
+k/E/ks,['kex']
+f/E/lps,['phelps']
+sw/i/d,['swede']
+sn/&/tS/,['snatch']
+pr/eI/t,['prate']
+d/oU/nt,"[""don't""]"
+st/I/f,['stiff']
+st/I/k,"['stick', 'stich']"
+st/I/l,['still']
+pr/eI/z,"['prase', 'praise']"
+p/O/tA/Z/,['potage']
+kr/@/tS/,['crutch']
+st/&/nd,['stand']
+st/E/l/T/,['stealth']
+lAkl/oU/,['laclos']
+l/aI/D/,['lithe']
+/eI/eI/,['aye-aye']
+gr/AU/s,['grouse']
+/dZ/I/N/ks,['jinx']
+/S/A/nt,"[""shan't""]"
+m/&/ts,['mats']
+sw/&/N/,['swang']
+h/u/z,"['whose', ""who's""]"
+h/u/p,"['whoop', 'hoop']"
+h/u/t,"['hwt', 'hoot']"
+/j/U/r,"[""you're"", 'your']"
+h/u/l,"[""who'll""]"
+h/u/m,['whom']
+/j/U/d,['yod']
+l/u/nz,['lunes']
+/S/@/nt,"['sant', 'shunt']"
+h/u/d,"[""who'd""]"
+kl/&/mp,['clamp']
+sl/@/mp,['slump']
+br/Oi/l,['broil']
+b/E/lt,['belt']
+/j/O/O/f,['yaw_off']
+h/A/rtstu/N/,"[""hart's-tongue""]"
+w/E/l/T/,['wealth']
+n/E/rnst,['nernst']
+/T/@/d,['thud']
+m/I/lk,['milk']
+l/I/N/,['ling']
+/S/I/t,['shit']
+/T/@/m,['thumb']
+/j/U/rt,['yurt']
+/j/U/rn,"[""your'n""]"
+m/I/lz,['mills']
+sl/@/dZ/,['sludge']
+sn/&/S/,['snash']
+pAn/j/O/l,['pagnol']
+b/I/ts,['bitts']
+sk/O/ld,"['scald', 'scalled', 'skald']"
+t/oU/,"['tow', 'toe']"
+gl/A/st,['glost']
+fAmfAtAl,"['femmes_fatales', 'femme_fatale']"
+pl/eI/nt,['plaint']
+v/O/n,"['vaughn', 'vaughan']"
+m/&/skt,['masked']
+w/@/rmz,['worms']
+kr/E/pt,['crept']
+kr/E/ps,['krebs']
+sn/E/l,['snell']
+fr/A/NS,['frans']
+h/E/nt,['hent']
+h/E/ns,['hence']
+/T/r/I/ps,['thrips']
+gl/u/,['glue']
+m/@/r,"['murre', 'myrrh']"
+m/@/s,['muss']
+m/@/t,"['mut', 'mutt']"
+m/@/z,['muzz']
+m/@/d,['mud']
+m/@/f,['muff']
+m/@/g,['mug']
+m/@/k,['muck']
+m/@/l,['mull']
+m/@/m,"['mum', 'mumm']"
+w/eI/lz,"['whales', 'wales']"
+/S/r/i/v,['shrieve']
+h/@/nts,['hunts']
+str/O/N/,['strong']
+/S/r/i/k,['shriek']
+h/u/,['who']
+n/i/T/,['neath']
+f/A/rS,['fars']
+p/&/nt,['pant']
+t/@/N/,"['tongue', 'tung']"
+g/u/,['goo']
+t/S/@/b,['chubb']
+f/A/rs,['farce']
+sk/aI/,"['sky', 'skye']"
+f/A/rt,['fart']
+f/A/rm,['farm']
+f/A/rl,['farl']
+f/eI/,"['fae', 'fay', 'phaye', 'fey']"
+s/eI/eI/,['say_aye']
+f/A/rd,['fard']
+/oU/boil,"[""o'boyle""]"
+v/A/st,['wast']
+nArb/O/n,['narbonne']
+tr/i/,['tree']
+fl/I/tS/,['flitch']
+spr/&/N/,['sprang']
+fl/E/d,['fled']
+/tS/A/rk,['chark']
+/tS/A/rm,['charm']
+fl/E/m,['phlegm']
+/tS/A/rd,['chard']
+fl/E/k,['fleck']
+selAv/i/,"[""c'est_la_vie""]"
+/T/r/aI/s,['thrice']
+/T/r/aI/v,['thrive']
+beg/@/rstik,"[""beggar's-tick""]"
+/oU/ld,['old']
+/S/Ar/A/Nt,['charente']
+r/E/dZ/,['reg']
+/@/r/T/,"['earth', 'airth']"
+l/i/nd,['leaned']
+/T/r/oU/,"['throw', 'throe']"
+/T/r/E/S/,['thresh']
+l/I/lt,['lilt']
+gr/Oi/n,"['groyne', 'groin']"
+l/i/nz,['lignes']
+g/aI/z,['guise']
+fl/i/,"['flea', 'flee']"
+k/oU/ks,['coax']
+fr/&/nz,['franz']
+fr/&/ns,['france']
+/i/ld,['eild']
+kw/E/l,['quell']
+pen/@/T/,"[""penn'orth""]"
+k/A/rst,['karst']
+vAl/A/Ns,['valence']
+/tS/eI/n,['chain']
+/tS/eI/p,['chape']
+/tS/eI/s,['chase']
+l/O/n/tS/,['launch']
+/S/r/E/d,['shred']
+w/E/pt,['wept']
+s/O/N/,['song']
+kr/I/ps,"['cripps', 'krips']"
+kr/I/pt,['crypt']
+/S/r/oU/v,['shrove']
+pr/u/st,['proust']
+str/Oi/,['stroy']
+sp/I/n,['spin']
+/E/ks,"['x', 'ex']"
+p/A/,"['pah', 'pa', 'pas']"
+m/I/lt/S/,['milch']
+m/@/r/T/,['mirth']
+dw/oU/rvz,['dwarves']
+mAr/j/E/t,['mariette']
+kl/O/O/f,['claw_off']
+r/E/nz,['wrens']
+tw/E/lf/T/,['twelfth']
+m/AU/,['mowe']
+spr/@/N/,['sprung']
+/tS/E/st,['chest']
+b/&/ts,['bats']
+k/O/ld,"['cauld', 'called']"
+/dZ/u/,['jew']
+kw/I/tS/,['quitch']
+k/E/g,['keg']
+k/E/d,['ked']
+k/E/k,['keck']
+k/E/n,"['ken', 'kenn']"
+k/E/p,['kep']
+/i/dz,['eads']
+kl/I/pt,"['clipped', 'clipt']"
+h/aI/nd,['hind']
+kr/E/mz,['cremes']
+v/oU/Z/,['vosges']
+b/u/T/,['booth']
+kr/E/ms,['krems']
+lw/i/s,['luis']
+k/A/N/k,"['conch', 'conk']"
+b/@/rst,['burst']
+h/@/N/ks,['hunks']
+pl/I/N/k,['plink']
+g/Ou/,['gough']
+sp/@/r/dZ/,['spurge']
+fr/aI/,"['frey', 'fri', 'fry']"
+/S/I/ft,['shift']
+robinzeg,"[""robin's-egg_blue""]"
+gYStAV,['gustave']
+t/O/rsk,['torsk']
+r/eI/s,"['race', 'reis']"
+fr/A/N/k,['franck']
+sk/i/t,"['skeat', 'skeet']"
+sk/i/m,['scheme']
+/@/rst,['erst']
+d/O/k,"['dauk', 'dak', 'dawk']"
+sk/i/d,['skied']
+blWA,['blois']
+/S/eI/k,"['sheikh', 'shake']"
+/S/eI/m,['shame']
+/S/eI/l,['shale']
+/tS/I/ns,['chinse']
+/S/eI/d,['shade']
+/S/eI/f,['shaef']
+/tS/eI/z,"['chaise', 'shays']"
+/S/eI/p,['shape']
+/S/eI/s,['schayes']
+/S/eI/v,['shave']
+dr/u/p,"['droop', 'drupe']"
+dr/u/z,"['druse', 'druze']"
+dr/u/b,['droob']
+dr/u/l,['drool']
+sp/A/t,['spot']
+/tS/@/r/tS/,['church']
+fl/eI/k,['flake']
+fl/eI/m,['flame']
+fl/eI/l,['flail']
+/E/N/,['eng']
+v/U/nt,['wundt']
+gr/@/nt,"['granth', 'grunt', 'grunth']"
+g/I/mp,['guimpe']
+p/j/E/r/S/Arl,['pierre_charles']
+gr/&/mps,['gramps']
+plAsp/i/gAl,['place_pigalle']
+kAf/eI/nwAr,['cafe_noir']
+bAVArdA/Z/,['bavardage']
+m/I/ng,['minnie']
+sl/u/t,"['sloot', 'sluit']"
+sl/u/s,['sluice']
+sl/u/p,['sloop']
+m/I/ns,['mince']
+m/I/nt,['mint']
+g/I/n,['gin']
+g/I/l,"['gill', 'gil', 'ghyll']"
+g/I/b,['gib']
+b/O/r/S/,['borsch']
+g/I/d,['gid']
+r/A/t/S/,['rotch']
+l/A/r/tS/,['larch']
+g/I/v,['give']
+g/I/t,['git']
+skw/A/d,['squad']
+n/oU/nz,['nones']
+n/&/st,['nast']
+p/u/tS/,['pooch']
+sn/eI/D/,['snathe']
+sm/O/l,['small']
+h/Oi/st,['hoist']
+l/I/b,['lib']
+l/I/d,['lid']
+/T/O/rn,"['thorn', 'thorne']"
+l/I/k,['lick']
+bl/A/nd,"['blonde', 'blond']"
+l/I/m,"['limb', 'limn']"
+l/I/n,"['linn', 'lin', 'lynn']"
+fl/Oi/d,['floyd']
+l/I/p,['lip']
+l/I/t,['lit']
+k/O/NtrAst,['contraste']
+/T/O/rp,"['thorpe', 'thorp']"
+fl/Oi/s,['floyce']
+l/I/z,['liz']
+/U/lm,['ulm']
+m/AU/T/,"['mouth', 'mouth/n']"
+p/AU/tS/t,['pouched']
+dw/A/m,['dwalm']
+f/I/st,['fist']
+h/aI/nz,"['hines', 'heyns']"
+/S/u/t,"['shoot', 'chute', 'shute']"
+pl/eI/t,"['plate', 'plait']"
+pl/eI/s,"['plaice', 'place']"
+st/E/n/tS/,['stench']
+str/U/k,['strook']
+sk/E/g,['skeg']
+/S/u/z,['choux']
+pl/eI/g,['plague']
+fl/O/n/tS/,['flaunch']
+/S/u/l,['shool']
+/S/u/n,['shoon']
+g/u/t,['goutte']
+g/u/s,"['goose', 'goes']"
+bl/A/tS/,['blotch']
+g/u/p,['goop']
+g/u/n,['goon']
+g/u/l,['ghoul']
+/tS/Oi/s,['choice']
+g/u/g,['goog']
+g/u/f,['goof']
+dr/aI/d,['dried']
+fr/E/nd,['friend']
+l/I/nts,['linz']
+st/O/,['staw']
+dr/aI/v,['drive']
+iz/@/nt,"[""isn't""]"
+fl/O/s,['floss']
+h/@/n/j/z,['henize']
+w/@/rkt,['worked']
+/tS/i/N/,"[""ch'ing""]"
+kr/O/st,['crossed']
+sk/I/N/k,['skink']
+dAlkr/O/z,['dalcroze']
+m/&/tS/,['match']
+mAkmA/O/N,['macmahon']
+n/Oi/z,"['noyes', 'noise']"
+h/u/tS/,"['hootch', 'hooch']"
+b/@/gz,['bugs']
+w/@/rm,['worm']
+n/Oi/l,['noil']
+bl/@/n/dZ/,['blunge']
+n/aI/t,"['knight', 'night']"
+/oU/rt,['ort']
+/oU/rz,['oars']
+/oU/rd,['oared']
+p/A/p,['pop']
+/T/&/n,['tanh']
+p/&/lp,['palp']
+k/AU/ld,['cowled']
+sn/E/kt,['snecked']
+kw/@/rt,['quirt']
+mus/@/nt,"[""mustn't""]"
+kw/@/rk,"['quirk', 'quark']"
+s/@/rks,['circs']
+kw/@/rn,['quern']
+r/u/z,"['roose', 'ruse']"
+/tS/U/k,['chook']
+/S/i/z,"[""she's""]"
+r/u/p,['roup']
+r/u/t,"['route', 'root']"
+st/eI/k,"['steak', 'stake']"
+r/u/n,['rune']
+r/u/l,['rule']
+r/u/m,"['rheum', 'room']"
+r/u/b,['rube']
+r/u/f,['roof']
+r/u/d,"['rood', 'rude']"
+pAs/i/,['passy']
+p/A/l,['pawl']
+h/O/n/tS/,['haunch']
+sk/I/mp,['skimp']
+d/@/rst,['durst']
+r/E/S/t,['resht']
+l/u/z,['lose']
+k/E/tS/,['ketch']
+l/u/t,"['loot', 'lute']"
+st/eI/d,"['staid', 'stade']"
+l/u/p,"['lupe', 'loupe', 'loop']"
+l/u/s,"['luce', 'loose', 'loos']"
+l/u/m,['loom']
+l/u/n,"['loon', 'lown', 'loun', 'lune']"
+l/u/k,['luke']
+l/u/d,"['leud', 'lewd']"
+l/u/f,['loof']
+s/oU/rs,['source']
+l/u/b,['lube']
+tr/aI/,['try']
+skr/&/tS/,['scratch']
+/j/esmam,"[""yes_ma'am""]"
+sk/oU/r,"['score', 'scaur']"
+sk/oU/p,['scope']
+g/I/S/,['gish']
+sw/i/ps,['sweeps']
+v/Oi/t,['voyt']
+fr/oU/,"['fro', 'froe', 'frow']"
+d/E/bz,['debs']
+v/Oi/d,['void']
+m/O/T/,['moth']
+sw/i/,['sui']
+v/Oi/l,['voile']
+/dZ/I/N/k,['jink']
+spr/A/g,['sprog']
+v/AU/,['vow']
+str/i/k,"['streak', 'streek']"
+l/Oi/,['loy']
+r/@/N/,"['wrung', 'rung']"
+str/i/m,['stream']
+/eI/mz,['ames']
+drO/@/,['drau']
+str/i/t,['street']
+tw/I/n/dZ/,['twinge']
+m/oU/r,['more']
+k/i/ts,['keats']
+m/oU/v,['mauve']
+m/oU/t,"['moat', 'mote']"
+m/oU/k,['moke']
+/S/l/A/k,['schlock']
+m/oU/n,"['moan', 'mon']"
+m/oU/m,['mome']
+m/oU/l,"['mole', 'mol']"
+s/i/dZ/,['siege']
+w/@/n,"['won', 'one']"
+m/oU/g,['moog']
+m/oU/d,['mode']
+/eI/twAl,['etoiles']
+/dZ/i/nz,['jeans']
+l/@/nWAr,['lenoir']
+/dZ/i/ns,['jeans']
+bl/@/S/,['blush']
+w/I/ns,['wince']
+w/I/nz,['winze']
+r/eI/dZ/,['rage']
+w/I/nd,"['wind/n', 'wind']"
+tr/E/n/tS/,['trench']
+gr/@/tS/,['grutch']
+dr/E/dZ/,['dredge']
+n/O/,['gnaw']
+pr/O/n,['prawn']
+tout/j/e,"[""t'ao_t'ieh""]"
+w/&/ks,['wax']
+sp/A/,['spa']
+t/eI/n,"['tain', ""ta'en""]"
+t/eI/l,"['tale', 'taille', 'tail', 'tael']"
+t/eI/m,['tame']
+t/eI/k,['take']
+tr/&/N/k,['trank']
+st/u/dZ/,['stooge']
+tw/I/st,['twist']
+h/&/nts,['hants']
+t/eI/t,['tate']
+t/eI/p,['tape']
+sp/@/rn,['spurn']
+sp/@/rm,['sperm']
+sp/@/rd,['spurred']
+sp/@/rt,"['spurt', 'spirt']"
+/tS/i/ld,['chield']
+b/&/N/ks,['banks']
+k/@/rst,"['curst', 'kerst']"
+g/i/st,['geest']
+kl/u/f,['kloof']
+/A/ntWAn,['antoine']
+fl/eI/,"['fley', 'flay']"
+k/&/lst,['calced']
+w/A/rk,['wark']
+tArn,['tarn']
+tArb,['tarbes']
+tArd,['tarde']
+n/AU/t,['knout']
+n/AU/d,['nowed']
+b/&/N/,"['bang', 'bhang']"
+n/AU/m,['naum']
+n/AU/n,['noun']
+kr/oU/m,['chrome']
+kr/oU/n,['crone']
+sw/AU/nd,['swound']
+kr/oU/k,['croak']
+kr/oU/z,['croze']
+kr/oU/r,['crore']
+b/@/dZ/,['budge']
+bAr/O/N,['baron']
+t/O/st,['tost']
+f/j/E/ld,['fjeld']
+fl/O/d,['flawed']
+kr/A/tS/,['crotch']
+fr/AU/z,['fraus']
+k/O/rdz,['cords']
+fr/AU/n,['frown']
+w/@/z,['was']
+b/&/l,['bal']
+b/&/k,['back']
+w/@/r,"['whir', 'wear', 'were', 'ware', 'where', 'whirr']"
+b/&/d,"['bad', 'bade']"
+b/&/g,['bag']
+b/&/f,"['baff', 'barf']"
+w/@/t,['what']
+l/@/n/tS/,['lunch']
+b/&/t,"['bat', 'batt']"
+/E/lvz,['elves']
+b/&/s,['bass']
+n/O/n,['gnawn']
+n/O/f,['knauff']
+n/O/r,"['knorr', 'nor']"
+n/O/s,['knous']
+n/O/t,['nought']
+h/i/rz,"[""here's""]"
+r/i/st,"['reist', 'reest']"
+handzbred/T/,"[""hand's-breadth""]"
+pl/@/S/,['plush']
+/S/Arl/@/rWA,['charleroi']
+st/eI/vd,['staved']
+l/u/Z/,['luge']
+h/aI/d,"['hide', 'hyde']"
+h/aI/l,['heil']
+h/aI/m,['haym']
+h/aI/k,"['haick', 'haik', 'haec', 'huic', 'hike', 'yoicks', 'hoick']"
+w/I/S/,"['wish', 'whish']"
+h/aI/v,['hive']
+h/aI/t,"['hyte', 'hight', 'height']"
+h/aI/r,['hire']
+h/aI/s,['heis']
+h/aI/p,['hype']
+g/oU/nd,['gond']
+r/aI/nd,"['rind', 'rynd']"
+s/O/rb,['sorb']
+d/AU/,"['douw', 'dau', 'dhow', 'tao', 'dow', 'dou']"
+gl/eI/d,['glade']
+fl/A/p,['flop']
+f/O/rb,['forb']
+fl/A/k,"['floc', 'flock']"
+gl/eI/z,['glaze']
+f/O/rk,['fork']
+gl/eI/v,"['glave', 'glaive']"
+fl/A/g,['flog']
+skr/@/n/tS/,['scrunch']
+sk/A/rvz,['scarves']
+f/E/n,['fen']
+f/E/l,['fell']
+g/oU/sts,['ghosts']
+str/@/nt,['strunt']
+s/E/T/,"['saith', 'seth']"
+f/E/f,['feoff']
+f/E/d,['fed']
+sl/O/T/,['sloth']
+v/I/nt,['vint']
+kr/I/n/dZ/,['cringe']
+f/E/z,['fez']
+v/I/ns,['vince']
+f/E/t,['fet']
+f/E/s,['fess']
+n/A/k,"['knock', 'nock']"
+spl/aI/s,['splice']
+/D/eI/d,"[""they'd""]"
+t/&/N/kt,['tanked']
+n/A/m,['nam']
+n/A/b,"['knob', 'nob']"
+n/A/g,"['nog', 'nogg']"
+n/A/d,['nod']
+k/AU/nt,"['count', 'compt']"
+n/A/r,"['knar', 'gnar']"
+n/A/p,['knop']
+b/&/kt,['backed']
+b/&/ks,['bax']
+n/A/t,"['not', 'naught', 'knot', 'nat']"
+spl/aI/n,['spline']
+k/I/N/z,['kings']
+kw/A/d,"['quad', 'quod']"
+kw/A/f,"['coif', 'quaff']"
+kw/A/m,['qualm']
+k/I/N/k,['kink']
+/S/&/lt,['shalt']
+r/A/,"['ra', 'rah']"
+v/U/rm,['wurm']
+s/E/dZ/d,['sedged']
+sk/&/mp,['scamp']
+fr/eI/,"['frae', 'frei', 'fray']"
+sk/@/r/dZ/,['scourge']
+tw/eI/n,['twain']
+bl/E/n/tS/,['blench']
+r/u/T/,"['ruth', 'routh']"
+kl/A/mp,['clomp']
+m/oU/rn,['mourn']
+tw/eI/t,['thwaite']
+kr/i/ps,['creeps']
+dr/i/mz,['dreams']
+l/j/oU/D/,['ljod']
+b/I/l/dZ/,['bilge']
+tr/aI/k,['trike']
+l/I/n/tS/,"['linch', 'lynch']"
+darest,"[""d'arrest""]"
+lAl/oU/,['lalo']
+/T/i/bz,['thebes']
+gl/&/s,['glass']
+gl/&/d,['glad']
+p/U/nt,['punt']
+s/oU/ld,['sold']
+gl/&/m,['glam']
+kw/&/nt,['quant']
+skAr/O/N,['scarron']
+/dZ/j/AU/,"['chiao', 'jiao']"
+fr/aI/z,['fries']
+sl/&/nt,['slant']
+fr/aI/t,['fright']
+sp/&/N/,['spang']
+b/eI/,"['bey', 'bay']"
+fr/aI/d,['fried']
+f/i/z,"['feaze', 'feeze']"
+f/i/r,"['fehr', 'fear', 'fere']"
+f/i/s,['fils']
+f/i/t,"['feet', 'feat']"
+f/i/l,"['feel', 'feal']"
+f/i/b,"['pheb', 'feeb']"
+bl/&/nd,['bland']
+f/i/f,['fief']
+f/i/d,['feed']
+fl/Oi/,['floy']
+f/O/rm,"['form', 'forme']"
+s/E/dZ/,['sedge']
+pr/I/mp,['primp']
+l/O/st,['lost']
+h/@/mf,['humph']
+h/@/mp,['hump']
+w/I/ld,['willed']
+/T/r/I/l,['thrill']
+f/i/ldz,['fields']
+/@/ks,['aix']
+kr/@/S/,['crush']
+dr/AU/t,['drought']
+dr/AU/z,['drowse']
+g/E/nt,['ghent']
+k/u/s,['coos']
+k/u/r,['coerr']
+k/u/p,['coop']
+k/u/t,['coot']
+k/u/z,['coups']
+k/u/f,"['coof', 'cuif']"
+kl/A/rk,['clark']
+k/u/k,"['cook', 'kook']"
+k/u/n,"['coon', 'kuhn']"
+k/u/m,"['coomb', 'qom', 'cwm', 'combe', 'coom']"
+k/u/l,['cool']
+br/I/ks,['brix']
+r/aI/z,['rise']
+r/aI/p,['ripe']
+r/aI/s,['rice']
+r/aI/t,"['write', 'wright', 'rite', 'right']"
+r/aI/v,['rive']
+r/aI/k,"['ryke', 'reich', 'reik']"
+r/aI/l,['rile']
+r/aI/m,"['rime', 'rhyme']"
+r/aI/n,['rhine']
+t/&/tS/,['tache']
+r/aI/d,['ride']
+r/aI/f,['rife']
+w/E/dZ/d,['wedged']
+m/&/ns,['manse']
+m/&/nd,['manned']
+b/eI/st,['baste']
+skr/oU/ld,['scrolled']
+sm/@/g,['smug']
+h/&/vz,['halves']
+f/E/m,['feme']
+s/A/nd,['sonde']
+f/E/k,['feck']
+p/u/,['pooh']
+f/&/ts,['fats']
+l/E/pt,['leapt']
+b/oU/st,['boast']
+m/O/NtAn/j/Ak,['montagnac']
+s/u/lt,['soult']
+d/A/NbWAZ,"[""d'amboise""]"
+str/A/p,['strop']
+/O/,"['awe', 'aw']"
+l/I/T/,['lith']
+spl/&/t,['splat']
+Ar/S/b/A/N,"['archbanc', 'archebanc']"
+dw/eI/n,"['duane', 'dwayne']"
+lAb/i/S/,['labiche']
+n/AU/,"['knowe', 'now']"
+h/E/dz,['heads']
+sk/@/N/k,['skunk']
+/tS/A/r,"['char', 'charr']"
+/tS/A/p,"['chop', 'chap']"
+/tS/A/n,"[""ch'an""]"
+/tS/A/k,['chock']
+/Z/u/v,['jouve']
+br/I/N/,['bring']
+tr/i/st,['triste']
+kr/i/l,['creel']
+kr/i/m,"['crim', 'cream']"
+t/aI/d,"['tide', 'tied']"
+kr/i/k,"['creak', 'creek', 'kriek']"
+kr/i/d,['creed']
+sm/i/r,['smear']
+t/aI/n,['tine']
+t/aI/l,['tile']
+t/aI/m,"['thyme', 'time']"
+sm/i/k,['smeek']
+t/aI/s,"['theiss', 'tice']"
+t/aI/p,['type']
+t/aI/t,['tight']
+sm/i/l,['smyl']
+kr/i/t,"['crete', 'crit']"
+kr/i/p,['creep']
+kr/i/s,"['crease', 'creese', 'kris']"
+s/&/N/k,['sank']
+bl/@/rt,['blurt']
+t/aI/mz,['times']
+gAr,['gard']
+bl/@/rb,['blurb']
+b/A/f,['boff']
+b/A/g,['bog']
+g/oU/ld,['gold']
+b/A/b,['bob']
+b/A/n,"['ban', 'bonn']"
+b/A/l,"['baale', 'basle', 'baal']"
+b/A/m,"['bombe', 'balm', 'bomb']"
+b/A/k,['bock']
+At/E/r,['a_terre']
+b/A/v,['badb']
+b/A/t,"['bot', 'bott', 'baht']"
+b/A/r,"['bahr', 'bar']"
+b/A/s,['boss']
+b/A/p,['bop']
+b/A/z,['boz']
+h/AU/,"['how', 'howe']"
+bAz/&/N,['bazin']
+w/u/,['woo']
+w/U/lf,"['wolfe', 'wolf', 'woolf']"
+f/E/nks,['fenks']
+/oU/g/j/st,['auguste']
+/dZ/Oi/st,['joist']
+n/A/sp,['knosp']
+sm/A/rt,['smart']
+m/AU/D/z,['mouths']
+b/y/m,['bohm']
+sm/A/rm,['smarm']
+eksi/N/,"[""x'ing""]"
+d/@/n/S/,['dunch']
+dr/&/N/k,['drank']
+f/I/tS/,['fitch']
+l/I/N/kt,['linked']
+m/u/t,['moot']
+m/u/v,['move']
+p/oU/r/tS/,['porch']
+/AU/rz,['ours']
+m/u/n,['moon']
+m/u/d,['mood']
+/j/u/T/,['youth']
+br/u/d,['brood']
+n/oU/z,['nose']
+br/u/m,"['broom', 'brume']"
+b/&/mf,['banff']
+br/u/t,"['brut', 'brute', 'bruit']"
+br/u/s,['bruce']
+bl/&/st,['blast']
+br/u/z,['bruise']
+d/@/N/k,['dunk']
+/T/I/N/k,['think']
+/A/pt,['opt']
+/A/ps,['ops']
+vAlAd/O/N,['valadon']
+kl/E/n/tS/,['clench']
+p/I/l/tS/,['pilch']
+k/I/N/,['king']
+v/aI/nd,['vined']
+/dZ/i/z,['jeez']
+/dZ/i/r,['jeer']
+/dZ/i/p,['jeep']
+/dZ/i/n,"['jean', 'gene']"
+st/@/N/,['stung']
+p/j/u/l,['pule']
+p/j/u/k,['puke']
+g/E/T/,['geth']
+p/j/u/s,['puce']
+t/A/A/l,['taal']
+kr/U/k,['crook']
+/dZ/AU/ns,['jounce']
+sk/@/rl,['skirl']
+f/&/N/,['fang']
+sk/@/rf,['scurf']
+sk/eI/ld,['scaled']
+sk/@/rt,['skirt']
+sk/@/rs,['scarce']
+t/&/lk,['talc']
+d/E/ft,['deft']
+/S/i/psbit,"[""sheep's-bit""]"
+w/eI/r,['wair']
+w/eI/v,"['waive', 'wave']"
+w/eI/t,"['waite', 'weight', 'wait']"
+w/eI/z,"['ways', 'wase']"
+r/@/st,['rust']
+t/E/st,['test']
+w/eI/f,['waif']
+/S/l/E/p,['schlepp']
+w/eI/d,['wade']
+w/eI/k,['wake']
+w/eI/n,"['wayne', 'wain', 'wane']"
+w/eI/m,['wame']
+w/eI/l,"['wale', 'whale', 'wail']"
+l/j/A/N/,['liang']
+kl/@/r,"['clare', 'claire', 'clair']"
+m/A/k,"['moc', 'mock', 'mach']"
+m/A/m,"['malm', 'mom']"
+m/A/l,"['moll', 'maul']"
+m/A/n,"['man', 'mon', 'mann', 'maun']"
+st/&/p,['stap']
+m/A/b,['mob']
+m/A/d,"['maud', 'mod']"
+m/A/g,['mog']
+kl/@/b,['club']
+st/&/k,['stack']
+kl/@/f,['clough']
+kl/@/k,"['cluck', 'kluck']"
+m/A/p,"['mop', 'mopp']"
+st/&/b,['stab']
+m/A/t,"['motte', 'mott']"
+st/&/g,"['stag', 'stagg']"
+st/&/f,"['staph', 'staff']"
+k/O/rs,['corse']
+p/oU/tS/,['poach']
+fAr/u/S/,['farouche']
+t/u/ts,['toots']
+skw/@/rt,['squirt']
+g/&/st,['ghast']
+g/&/sp,['gasp']
+k/O/rf,['corf']
+k/O/rk,['cork']
+k/O/rm,['corm']
+k/O/rn,['corn']
+k/O/rS,['corse']
+f/I/f/T/,['fifth']
+l/I/st,"['liszt', 'list']"
+br/A/b,['brob']
+l/I/sp,['lisp']
+br/A/k,"['brock', 'broch', 'braque']"
+br/A/m,['brom']
+n/i/r,"['near', 'nier']"
+n/i/s,"['niece', 'nice']"
+n/i/p,"['neap', 'neep', 'neanderthaloid']"
+m/I/N/ks,['minx']
+n/i/t,['neat']
+n/i/d,"['need', 'knead']"
+n/i/l,"['neal', 'neil', 'kneel']"
+st/&/fs,['staffs']
+g/E/lt,['gelt']
+/dZ/oU/v,['jove']
+/@/mp,['ump']
+tr/eI/,"['trey', 'tray']"
+g/E/ld,['geld']
+/dZ/oU/b,['job']
+/aI/vz,['ives']
+/dZ/oU/k,['joke']
+/dZ/oU/l,['jole']
+/dZ/oU/n,['joan']
+gl/i/d,"['glede', 'gleed']"
+gl/i/b,['glebe']
+gl/i/n,['glean']
+gl/i/m,['gleam']
+gl/i/k,['gleek']
+gl/i/t,['gleet']
+p/Oi/,['poi']
+st/@/mp,['stump']
+bl/AU/s,['blouse']
+d/aI/r,['dire']
+d/aI/s,"['dice', 'dyce']"
+d/aI/v,['dive']
+d/aI/t,['dight']
+d/aI/z,['dies']
+daNd/i/,"[""d'indy""]"
+d/aI/k,"['dike', 'dyke']"
+d/aI/n,"['dine', 'dyne']"
+v/E/dZ/,['veg']
+d/aI/m,['dime']
+t/O/k,['talk']
+t/O/l,['tall']
+t/O/r,"['tor', 'torr']"
+t/O/t,"['taught', 'taut']"
+t/O/z,['taws']
+gl/oU/t,['gloat']
+sw/u/n,['swoon']
+s/A/lt,['salt']
+s/A/lv,['solve']
+gl/oU/z,['gloze']
+h/U/kt,['hooked']
+gl/oU/b,['globe']
+gl/oU/m,['gloam']
+spr/&/g,['sprag']
+k/eI/,"['cayes', 'kay', 'quai', 'cay', 'k']"
+/dZ/aI/n,['jain']
+t/E/ns,['tense']
+t/E/nt,['tent']
+spr/&/t,['sprat']
+k/O/lmAr,['colmar']
+n/A/ns,['nonce']
+t/E/nd,['tend']
+s/eI/dZ/,['sage']
+/T/&/N/k,['thank']
+gl/U/k,['gluck']
+/S/p/eI/,['spee']
+n/O/rs,['norse']
+l/i/S/,['leash']
+/dZ/aI/b,"['gibe', 'gybe', 'jibe']"
+n/O/rm,['norm']
+m/@/sk,['musk']
+tw/I/t,['twit']
+s/I/kst,['sixte']
+m/I/T/,['myth']
+tw/I/g,['twig']
+tw/I/l,['twill']
+tw/I/n,['twin']
+drag/@/nztu/N/,"[""dragon's-tongue""]"
+d/@/rm,['derm']
+d/@/rn,"['dern', 'durn']"
+k/O/,['coo']
+d/@/rk,"['dirk', 'duerk']"
+gr/oU/,"['gros', 'grow']"
+d/@/rt,['dirt']
+d/@/rv,['derv']
+t/U/S/,"['tusche', 'tush']"
+z/I/N/k,['zinc']
+k/I/S/,['kish']
+p/O/n/tS/,['paunch']
+gw/aI/n,['gwine']
+h/E/lmd,['helmed']
+r/E/t/tS/,['wretch']
+br/AU/n,"['brown', 'braun', 'browne']"
+t/u/b,['tube']
+pl/i/t,['pleat']
+t/u/l,"['tool', 'tulle', 'toul']"
+pl/i/z,['please']
+t/u/n,"['toon', 'thun', 'tune']"
+t/u/k,['tuque']
+t/u/t,['toot']
+pl/i/b,['plebe']
+/oU/,"['eaux', 'oh', 'owe', 'o', 'au', 'eau']"
+br/AU/z,['browse']
+AtrW/A/,['a_trois']
+st/&/N/k,['stank']
+d/O/nt,['daunt']
+dArl/A/N,['darlan']
+pr/oU/z,['prose']
+sk/oU/ps,['scopes']
+/j/A/N/,['yang']
+pr/oU/n,['prone']
+pr/oU/m,['prome']
+pr/oU/l,['prole']
+pr/oU/b,['probe']
+m/I/N/,['ming']
+kap/@/m,"[""cap'n""]"
+gr/A/m,['gram']
+/dZ/Oi/,['joy']
+f/A/kst,['foxed']
+/dZ/@/t,['jut']
+skr/@/mp,['scrump']
+l/aI/ts,['lights']
+f/&/kt,['fact']
+h/E/ft,['heft']
+fl/&/S/,['flash']
+w/E/r/S/,['wersh']
+pl/eI/j/Ad,['pleiade']
+spr/u/,['sprue']
+sl/AU/,['slough']
+skr/eI/p,['scrape']
+t/A/,['ta']
+sl/E/pt,['slept']
+/oU/ts,['oates']
+g/aI/st,['geist']
+l/i/vz,['leaves']
+b/I/g,"['big', 'bigg']"
+l/i/vd,['leaved']
+/A/rt,['art']
+/A/rp,['arp']
+k/U/rg,"['kurg', 'coorg']"
+/A/rs,['arse']
+/A/rm,['arm']
+/A/rn,['arne']
+/A/rk,"['arc', 'ark']"
+/A/rd,['ard']
+fl/A/N/,['flong']
+pw/&/NtnwAr,['pointe-noire']
+fl/@/N/,['flung']
+st/O/n/tS/,['stanch']
+p/oU/n,['pone']
+w/@/rd,"['word', ""where'd""]"
+h/E/,['heh']
+d/I/b,['dib']
+fl/&/ps,['flaps']
+tr/O/l,['trawl']
+r/&/sk,['rask']
+t/@/rkshed,"[""turk's-head""]"
+v/E/kst,['vexed']
+r/A/mp,['romp']
+/T/r/&/S/,['thrash']
+p/O/n,['pawn']
+p/O/l,"['paul', 'pall']"
+gl/aI/m,['glime']
+gl/aI/d,['glide']
+m/O/Nd,['monde']
+p/O/z,['pause']
+k/oU/st,['coast']
+fr/O/st,['frost']
+d/&/md,['damned']
+sk/O/,['skaw']
+d/&/mp,['damp']
+/tS/E/kt,['checked']
+/tS/oU/r,['chore']
+/tS/oU/t,['choate']
+f/A/,['fa']
+g/O/lts,['goltz']
+b/i/ld,['bield']
+b/I/gz,['biggs']
+/tS/oU/k,['choke']
+sl/Oi/d,['sloid']
+/tS/oU/n,['chon']
+b/@/l/dZ/,['bulge']
+n/@/rts,['nerts']
+tr/A/d,['trod']
+d/I/n/dZ/,['dinge']
+tr/A/f,['trough']
+/S/u/,"['shtreimel', 'shue', 'shoe', 'chou', 'shoo']"
+tr/A/t,['trot']
+b/@/rks,['berks']
+b/u/r/Z/,['bourges']
+pl/&/n/tS/,['planch']
+w/eI/st,"['waste', 'waist']"
+l/@/nt,['lunt']
+Al/O/st,['alost']
+b/aI/,"['bayh', 'buy', 'bye', 'by', 'bai']"
+/tS/w/i/,['twi']
+br/I/gz,['briggs']
+/oU/lAr,['aulard']
+sm/u/dZ/,['smoodge']
+kr/O/n/tS/,['craunch']
+/j/E/l,['yell']
+/j/E/n,['yen']
+r/@/mp,['rump']
+/i/tS/,"['eche', 'each']"
+pl/AU/,"['plow', 'plough']"
+/j/E/g,['yegg']
+k/j/u/b,['cube']
+/j/E/t,"['yett', 'yet']"
+/j/E/p,['yep']
+/j/E/r,"['jer', 'hyeres']"
+/j/E/s,['yes']
+kw/eI/,"['qua', 'quey']"
+/j/A/,"['ja', 'yah']"
+f/AU/l,"['fowl', 'foul']"
+t/eI/,"['tae', 'tay']"
+/dZ/I/nd,['ginned']
+s/O/ft,['soft']
+tr/E/nd,['trend']
+r/u/st,['roost']
+fr/I/l,['frill']
+fr/I/k,['frick']
+sYZAn,['suzanne']
+fr/I/g,"['frig', 'frigg']"
+b/A/rbd,['barbed']
+fr/I/z,"['frizz', 'friz']"
+fr/I/t,['frit']
+b/@/rt,"['bert', 'birt', 'burt']"
+b/@/rs,"['birse', 'burse']"
+b/@/rp,['burp']
+b/@/rn,"['burn', 'byrne', 'beirne', 'bairn', 'bern', 'berne']"
+b/@/rl,"['byrle', 'byrl', 'burl', 'birle', 'birl', 'berl']"
+b/@/rm,['berm']
+st/O/l,['stall']
+b/@/rk,"['birk', 'berk', 'burke']"
+b/@/rg,"['berg', 'burg', 'burgh']"
+b/@/rd,"['burd', 'baird', 'bird', 'burred', 'byrd']"
+fr/A/g,['frog']
+fr/A/m,"['fromm', 'fromme']"
+fr/A/k,['frock']
+pr/u/d,['prude']
+d/&/N/,['dang']
+gzAv/j/eI/,['xavier']
+d/@/ls,['dulse']
+/eI/,"['a', 'ae', 'eh', 'aye', 'ay', 'ay/inj']"
+t/aI/k,"['tike', 'tyke']"
+br/i/z,['breeze']
+kr/&/tS/,['cratch']
+br/i/v,['breve']
+/T/j/u/,['thew']
+br/i/t,['brit']
+br/i/m,['bream']
+k/i/T/,['keith']
+br/i/f,['brief']
+br/i/d,"['breed', 'brede']"
+s/i/n,"['scene', 'sin']"
+s/i/m,"['seem', 'seam']"
+s/i/l,"['ceil', 'seel', 'seal']"
+s/i/k,"['sieck', 'seek', 'sikh']"
+fr/Oi/d,['freud']
+/S/eI/pt,['shaped']
+sw/A/n,['swan']
+sw/A/b,"['swob', 'swab']"
+d/@/rnd,['durned']
+sl/u/S/,['sloosh']
+s/i/z,"['seise', 'seize']"
+sw/A/p,"['swop', 'swap']"
+s/i/t,['seat']
+s/i/s,['cease']
+f/&/lks,['falx']
+h/aI/vz,['hives']
+s/Oi/,['soy']
+k/E/n/tS/,['kench']
+b/E/s,"['bes', 'bess']"
+fYn,['fyn']
+f/i/S/,['fiche']
+b/E/t,"['beth', 'bet', 'bett']"
+b/E/k,['beck']
+b/E/n,"['ben', 'benn']"
+br/@/S/,['brush']
+b/E/l,"['bael', 'beal', 'bell', 'bel', 'belle']"
+m/O/rWA,['maurois']
+b/E/g,['beg']
+b/E/d,['bed']
+pl/@/N/k,['plunk']
+kr/I/mp,['crimp']
+m/@/rznest,"[""mare's-nest""]"
+h/A/N/,['hong']
+/dZ/E/nt,['gent']
+h/@/N/,['hung']
+/oU/D/z,['oaths']
+/dZ/E/nz,['gens']
+br/u/,"['brew', 'broo']"
+l/aI/vz,['lives']
+m/i/t,"['meet', 'meat', 'mete']"
+/T/r/@/S/,['thrush']
+m/i/z,['mise']
+mAl/i/n,['malines']
+w/@/rst,"['worst', 'wurst']"
+m/i/d,"['meed', 'meade', 'mead', 'mede']"
+w/aI/,"['y', 'hwai', 'wye', 'why']"
+m/E/S/,['mesh']
+m/i/k,['meek']
+m/i/l,['meal']
+m/i/n,"['mean', 'mesne', 'mien']"
+sw/aI/ps,['swipes']
+k/&/Nt,['quinte']
+sw/A/tS/,['swatch']
+s/&/NnAzAr,['st_nazaire']
+tr/Oi/,['troy']
+st/eI/D/,['staithe']
+s/E/nd,"['scend', 'send']"
+k/&/N/,['cangue']
+s/E/nt,"['scent', 'cent', 'sent']"
+sk/u/lmam,"[""schoolma'am""]"
+s/E/ns,"['cense', 'sense']"
+/dZ/u/s,['juice']
+w/A/ft,['wafd']
+/dZ/u/p,['jupe']
+fr/u/t,['fruit']
+l/i/pt,['leaped']
+/Z/E/r,['gers']
+fr/u/g,['frug']
+skr/eI/,['scray']
+fr/u/d,['froude']
+/dZ/u/k,"['jook', 'jouk']"
+sn/oU/,['snow']
+/dZ/u/n,['june']
+/dZ/u/l,['joule']
+w/I/lt,['wilt']
+w/O/r,['waur']
+br/E/s,['bres']
+gr/eI/nd,['grained']
+gr/eI/nz,['grains']
+w/O/f,['waugh']
+br/E/n,['brengun']
+w/O/k,"['wauk', 'walk']"
+w/O/l,['wall']
+/E/lk,['elk']
+kw/O/rts,['quartz']
+w/E/ns,['whence']
+kr/aI/ps,['cripes']
+w/E/nt,['went']
+/E/lf,['elf']
+s/E/dst,['saidst']
+k/AU/tS/,['couch']
+w/E/nd,['wend']
+n/j/O/r/T/,['njorth']
+AnAb/A/z,['anabase']
+s/U/r,['sur']
+s/U/t,['soot']
+spr/I/ts,['spritz']
+z/aI/m,['zyme']
+pr/@/r,['prayer']
+z/AU/ndz,['zounds']
+/S/r/I/N/k,['shrink']
+pl/A/p,['plop']
+l/&/D/z,['laths']
+p/j/E/r,['pierre']
+sw/A/mp,['swamp']
+pl/A/d,['plod']
+bl/E/nt,['blent']
+/y/j/Ad,"['oeillade', 'oeillades']"
+bl/E/nd,"['blende', 'blend']"
+gr/I/ts,['grits']
+m/E/m,['mem']
+m/E/l,"['mel', 'mell']"
+sn/i/z,['sneeze']
+m/E/n,['men']
+skw/i/z,['squeeze']
+/S/m/@/k,['schmuck']
+m/E/g,['meg']
+l/E/ks,['lex']
+skw/i/k,['squeak']
+v/aI/bz,['vibes']
+m/E/t,['met']
+m/E/v,['mev']
+sn/i/d,['snead']
+m/E/s,['mess']
+skr/i/k,['screak']
+g/i/dZ/,['guige']
+h/E/n/tS/,['hench']
+skr/i/m,"['scream', 'scrim']"
+skr/i/b,['scribe']
+f/oU/rd,['ford']
+skr/i/d,['screed']
+f/oU/rs,['force']
+dr/AU/n,['drown']
+f/oU/rt,['fort']
+m/A/N/S/,['manche']
+w/A/r,['war']
+w/A/p,"['wop', 'whap', 'wap']"
+m/I/st,['mist']
+w/A/b,['wab']
+w/A/d,['wad']
+ro/N/@/n,"[""wrong'un""]"
+w/A/n,"['wan', 'juan', 'hwan']"
+st/@/N/k,['stunk']
+d/A/ks,['dax']
+/S/aI/,['shy']
+gr/A/ts,['graz']
+r/&/pt,['rapt']
+d/E/ns,['dense']
+h/@/sk,['husk']
+p/A/t/S/,['potch']
+st/O/kt,['stalked']
+kl/A/rt,['clart']
+/S/i/D/,['sheathe']
+bl/I/nts,"['blintz', 'blintze']"
+b/u/S/Ar,['bouchard']
+kw/oU/,['quo']
+f/i/nd,['fiend']
+r/eI/T/,['wraith']
+sl/@/N/k,['slunk']
+fl/@/r,"['flare', 'fleur', 'flair']"
+k/&/mp,['camp']
+fl/@/d,['flood']
+v/i/t,['vite']
+fl/@/f,['fluff']
+t/E/kst,['text']
+kr/i/,['cree']
+b/i/S/A,['bichat']
+/&/ps,['apse']
+/j/@/rn,['yearn']
+/&/pt,['apt']
+sl/&/S/t,['slashed']
+n/@/b,['nub']
+t/i/z,"['tees', 'tease']"
+t/i/r,['tyr']
+t/i/t,['teat']
+n/@/n,"['nun', 'non']"
+n/@/m,['numb']
+n/@/l,['null']
+n/@/r,"['knur', ""ne'er""]"
+t/i/k,"['teak', 'tieck']"
+t/i/l,"['teel', 'teal', 'teil']"
+t/i/m,"['teem', 'team']"
+t/i/n,['teen']
+n/@/t,['nut']
+t/i/d,"[""tea'd""]"
+t/i/g,['teague']
+p/U/tS/,['putsch']
+g/@/st,"['gust', 'gutse']"
+mAt/i/s,['matisse']
+spl/i/t,['split']
+spl/i/n,['spleen']
+kant,"[""can't""]"
+sm/&/k,['smack']
+r/E/st,"['wrest', 'rest']"
+fle/S/dAm/u/r,"[""fleches_d'amour""]"
+hr/A/lf,['hrolf']
+w/O/rm/T/,['warmth']
+d/@/ns,['dunce']
+d/@/nt,['dunt']
+d/A/N/,['dong']
+/D/E/ns,['thence']
+g/O/bA,['gobat']
+gl/U/n/S/,['glunch']
+h/AU/l,['howl']
+kArt/j/eI/,['cartier']
+h/AU/f,['howff']
+h/AU/s,['house/v']
+w/U/lvz,['wolves']
+l/i/,"['lea', 'li', 'lee', 'leigh', 'lie']"
+h/AU/s,"['house/n', 'house']"
+fr/A/sk,['frosk']
+/D/oU/z,['those']
+spr/I/N/,['spring']
+/tS/eI/st,['chaste']
+t/O/N/z,['tongs']
+kl/oU/k,"['cloke', 'cloak']"
+r/eI/D/,['rathe']
+tr/oU/p,['trope']
+dr/u/ss,['druce']
+t/i/T/,['teeth']
+s/I/st,"['cist', 'cyst']"
+f/j/u/m,['fume']
+f/j/u/g,['fugue']
+f/j/u/d,"['feud', 'feod']"
+f/j/u/z,"['fuse', 'fuze']"
+f/j/u/r,['fuhr']
+sp/i/r,"['spere', 'speer', 'speir', 'spier', 'spear']"
+/A/nd/j/,['hendaye']
+g/oU/vz,['goaves']
+sp/i/d,['speed']
+sp/i/n,['spean']
+p/@/ls,['pulse']
+p/@/lp,['pulp']
+sp/i/k,['speak']
+skw/O/,['squaw']
+br/E/d/T/,['breadth']
+p/U/S/,['push']
+h/@/rts,['hertz']
+d/&/ns,['dance']
+f/@/rst,['first']
+sAbAt/j/eI/,['sabatier']
+s/@/r/dZ/,"['serge', 'surge']"
+/tS/in,"[""ch'in""]"
+t/O/ft,['toft']
+dr/i/m,['dream']
+dr/i/n,['drin']
+dr/i/r,['drear']
+huntsup,"[""hunt's-up""]"
+bl/O/k,['blok']
+f/aI/l,"['faille', 'pfeil', 'file']"
+f/aI/n,['fine']
+f/aI/k,"['fike', 'fyke']"
+f/aI/f,"['fife', 'phyfe']"
+f/aI/t,"['veit', 'fight']"
+f/aI/v,['five']
+f/aI/r,['fire']
+f/aI/s,['fice']
+dYkAS,['ducasse']
+tr/i/r,['trier']
+tr/i/t,['treat']
+s/E/lf,['self']
+h/i/f,['heaf']
+tr/i/d,['treed']
+l/O/n,['lawn']
+l/O/g,['log']
+l/O/d,['laud']
+pr/eI/,"['pray', 'prey']"
+l/O/s,['loss']
+br/eI/n,['brain']
+br/eI/l,"['braille', 'brale', 'brail']"
+br/eI/k,"['break', 'brake']"
+br/eI/d,['braid']
+fr/@/nt,['front']
+br/eI/z,"['braise', 'braze']"
+br/eI/v,['brave']
+m/A/nz,['mons']
+h/i/k,['hic']
+h/oU/rs,['hoarse']
+gr/oU/T/,['growth']
+w/E/ld,['weld']
+fr/I/sk,['frisk']
+gr/I/l,['grill']
+gr/I/m,"['grimm', 'grim']"
+gr/I/n,['grin']
+w/E/lm,['whelm']
+b/A/tS/,['botch']
+gr/I/d,['grid']
+v/E/nt,['vent']
+gr/I/f,"['griffe', 'griff']"
+gr/I/g,['grig']
+w/E/lt,['welt']
+w/E/lp,['whelp']
+w/E/ls,['wels']
+gr/I/p,"['grip', 'grippe']"
+h/i/p,"['heep', 'heap']"
+gr/I/t,['grit']
+v/E/nd,['vend']
+w/E/lz,"['welles', 'wells']"
+n/aI/,"['ninetieth', 'nigh', 'nye']"
+b/eI/b,['babe']
+b/eI/l,"['bayle', 'bail', 'bale', 'beyle', 'bel']"
+b/eI/n,"['bane', 'bain']"
+b/eI/k,['bake']
+b/eI/t,"['bate', 'bait']"
+b/eI/s,['base']
+s/@/N/,"['soong', 'sung']"
+b/eI/z,['baize']
+h/A/,"['hah', 'ha']"
+fl/eI/S/,['fleche']
+r/AU/z,['rouse']
+r/AU/t,"['rowte', 'rout']"
+sw/i/p,['sweep']
+sw/i/s,['suisse']
+sw/i/r,['sweer']
+sw/i/t,"['suite', 'sweet']"
+g/A/,['ga']
+d/E/lf,['delf']
+sv/E/lt,['svelte']
+d/E/lt,['dealt']
+d/E/lv,['delve']
+d/E/lz,['dells']
+sw/i/l,['sweal']
+st/AU/S/,['stoush']
+p/i/st,['piste']
+m/@/N/,['mong']
+kl/oU/zd,['closed']
+kr/oU/,['crow']
+g/aI/l,['guile']
+/tS/@/r,"['chirre', 'chair', 'chirr', 'chare', 'churr']"
+g/aI/d,['guide']
+f/Oi/n,['foin']
+f/Oi/l,['foil']
+/tS/@/g,['chug']
+/tS/@/f,"['chough', 'chuff']"
+/tS/@/b,['chub']
+/tS/@/m,['chum']
+/tS/@/k,['chuck']
+r/E/nd,['rend']
+t/Oi/,['toy']
+r/E/nt,['rent']
+r/O/t,"['raught', 'wrought']"
+de/T/shed,"[""death's-head""]"
+r/O/s,"['rosse', 'ross']"
+kl/@/tS/,['clutch']
+gr/eI/,"['gray', 'greige', 'grey', 'griege']"
+br/I/dZ/,['bridge']
+p/A/ks,['pox']
+p/A/kt,['pocked']
+r/eI/t,['rate']
+r/eI/v,['rave']
+r/eI/p,['rape']
+/dZ/AU/l,['jowl']
+fl/O/nt,['flaunt']
+/dZ/aI/ls,['giles']
+vr/i/s,['vries']
+r/eI/z,"['rase', 'raze', 'raise']"
+r/eI/d,['raid']
+r/eI/l,['rail']
+/dZ/AU/r,['giaour']
+r/eI/n,"['rain', 'rein', 'rayne', 'reign']"
+r/eI/k,['rake']
+/j/I/n,['yin']
+/j/I/d,['yid']
+m/A/sk,"['masque', 'mosque']"
+/O/rf,"['orfe', 'orff']"
+/j/I/p,['yip']
+kr/@/p,['krupp']
+kr/@/s,['crus']
+kr/@/r,"['crare', 'crayer']"
+kr/@/m,"['crumb', 'crum']"
+s/I/T/,['sith']
+kr/@/k,['cruck']
+kr/@/d,['crud']
+tr/&/S/,['trash']
+/S/i/f,['sheaf']
+sk/u/T/,"['scouth', 'skouth']"
+/S/i/k,"['chic', 'sheik']"
+/S/i/l,"['shiel', ""she'll""]"
+/S/i/n,['sheen']
+h/j/u/,"['hue', 'hew', 'hugh']"
+/S/i/p,['sheep']
+/S/i/r,"['sheer', 'shear']"
+/S/i/t,['sheet']
+f/i/ld,['field']
+sn/aI/p,['snipe']
+gArs/O/N,['garcon']
+w/A/tS/,['watch']
+sn/aI/d,['snide']
+sw/@/N/,['swung']
+s/i/n,['seen']
+l/eI/d,"['lade', 'laid']"
+l/eI/n,"['lain', 'lane']"
+kl/u/t,['cloot']
+l/eI/ms,"['lame', 'lames']"
+l/eI/k,['lake']
+h/ju/g/oU/,['hugo']
+l/eI/v,['lave']
+l/eI/t,['late']
+l/eI/s,['lace']
+w/aI/lst,['whilst']
+/S/j/@/n,['hsien']
+l/eI/z,"['lase', 'laze']"
+l/i/dZ/,['liege']
+fr/E/d,['fred']
+s/I/n/tS/,"['cinch', 'sinh']"
+fr/E/s,['fress']
+fr/E/r,"['freres', 'frere']"
+fr/E/t,['fret']
+r/AU/nd,['round']
+m/@/mp,['mump']
+f/oU/r/T/,"['forth', 'fourth']"
+s/AU/s,['souse']
+s/AU/r,['sour']
+s/O/rt,['sort']
+s/O/rn,"['zorn', 'sorn']"
+spr/E/nt,['sprent']
+s/u/n,['soon']
+/O/ks,['aux']
+b/eI/tS/,['bache']
+dr/O/,['draw']
+h/j/u/dZ/,['huge']
+w/&/t,['wat']
+p/A/S/,['posh']
+w/&/f,"['waf', 'waaf']"
+w/&/g,['wag']
+w/&/k,"['wack', 'whack']"
+w/&/m,['wham']
+g/O/lt,['galt']
+kw/I/d,['quid']
+kl/@/N/,['clung']
+k/AU/z,['cowes']
+An/j/E/l,['agnel']
+k/AU/l,['cowl']
+w/E/l/tS/,['welch']
+v/j/E/n,['vienne']
+l/&/nd,['land']
+/&/N/k,['ankh']
+l/&/ns,"['lance', 'launce']"
+kw/I/s,['cuisse']
+st/AU/nd,['stound']
+pl/&/t,"['platte', 'plat']"
+b/j/E/n,['bienne']
+pl/&/k,"['plack', 'plaque']"
+pl/&/n,['plan']
+pl/i/tS/,['pleach']
+pl/&/d,['plaid']
+n/oU/t,"['note', 'nowt']"
+n/oU/r,"[""nor'""]"
+n/oU/p,['nope']
+w/A/dZ/,['wodge']
+n/oU/d,['node']
+n/oU/n,"['known', 'none']"
+n/oU/l,['knoll']
+n/oU/m,"['gnome', 'nome']"
+vlAm/&/Nk,['vlaminck']
+/j/u/z,"['youse', 'yous', 'use/v']"
+/j/u/t,['ute']
+/j/u/v,"[""you've""]"
+/j/u/s,['use/n']
+/j/u/l,"['youl', ""you'll"", 'yule']"
+d/Oi/t,"['doit', 'duit']"
+/j/u/k,"['uke', 'yeuk']"
+/j/u/d,"[""you'd""]"
+l/@/n/dZ/,"['lunge', 'longe']"
+s/Ou/,['sew']
+p/@/nt,['punt']
+h/A/rt,"['heart', 'hart', 'harte']"
+sk/aI/t,['skite']
+sk/aI/v,['skive']
+skw/@/rm,['squirm']
+skw/@/rl,['squirl']
+w/U/dz,['woods']
+sk/aI/f,['skeif']
+kl/A/k,['clock']
+t/&/sk,['task']
+kl/A/n,['clon']
+fl/E/dZ/d,['fledged']
+kl/A/g,['clog']
+kl/A/d,['clod']
+s/&/ks,['sax']
+kl/A/p,['clop']
+kl/A/t,['clot']
+sp/I/lt,['spilt']
+p/eI/dZ/,['page']
+b/eI/T/,['baith']
+/j/oU/k,"['yoke', 'yolk']"
+kl/E/nz,['cleanse']
+/j/oU/r,['yore']
+/j/oU/s,['jooss']
+br/i/,"['bree', 'brie']"
+/dZ/@/g,['jug']
+/dZ/@/d,['judd']
+tr/&/ps,['traps']
+br/@/r,"[""br'er""]"
+m/I/dst,['midst']
+/dZ/@/s,['jus']
+s/@/N/k,['sunk']
+v/eI/ld,['veiled']
+s/AU/,"['soufriere', 'sau']"
+d/I/k,"['dick', 'dyck']"
+d/I/l,['dill']
+d/I/m,['dim']
+d/I/n,['din']
+w/@/rk,['work']
+d/I/d,['did']
+w/@/rl,"['whirl', ""where'll"", 'whorl']"
+d/I/g,['dig']
+w/@/rs,['worse']
+p/A/N/,['pong']
+w/@/rt,"['wort', 'wert', 'whort']"
+w/@/rv,"[""where've""]"
+d/I/p,['dip']
+d/I/s,['dis']
+d/I/t,['dit']
+/T/oU/T/,['thoth']
+kn/I/n,['knin']
+dr/&/fts,['draughts']
+/S/v/A/n,['schwann']
+s/@/tS/,['such']
+l/&/st,['last']
+pr/u/n,['prune']
+l/O/ft,['loft']
+/S/&/ft,['shaft']
+pr/u/f,['proof']
+v/E/lp,['welp']
+v/E/lt,['veld']
+pr/u/t,"['prut', 'pruth']"
+pr/u/v,['prove']
+bwAt,['boite']
+rAm/oU/,['rameau']
+w/E/bd,['webbed']
+k/A/nd,['khond']
+bl/&/n/tS/,"['blanch', 'blanche']"
+k/A/ns,['kans']
+k/A/nt,['cant']
+sn/oU/r,['snore']
+s/&/S/,['sash']
+br/U/ks,['brooks']
+p/&/t,['pat']
+p/&/s,['pass']
+p/&/p,['pap']
+p/&/n,"['panne', 'pan']"
+p/&/m,['pam']
+p/&/l,['pal']
+p/&/k,"['pac', 'pack']"
+dr/@/N/k,['drunk']
+/oU/higinz,"[""o'higgins""]"
+p/&/d,['pad']
+skr/O/l,['scrawl']
+r/i/T/,['wreath']
+kw/i/n,"['queen', 'quean']"
+kw/i/r,['queer']
+m/E/ts,['metz']
+/dZ/oU/ks,['joxe']
+d/E/nz,['dens']
+/&/kt,['act']
+/&/ks,"['ax', 'axe']"
+hiz/@/n,"[""his'n""]"
+d/E/nt,['dent']
+kl/oU/ts,['cloots']
+d/Oi/ld,['doiled']
+gr/I/pt,['gript']
+v/u/Z/,['vouge']
+OEl/A/nd,['oland']
+m/@/mps,['mumps']
+d/AU/t,"['dought', 'doubt']"
+d/AU/s,"['dowse', 'douse']"
+d/AU/p,['doup']
+d/AU/n,['down']
+g/eI/ss,['gaess']
+d/AU/f,['dowf']
+g/@/lf,['gulf']
+w/j/br/I/N/,['weibring']
+g/O/dAr,['godard']
+g/@/lp,['gulp']
+r/E/lm,['realm']
+/tS/&/d,['chad']
+p/A/mp,['pomp']
+/tS/&/f,['chaff']
+kl/I/ft,['clift']
+g/A/lp,['golp']
+gArdf/y/,"['garde-feu', 'garde-feux']"
+/i/rd,['eared']
+/tS/&/t,['chat']
+katsp/O/,"[""cat's-paw""]"
+gw/E/lf,['guelph']
+g/A/lf,['golf']
+/T/eI/n,"['thane', 'thegn']"
+vAlrA,['walras']
+gr/u/vd,['grooved']
+k/oU/d,"['coad', 'code']"
+fl/A/ks,['phlox']
+k/oU/l,"['coal', 'cole', 'kohl']"
+k/oU/n,"['cohn', 'cone']"
+k/oU/k,"['coke', 'coak']"
+d/Oi/l,['doyle']
+k/oU/t,"['coat', 'cote']"
+k/oU/v,['cove']
+k/oU/p,['cope']
+k/oU/s,"['cos', 'coss', 'kos', 'cose']"
+k/oU/r,"['core', 'kor', 'corps']"
+r/I/ts,['ritz']
+k/oU/z,['coze']
+br/I/N/k,['brink']
+fl/@/mp,['flump']
+p/@/n/tS/,['punch']
+A/S/@/VAl,['a_cheval']
+fr/&/tS/,['fratch']
+t/aI/r,"['tire', 'tyre']"
+/T/i/i/n,['theine']
+s/@/dz,['suds']
+kr/aI/z,['crises']
+sm/&/S/,['smash']
+b/&/N/z,['bangs']
+b/&/N/k,"['banc', 'bank']"
+/S/eI/,"['chay', 'chez', 'shay']"
+kArkAs/O/n,['carcassonne']
+f/A/b,['fob']
+f/A/f,['pfaff']
+f/A/g,['fog']
+f/A/d,['fahd']
+k/i/f,['kief']
+f/A/k,['fac']
+f/A/n,['phon']
+f/A/r,"['far', 'farr']"
+f/A/s,"['foss', 'fosse']"
+f/A/p,['fop']
+f/A/t,['phot']
+n/eI/z,['naze']
+sw/I/n/dZ/,['swinge']
+n/eI/p,['nape']
+m/O/,"['maw', 'mmaw']"
+kr/Oi/,['croix']
+n/eI/l,['nail']
+n/eI/m,['name']
+n/eI/n,['nane']
+f/A/nts,['fontes']
+br/aI/b,['bribe']
+k/U/S/,"['kush', 'kusch', 'cush']"
+br/aI/d,['bride']
+n/&/p,"['knap', 'nappe', 'nap']"
+n/&/t,['gnat']
+br/aI/s,"['brice', 'bryce']"
+n/&/k,['knack']
+n/&/n,['nan']
+n/&/b,['nab']
+n/&/g,['nag']
+/A/,"['ah', ""a'""]"
+gr/A/NddAm,"['grande_dame', 'grandes_dames']"
+b/O/,['baugh']
+m/oU/lt,"['moult', 'molt']"
+m/oU/ld,"['mould', 'mold']"
+str/aI/k,['strike']
+/O/t,['ought']
+g/O/nt,['gaunt']
+str/aI/f,['strife']
+/O/p,['ob']
+/O/n,['awn']
+b/Oi/d,['boyd']
+/O/l,"['all', 'awl']"
+/O/k,['auk']
+n/eI/v,"['nave', 'knave']"
+/O/g,['hogue']
+/O/f,['off']
+b/Oi/l,"['boil', 'boyle']"
+/O/d,['awed']
+str/aI/v,['strive']
+w/A/t,"['watt', 'wot', 'wat']"
+skr/u/dZ/,['scrooge']
+l/oU/T/,"['loath', 'loth']"
+tr/A/mp,['trompe']
+b/A/d,['bod']
+sw/oU/rn,['sworn']
+sk/I/t,['skit']
+sk/I/p,"['skip', 'skipp']"
+h/@/r/S/,['hersh']
+sk/I/m,['skim']
+sk/I/l,['skill']
+sk/I/n,['skin']
+v/&/N/,['vang']
+sk/I/d,['skid']
+sw/oU/rt,['swart']
+sk/I/f,['skiff']
+k/A/T/,['coth']
+skr/I/mp,['scrimp']
+/S/oU/rts,['shorts']
+fl/&/ks,['flax']
+d/@/r/T/,['dearth']
+f/@/rd,"['fyrd', 'furred', 'ferd']"
+m/Oi/l,['moil']
+f/@/rn,['fern']
+kl/oU/S/,['cloche']
+f/@/rl,['furl']
+br/aI/n,['brine']
+m/Oi/t,['moit']
+f/@/rt,['furth']
+f/@/rz,['furze']
+f/&/S/,['fash']
+sm/@/dZ/,['smudge']
+l/eI/D/,['lathe']
+/dZ/eI/p,['jape']
+kr/eI/k,"['crake', 'craik']"
+/dZ/eI/k,['jake']
+/dZ/eI/n,"['jane', 'jayne']"
+/dZ/eI/l,"['gaol', 'jail']"
+/dZ/eI/d,['jade']
+b/eI/Z/,['beige']
+br/aI/t,['bright']
+sm/A/g,['smog']
+sm/A/k,['smock']
+l/E/N/k/T/,['length']
+pr/&/N/,['prang']
+/Z/AkmAr,['jacquemart']
+g/i/k,['geek']
+g/i/n,"['gean', 'gien']"
+g/i/z,['guise']
+dYk,['ducs']
+g/i/s,['geese']
+g/i/r,['gear']
+l/U/ks,['luxe']
+b/@/r/tS/,['birch']
+tr/@/g,['trug']
+tr/@/k,['truck']
+tr/@/l,['trull']
+tr/@/s,['truss']
+Ak/O/Nt,['a_compte']
+k/&/dZ/,['cadge']
+br/oU/tS/,"['brooch', 'broach']"
+p/A/ps,['pops']
+bAl/O/N,"['ballon', 'balon']"
+kr/&/ft,"['craft', 'kraft', 'krafft']"
+z/I/v,['ziv']
+l/i/d,"['lead/v', 'lead', 'lied']"
+z/I/p,['zip']
+l/i/g,['league']
+sAr/oU/t,['sarraute']
+l/i/k,"['leak', 'leek']"
+l/i/l,"['lisle', 'leal', 'lille']"
+l/i/n,"['ligne', 'lean']"
+z/I/f,['zif']
+l/i/r,"['lear', 'leer', 'lir', 'lehr']"
+l/i/s,"['lease', 'lys']"
+l/i/t,"['leet', 'leat']"
+w/I/n/dZ/,['whinge']
+l/i/v,"['leave', 'lieve']"
+l/i/z,['lees']
+l/I/ft,['lift']
+/eI/dZ/,['age']
+km/E/r,['khmer']
+t/oU/p,['tope']
+str/u/n,['strewn']
+t/oU/r,['tore']
+t/oU/t,"['tote', 'todt']"
+k/A/lz,['cols']
+t/oU/k,['toque']
+t/oU/l,"['tole', 'toll']"
+t/oU/m,['tome']
+t/oU/n,['tone']
+t/oU/b,"['tob', 'tobe']"
+t/oU/d,['toad']
+t/oU/f,['toph']
+t/oU/g,['togue']
+/AU/s,['owse']
+/AU/r,"['our', 'hour']"
+/AU/t,['out']
+/dZ/u/ks,['jukes']
+skr/I/pt,['script']
+ad/@/rztu/N/,"[""adder's-tongue""]"
+/D/eI/,"['thae', 'they']"
+/AU/d,['oudh']
+/AU/f,['ouphe']
+m/oU/,"['mo', 'mow', 'mot']"
+/AU/l,['owl']
+bAr/oU/,['barrault']
+pr/aI/,['pry']
+st/@/r,"['stare', 'stir', 'stair']"
+sk/A/rf,"['scarph', 'scarf']"
+kw/Oi/t,['quoit']
+h/I/ks,['hicks']
+pl/Oi/,['ploy']
+st/@/b,['stub']
+sk/A/rp,"['scarp', 'scarpe']"
+st/@/f,['stuff']
+st/@/d,['stud']
+st/@/k,['stuck']
+st/@/n,['stun']
+st/@/m,['stum']
+st/@/l,['stull']
+fr/E/S/,['fresh']
+br/A/nz,['bronze']
+st/u/,"['stu', 'stew']"
+gr/aI/m,['grime']
+gr/aI/d,['gride']
+g/@/r/T/,['girth']
+s/oU/,"['soh', 'so', 'sow']"
+gr/aI/s,['grice']
+gr/aI/p,['gripe']
+Ad/y/,['a_deux']
+fl/&/n/dZ/,['flange']
+s/E/kst,"['sexed', 'sext']"
+m/O/N/Z/,['monge']
+b/AU/AU/t,['bow_out']
+dw/E/lt,['dwelt']
+/i/ts,['eats']
+/S/E/nd,['shend']
+r/U/r,['ruhr']
+sw/@/m,['swum']
+/tS/u/z,['choose']
+r/U/k,['rook']
+sw/@/r,"['sware', 'swear']"
+n/@/rld,['knurled']
+str/aI/d,['stride']
+/I/lk,['ilk']
+n/eI/,"['nay', 'neigh', 'nee', 'nae']"
+gl/I/ts,['glitz']
+t/&/s,"['tass', 'tace', 'tasse']"
+t/&/p,['tap']
+b/A/nd,['bond']
+t/&/t,['tat']
+t/&/b,['tab']
+sp/E/lt,['spelt']
+t/&/g,['tag']
+t/&/d,['tad']
+t/&/k,['tack']
+b/A/nz,['bonze']
+t/&/n,['tan']
+t/&/m,['tam']
+str/aI/p,['stripe']
+k/eI/nz,['keynes']
+s/@/r,"['sir', 'sayre', 'sur']"
+/S/I/vz,['sheaves']
+s/@/n,"['sun', 'sunn', 'son']"
+fr/@/m,['from']
+s/@/k,['suck']
+s/@/f,['sough']
+s/@/g,['sugg']
+s/@/d,['sudd']
+s/@/b,['sub']
+/tS/I/nts,['chintz']
+fl/@/ks,['flux']
+sp/&/m,['spam']
+sp/&/n,['span']
+/S/r/u/,['shrew']
+k/eI/dZ/,['cage']
+sp/&/t,['spat']
+h/&/t,['hat']
+str/oU/m,['strome']
+str/oU/l,['stroll']
+k/@/n/j/p,['kneip']
+str/oU/n,['strown']
+kl/i/v,"['cleve', 'cleave']"
+str/oU/k,['stroke']
+str/oU/d,['strode']
+str/oU/b,['strobe']
+kl/i/k,"['cleek', 'clique']"
+str/oU/v,['strove']
+kl/i/n,['clean']
+dr/A/pt,['dropt']
+s/Oi/l,['soil']
+l/I/N/ks,"['links', 'lynx']"
+tr/@/mp,['trump']
+fl/E/tS/,['fletch']
+sAbA/j/O/N,['sabayon']
+/T/A/N/,['thong']
+m/A/,['ma']
+b/oU/gs,['bogues']
+p/i/,"['p', 'pea']"
+hav/@/nt,"[""haven't""]"
+gd/@/Nsk,['gdansk']
+str/E/tS/t,['stretched']
+w/aI/ld,"['wild', 'wyld', 'wilde']"
+g/I/ft,['gift']
+m/u/s,"['moose', 'mousse']"
+sk/A/tS/,['scotch']
+/j/E/ld,['yeld']
+sk/E/tS/,['sketch']
+l/aI/,"['lie', 'lye']"
+z/I/st,['xyst']
+d/@/dz,['duds']
+tr/oU/,"['trop', 'trow']"
+p/&/st,"['past', 'passed']"
+/aI/v,"[""i've""]"
+/aI/s,['ice']
+/aI/r,['ire']
+/aI/m,"[""i'm""]"
+/aI/l,"[""i'll"", 'aisle', 'isle']"
+/aI/n,['eyne']
+/D/atsr/aI/t,"[""that's_right""]"
+/aI/k,"['eyck', 'ike']"
+m/eI/st,"['maist', 'mayst']"
+/aI/d,"[""i'd"", 'eyed', 'ide']"
+r/O/N/,['wrong']
+s/I/N/k,"['cinque', 'sync', 'sink']"
+st/AU/t,['stout']
+s/E/lvz,['selves']
+h/oU/ks,['hoax']
+pl/@/s,['plus']
+v/A/A/d,['vaad']
+d/i/m,"['deem', 'deme']"
+fl/@/S/,['flush']
+pl/@/g,['plug']
+br/u/n,"['bruhn', 'broun']"
+/dZ/A/nz,['johns']
+pl/@/k,['pluck']
+r/i/mz,['reims']
+pl/@/m,"['plum', 'plumb']"
+m/AU/D/,['mouth/v']
+spl/A/dZ/,['splodge']
+kl/E/m,['clem']
+kl/E/f,['clef']
+bl/u/,"['blue', 'blew']"
+fAm,"['femmes', 'femme']"
+s/eI/v,['save']
+n/u/d,['nude']
+s/eI/t,['sate']
+n/u/n,"['nun', 'noon']"
+n/u/m,['neume']
+kl/&/S/,['clash']
+n/u/k,['nuke']
+w/i/,"['oui', 'we', 'wee', 'whee']"
+p/i/kAr,['piccard']
+s/eI/f,"['safe', 'seif']"
+n/u/t,['newt']
+ledAm/A/Nd,"[""lait_d'amandes""]"
+n/u/s,"['noose', 'nous']"
+s/eI/n,"['sain', 'sane', 'seine']"
+m/aI/nts,['mainz']
+s/eI/l,"['sail', 'sale']"
+n/u/z,['news']
+/dZ/oU/lt,['jolt']
+Arg/O/n,['argonne']
+/E/ft,['eft']
+kl/@/mp,['clump']
+skw/@/r,['square']
+lwAr,['loire']
+k/A/rn,['carn']
+kl/E/bz,['klebs']
+kats/i/r,"[""cat's-ear""]"
+/j/u/T/s,['youths']
+/T/O/s,['zos']
+k/AU/,['cow']
+sp/i/tS/,['speech']
+/tS/I/n/tS/,['chinch']
+/A/rlz,['arles']
+tw/aI/s,['twice']
+gr/i/b,['grebe']
+w/@/ns,['once']
+kw/I/nt,['quint']
+w/AU/,"['waw', 'wow']"
+fl/I/N/,['fling']
+kw/I/ns,['quince']
+z/A/rf,['zarf']
+p/A/rl,['parle']
+p/A/rk,['park']
+pr/i/k,['prick']
+w/A/nd,['wand']
+p/A/rd,['pard']
+kr/AU/nd,['crowned']
+p/A/rz,['pars']
+/T/oU/l,['thole']
+p/A/rt,['part']
+p/A/rs,['parse']
+bAr/i/,['barye']
+p/I/T/,['pith']
+l/&/tS/,['latch']
+kv/A/s,"['quass', 'kvass']"
+w/E/ft,['weft']
+s/O/,['saw']
+v/j/u/,['view']
+r/oU/tS/,['roach']
+/AU/,['ow']
+sk/@/lpt,['sculpt']
+g/AU/dZ/,['gouge']
+/S/i/i/,['shii']
+sr/i/,['sri']
+h/eI/nt,"[""han't"", ""hain't""]"
+st/@/rt,['sturt']
+h/eI/nz,['haynes']
+k/@/sk,['cusk']
+k/@/sp,['cusp']
+r/eI/kt,['raked']
+st/@/rk,['stirk']
+st/@/rn,['stern']
+l/@/S/,['lush']
+h/O/,"['hao', 'haw']"
+s/u/t,['suit']
+p/Oi/z,['poise']
+An/j/oU/,['agneaux']
+tr/u/T/,['truth']
+p/Oi/l,['poil']
+n/I/bz,['nibs']
+r/&/z,['razz']
+r/&/t,['rat']
+t/I/t/S/,['titch']
+r/&/p,"['wrap', 'rapp', 'rap']"
+r/&/s,['wrasse']
+r/&/m,['ram']
+r/&/l,['rale']
+r/&/n,['ran']
+r/&/k,"['wrack', 'rack']"
+r/&/d,['rad']
+r/&/g,['rag']
+r/&/f,"['raff', 'wraf']"
+r/&/b,"['raab', 'rab']"
+p/oU/rk,['pork']
+fr/A/,['fra']
+b/O/l/tS/,['balch']
+p/E/rs,['perse']
+p/E/rm,['perm']
+k/oU/tS/,['coach']
+d/A/dZ/,['dodge']
+mam,"[""ma'am""]"
+g/oU/S/,['gauche']
+m/A/rkt,['marked']
+/i/vz,['eaves']
+br/&/kt,['bract']
+/S/E/lf,['shelf']
+/S/E/ld,['shelled']
+gr/E/ks,['grex']
+f/@/rm,['firm']
+/S/E/lv,['shelve']
+/I/nd,['ind']
+/I/nf,['inf']
+d/eI/,"['dey', 'daye', 'day']"
+sp/E/nd,['spend']
+n/@/rs,['nurse']
+n/@/rv,['nerve']
+sp/Oi/lt,['spoilt']
+sp/E/ns,['spence']
+n/@/rn,['nairn']
+sp/E/nt,['spent']
+n/@/rl,"['nurl', 'knurl']"
+fl/O/,['flaw']
+v/O/lf,"['wolff', 'wolf']"
+r/I/dZ/,['ridge']
+/dZ/A/S/,['josh']
+sp/Oi/ld,['spoiled']
+g/oU/rd,['gourd']
+r/eI/S/,['resh']
+skw/I/t/S/,['squitch']
+pr/&/ns,['prance']
+s/I/nd,['sind']
+s/I/nz,['sins']
+sl/E/d,['sled']
+s/I/ns,['since']
+fr/I/T/,['frith']
+p/E/p,['pep']
+g/@/k,['guck']
+p/E/r,['pair']
+g/@/n,['gun']
+g/@/l,['gull']
+g/@/m,['gum']
+d/@/tS/,['dutch']
+p/E/g,['peg']
+g/@/r,['gare']
+g/@/s,['gus']
+p/E/k,['peck']
+g/@/v,['guv']
+g/@/t,['gut']
+/Z/y/,"['jeux', 'jeu']"
+sp/A/rk,['spark']
+t/A/gz,['togs']
+kr/i/S/,['creesh']
+sp/A/rs,['sparse']
+f/E/tS/,['fetch']
+/tS/oU/ks,['chokes']
+/dZ/eI/ks,['jakes']
+fr/O/T/,['froth']
+/eI/d,"['aid', 'ade', 'aide']"
+sp/Oi/l,['spoil']
+sm/E/l,['smell']
+m/A/r/S/,['marsh']
+br/&/S/,['brash']
+sk/u/p,['scoop']
+p/AU/ns,['pounce']
+sk/u/t,['scoot']
+b/@/r/T/,"['berth', 'birth']"
+sk/u/l,['school']
+l/oU/tS/,"['loche', 'loach']"
+p/AU/nd,['pound']
+l/AU/ndz,['lowndes']
+/T/r/i/d,['thrid']
+/tS/I/N/k,['chink']
+b/E/tnWAr,['bete_noire']
+/T/r/i/p,['threap']
+f/oU/rst,['forced']
+kw/E/tS/,['quetsch']
+f/A/ks,"['fox', 'foxe']"
+b/Oi/n,['boyne']
+b/U/k,"['bukh', 'book']"
+b/U/l,['bull']
+sw/A/S/,['swash']
+kAb/E/,['cabet']
+sl/&/S/,['slash']
+b/U/r,"['bur', 'boor']"
+p/i/gAl,['pigalle']
+oulzkroun,"[""owl's-crown""]"
+mAdmwAz/E/l,['mademoiselle']
+Artw/A/,['artois']
+h/A/r/S/,['harsh']
+f/I/l/T/,['filth']
+f/@/nd,['fund']
+/dZ/oU/nz,['jones']
+kw/A/,['kwa']
+skl/&/f,['sclaff']
+kl/I/n/tS/,['clinch']
+swAs/O/N,['soissons']
+dev/@/lzbit,"[""devil's-bit""]"
+/S/v/aI/ts,['schweiz']
+m/@/S/,['mush']
+s/@/r/tS/,['search']
+zw/aI/g,['zweig']
+f/eI/md,['famed']
+f/y/lkEr,['volker']
+d/I/sk,"['disc', 'disk']"
+l/Oi/d,"['loyde', 'lloyd']"
+tr/&/ns,"['trance', 'trans']"
+h/aI/st,['heist']
+br/i/D/d,['breathed']
+st/I/tS/,['stitch']
+gr/i/n/T/,['greenth']
+kr/A/w,['crowe']
+kr/A/p,['crop']
+fl/O/n/tS/t,['flaunched']
+kr/A/l,"['craal', 'kraal']"
+kr/A/n,['kran']
+kr/A/k,"['crock', 'croc', 'krak']"
+h/&/tS/,['hatch']
+spr/i/,['spree']
+gh/@/r/S/,['guerche']
+AbA/Z/u/r,['abatjour']
+f/AU/st,['faust']
+fl/@/rt,['flirt']
+dr/&/k,['drack']
+/oU/tmArn,['haute-marne']
+kanthelp,"[""can't_help""]"
+dr/&/b,['drab']
+br/oU/,['breaux']
+dr/&/g,['drag']
+/A/rnt,"['arndt', ""aren't""]"
+dr/&/t,['drat']
+lArb/oU/,['larbaud']
+/&/mp,['amp']
+p/i/kt,['peaked']
+g/@/l/tS/,['gulch']
+ad/@/rzmou/T/,"[""adder's-mouth""]"
+dr/I/ft,['drift']
+/E/n/T/,['nth']
+/j/A/rd,['yard']
+d/u/,"['do', 'doux', 'due', 'dew', 'doubs', 'du']"
+p/j/u/,"['pew', 'piu', 'piau']"
+/tS/I/t,"['chit', 'cit']"
+/tS/I/p,['chip']
+/&/S/,"['ash', 'asch']"
+b/E/S/,['beche']
+/tS/I/n,['chin']
+/tS/I/l,['chill']
+/tS/I/k,['chick']
+r/@/n,['run']
+r/@/m,"['rhumb', 'rum']"
+r/@/k,['ruck']
+r/@/g,['rug']
+r/@/f,"['rough', 'ruff']"
+r/@/d,['rudd']
+r/@/b,['rub']
+lYrSA,['lurcat']
+r/@/t,['rut']
+r/@/s,['russ']
+r/@/r,['rare']
+str/&/T/,['strath']
+str/I/N/,['string']
+b/I/sk,"['bisk', 'bisque']"
+f/u/,"['fou', 'foo']"
+khv/A/r,['hvar']
+g/@/f,['guff']
+r/E/ft,['reft']
+k/&/skt,['casqued']
+t/O/nt,['taunt']
+kwAf/y/r,['coiffeur']
+tr/eI/ps,['traipse']
+s/aI/k,"['cyc', 'cyke', 'sike', 'syke', 'psych']"
+l/oU/r,['lore']
+l/oU/t,['lote']
+s/aI/n,"['sine', 'syne', 'sign']"
+s/aI/m,['cyme']
+gw/A/m,['guam']
+gw/A/l,['gwawl']
+l/oU/z,['lowes']
+gw/A/n,['guan']
+s/aI/d,['side']
+s/aI/z,['size']
+l/oU/b,"['lobe', 'loeb']"
+l/oU/d,"['load', 'lode']"
+l/oU/f,['loaf']
+sw/&/m,['swam']
+s/aI/s,"['saice', 'sice', 'syce']"
+s/aI/r,['sire']
+s/aI/p,['sipe']
+sw/&/g,['swag']
+l/oU/n,"['loan', 'lone']"
+s/aI/t,"['cite', 'sight', 'site']"
+l/@/rd,"['laird', 'layard']"
+b/A/rt,"['bart', 'barth']"
+/aI/dz,['ides']
+l/@/rn,['learn']
+l/@/rk,['lurk']
+b/A/rd,"['barred', 'barde', 'bard']"
+p/j/A/,['pya']
+fr/i/kt,['freaked']
+b/A/rb,"['barb', 'barbe']"
+b/A/rm,['barm']
+b/A/rn,['barn']
+b/A/rk,"['barque', 'bourque', 'bark']"
+r/I/ns,['rinse']
+sn/@/r,['snare']
+sn/@/k,['snuck']
+sn/@/b,['snub']
+sn/@/g,['snug']
+sn/@/f,['snuff']
+s/I/lt,['silt']
+/S/i/,"['she', 'shea']"
+k/@/lt,['cult']
+s/I/lf,['sylph']
+k/@/lm,['culm']
+st/A/N/k,['stonk']
+/S/r/i/,['sri']
+s/I/lk,['silk']
+br/&/N/ks,['branks']
+sk/AU/l,['scowl']
+/dZ/A/d,['jad']
+/dZ/A/b,['job']
+/dZ/A/n,"['john', 'jon']"
+/dZ/A/k,"['jauk', 'jock']"
+r/i/,"['re', 'rhee']"
+/dZ/A/t,"['jat', 'jot']"
+/dZ/A/s,['joss']
+/dZ/A/r,['jar']
+sk/AU/t,['scout']
+sk/AU/r,['scour']
+sp/A/ts,['spaatz']
+b/U/rs,['bourse']
+b/U/rg,['bourg']
+l/&/N/k,['lank']
+/D/&/t,['that']
+l/&/N/d,['langued']
+v/aI/l,"['weyl', 'vile']"
+v/aI/n,['vine']
+d/I/nt,['dint']
+b/E/n/tS/,['bench']
+b/oU/z,"['beaus', 'beaux']"
+b/oU/r,"['boar', 'bore', 'boer', 'bohr']"
+b/oU/s,['bose']
+b/oU/t,['boat']
+v/O/nt,['vaunt']
+b/oU/n,"['beaune', 'bon', 'bone']"
+b/@/N/k,['bunk']
+b/oU/l,"['bole', 'bowl', 'boll']"
+b/oU/g,['bogue']
+b/oU/d,"['boud', 'bode', 'bowed']"
+sn/A/rl,['snarl']
+sn/A/rf,"['snarf', 'whew']"
+b/@/nt,['bunt']
+sk/O/rn,['scorn']
+b/@/nd,['bund']
+n/I/p,['nip']
+sw/I/N/,['swing']
+g/O/ts,['ghats']
+n/I/t,"['knit', 'nit']"
+sk/E/nt,['pschent']
+n/I/g,['nig']
+n/I/k,['nick']
+/dZ/O/p,"['jawp', 'jaup']"
+/dZ/O/s,['jos']
+n/I/m,['nim']
+t/A/p,['top']
+t/A/r,"['thar', 'tahr', 'tar']"
+t/A/s,['toss']
+t/A/t,['tot']
+g/u/ld,['gould']
+t/A/d,"['tod', 'todd']"
+t/A/f,['toff']
+t/A/g,['tog']
+t/A/m,['tom']
+gl/I/f,"['gliff', 'glyph']"
+sk/eI/t,['skate']
+m/A/r,"['mar', 'maar']"
+gl/I/b,['glib']
+b/A/,"['ba', 'bah']"
+gl/I/n,['glyn']
+sm/oU/lt,['smolt']
+gl/I/m,['glim']
+/j/&/m,['yam']
+/j/&/p,"['yap', 'yapp']"
+sk/eI/l,['scale']
+sk/eI/n,['skein']
+t/O/msk,['tomsk']
+tw/E/lv,['twelve']
+/S/r/AU/d,['shroud']
+/tS/&/nt,['chant']
+/tS/&/ns,['chance']
+lAVWAz/j/eI/,['lavoisier']
+/T/@/rs,['thyrse']
+skr/i/tS/,['screech']
+/T/@/rm,"['therme', 'therm', 'thurm']"
+/T/@/rd,['third']
+h/I/n/dZ/,['hinge']
+t/U/k,"['tooke', 'took']"
+f/oU/r/dZ/,['forge']
+k/O/rd,"['cord', 'chord']"
+/A/N/kst,['angst']
+sl/@/S/,['slush']
+l/A/dZ/,['lodge']
+k/&/d,['cad']
+k/&/f,"['caff', 'calf']"
+pr/i/N/k,['prink']
+k/&/b,"['cab', 'kab']"
+k/&/l,['cal']
+k/&/m,"['cam', 'cham']"
+k/&/n,"['can', 'cannes']"
+k/&/k,['cack']
+k/&/t,"['catt', 'cat']"
+k/&/v,['calve']
+k/&/p,['cap']
+f/O/lz,['falls']
+f/O/lt,['fault']
+f/O/ls,['false']
+w/E/lkt,['whelked']
+/eI/dz,['aids']
+kw/&/g,['quag']
+tw/i/t,['tweet']
+w/u/m,['womb']
+w/u/f,['woof']
+tw/i/z,['tweeze']
+tw/i/d,['tweed']
+sm/@/rk,['smirk']
+kr/A/t/tS/t,['crotched']
+tw/i/k,['tweak']
+k/eI/n,"['cane', 'kane', 'kayne', 'kain', 'caine', 'cain']"
+k/eI/m,"['came', 'kame']"
+k/eI/l,"['kail', 'kale', 'cahill']"
+k/eI/k,['cake']
+gr/AU/t,['grout']
+/Oi/k,['oik']
+k/eI/f,['kef']
+k/eI/d,['cade']
+k/eI/b,['cabe']
+/Oi/l,['oil']
+k/eI/z,['kayes']
+g/A/S/,['gosh']
+k/eI/v,['cave']
+k/eI/t,"['cate', 'kate']"
+k/eI/s,['case']
+gr/AU/l,['growl']
+k/eI/p,"['cape', 'keap']"
+l/&/k,"['lakh', 'lack']"
+l/&/m,"['lamb', 'lam']"
+l/&/l,['lall']
+l/&/b,['lab']
+l/&/g,['lag']
+l/&/f,['laugh']
+f/eI/nts,"['feints', 'faints']"
+l/&/s,['lass']
+l/&/p,"['lapp', 'lap']"
+/@/,"[""o'""]"
+p/u/d,['pood']
+p/u/f,['pouf']
+k/E/nt,['kent']
+p/u/l,"['pul', 'pool']"
+p/u/n,['poon']
+p/u/p,['poop']
+p/u/r,['puir']
+kl/i/vz,['cleves']
+f/eI/s,['face']
+f/eI/t,"['fete', 'fate']"
+str/I/kt,['strict']
+f/eI/z,"['faze', 'phase']"
+str/I/ks,['strix']
+f/eI/d,['fade']
+f/eI/k,['fake']
+f/eI/l,['fail']
+f/eI/m,"['fame', 'fayme']"
+f/eI/n,"['foehn', 'fain', 'fane', 'feign', 'fohn']"
+/dZ/I/lt,['jilt']
+h/E/dZ/,['hedge']
+k/A/ft,['coft']
+sp/I/l/T/,['spilth']
+tw/I/N/k,['twink']
+dWAn,['douanes']
+f/@/z,['fuzz']
+h/aI/,"['high', 'hi', 'hy', 'hie']"
+m/&/N/ks,['manx']
+f/@/s,['fuss']
+f/@/r,"['fir', 'fer', 'fare', 'fur', 'fair']"
+f/@/k,['fuck']
+f/@/n,['fun']
+f/@/b,['fub']
+f/@/g,['fug']
+br/E/T/,['breath']
+sw/eI/,['sway']
+s/j/u/d,['pseud']
+d/aI/,"['die', 'di', 'dye']"
+h/O/rn,['horn']
+h/O/rs,['horse']
+dYkA,['dukas']
+p/A/t,"['pot', 'pott']"
+sk/A/ts,['scots']
+p/@/r/T/,['perth']
+k/O/,['caw']
+p/A/r,"['par', 'parr']"
+n/aI/s,"['gneiss', 'nice']"
+s/oU/rd,['sword']
+st/eI/t,['state']
+st/eI/v,['stave']
+p/A/d,['pod']
+n/aI/f,['knife']
+p/A/g,['pogge']
+st/eI/l,['stale']
+st/eI/n,"['stain', 'stane', 'steen']"
+n/aI/l,['nile']
+p/A/m,['palm']
+n/aI/n,['nine']
+n/i/m,['nimes']
+d/i/mz,['deems']
+p/A/k,['pock']
+v/i/,"['vee', 'v']"
+l/E/gd,['legged']
+m/aI/,['my']
+sAr,['sarre']
+d/&/b,['dab']
+d/&/g,['dag']
+d/&/f,['daff']
+d/&/d,['dad']
+d/&/n,"['dann', 'dan']"
+d/&/m,"['dam', 'damn']"
+d/&/p,['dap']
+spr/I/n/dZ/,['springe']
+m/j/U/r,"['muir', 'mure']"
+br/O/T/,['broth']
+kl/I/nt,['clint']
+bl/I/n,['blin']
+bl/I/p,['blip']
+bl/I/s,['bliss']
+p/I/t,"['pit', 'pitt']"
+sn/&/T/,['snath']
+p/I/p,['pip']
+p/I/s,['piss']
+p/I/l,['pill']
+p/I/m,['pym']
+p/I/n,['pin']
+p/I/k,"['pic', 'pick']"
+gl/I/t/S/,['glitch']
+p/I/g,"['pig', 'pigg']"
+tr/oU/S/,['troche']
+br/E/st,"['brest', 'breast']"
+f/aI/st,['feist']
+m/eI/n/dZ/,['mange']
+str/eI/n,['strain']
+str/eI/k,['strake']
+str/eI/f,['strafe']
+st/u/p,"['stoop', 'stoup', 'stupe']"
+st/u/l,['stool']
+/dZ/oU/,"['jo', 'chou', 'joe']"
+st/u/k,['stook']
+st/u/d,['stewed']
+str/eI/t,"['straight', 'strait']"
+kr/u/tS/,['krutch']
+/E/dZ/,['edge']
+tr/u/p,"['troupe', 'troop', 'throop']"
+tr/u/s,['truce']
+sm/@/t,['smut']
+tr/u/z,['trews']
+/eI/tWAl,['etoile']
+f/i/rs,['fierce']
+r/@/mbl,['rumble']
+h/A/n,"['hahn', 'han']"
+h/A/k,"['hough', 'hock']"
+h/A/d,['hod']
+h/A/f,['haaf']
+h/A/g,['hogg']
+h/A/b,['hob']
+h/O/ms,['homs']
+h/A/t,['hot']
+br/A/N/k,['bronc']
+h/A/p,['hop']
+h/A/r,['haar']
+sk/A/rt,['scart']
+mA/j/O/l,['maillol']
+mA/j/O/t,['mayotte']
+d/O/,['daw']
+s/y/rA,['seurat']
+/dZ/Oi/nt,['joint']
+h/I/d,['hid']
+mAlr/oU/,['malraux']
+h/I/l,['hill']
+h/I/m,"['hymn', 'him']"
+h/I/n,['hin']
+s/O/lt,['salt']
+h/I/k,['hick']
+h/I/t,['hit']
+s/O/lk,['salk']
+f/eI/ts,['fetes']
+h/I/p,['hip']
+h/I/s,['hiss']
+h/I/z,['his']
+r/A/N/k,['rank']
+/tS/A/nk/j/,['chancay']
+kr/u/,"['crew', 'cru']"
+r/&/lf,['ralph']
+/S/aI/d,['shied']
+/dZ/aI/v,"['jive', 'gyve']"
+/S/aI/n,"['shine', 'schein']"
+/dZ/aI/r,['gyre']
+/S/aI/t,['scheidt']
+/S/aI/v,['shive']
+sw/u/p,['swoop']
+sw/u/s,['swoose']
+/S/aI/r,['shire']
+k/A/N/ks,['conchs']
+sk/eI/D/,['scathe']
+sw/A/D/,['swathe']
+gr/E/g,"['greg', 'gregg']"
+fr/AU/ns,['frounce']
+sk/E/lp,"['scelp', 'skelp']"
+fl/aI/d,['flied']
+Ab/eI/lAr,['abailard']
+fl/aI/t,"['flite', 'flight', 'fluyt', 'flyte']"
+sl/E/dZ/,['sledge']
+kl/oU/,['clos']
+m/u/tArd,['moutarde']
+b/I/n,"['bin', 'been']"
+b/I/l,['bill']
+b/I/m,['bim']
+p/oU/p,['pope']
+h/AU/nd,['hound']
+frAg/O/nAr,['fragonard']
+b/I/f,['biff']
+m/i/T/,['meath']
+b/I/d,['bid']
+b/I/b,"['bibb', 'bib']"
+p/oU/z,['pose']
+b/O/nfWA,['bonne_foi']
+b/I/z,['biz']
+p/oU/l,"['pole', 'poll']"
+p/oU/m,['pome']
+b/I/t,"['bit', 'bitt']"
+b/I/s,['bis']
+p/oU/k,"['poke', 'polk']"
+tw/A/l,['toile']
+h/oU/mz,['holmes']
+br/E/nt,['brent']
+k/j/U/r,['cure']
+st/A/k,['stock']
+v/eI/g,['vague']
+st/A/b,['stob']
+v/eI/l,"['vail', 'veil', 'vale']"
+v/eI/n,"['vain', 'vane', 'vein']"
+s/@/lk,['sulk']
+v/eI/s,['vase']
+st/A/r,['star']
+sk/I/ts,['schiz']
+st/A/p,['stop']
+st/A/rt,['start']
+st/&/N/,['stang']
+s/&/N/,['sang']
+tr/AU/t,['trout']
+b/@/lb,['bulb']
+t/i/rst,['tierced']
+b/@/lk,['bulk']
+l/u/,"['loe', 'lou', 'loo', 'lu', 'lieu', 'lew']"
+kr/&/ps,['craps']
+kr/&/m,['cram']
+k/u/,"['coup', 'coo', 'koo']"
+smr/E/k,['smrek']
+fr/i/k,['freak']
+pl/@/n/dZ/,['plunge']
+fr/i/d,['fried']
+/E/ls,['else']
+/E/lm,['elm']
+fr/i/z,"['frieze', 'freeze']"
+kl/O/T/,['cloth']
+sm/A/lt,['smalt']
+b/A/S/,"['boche', 'bosch', 'bosh']"
+/E/ld,['eld']
+fr/i/r,['freer']
+pr/@/nt,['prunt']
+/S/A/N/,['shang']
+kr/E/m,['creme']
+b/U/S/,"['busch', 'bush']"
+sm/I/T/,['smith']
+n/E/dZ/d,['nejd']
+kr/E/s,['cress']
+houndzt/u/T/,"[""hound's-tooth""]"
+sm/@/t/S/,['smutch']
+kl/oU/z,"['close/n', 'close/v', 'clothes']"
+s/A/t,['sot']
+st/eI/dZ/d,['staged']
+s/A/p,['sop']
+kl/oU/s,"['close', 'close/aj']"
+kl/oU/v,['clove']
+s/A/f,['soph']
+s/A/d,"['saad', 'sade', 'sod']"
+kl/oU/n,['clone']
+s/A/b,['sob']
+kl/oU/m,['clomb']
+s/A/n,['san']
+s/A/m,['psalm']
+s/A/l,['sol']
+s/A/k,['sock']
+kl/oU/d,['claude']
+l/I/nd,['lind']
+k/E/lp,['kelp']
+st/eI/vz,['staves']
+k/E/lt,"['celt', 'kelt']"
+l/I/nt,['lint']
+d/@/mps,['dumps']
+kr/@/tS/t,['crutched']
+l/@/v/j/n,['levine']
+gl/I/sk,['glisk']
+fr/A/NbWAZ,['framboise']
+b/O/rd,['bord']
+v/@/rd,['verde']
+sl/i/kt,['sleeked']
+/@/rs,"['erse', 'ers']"
+b/O/rn,['born']
+f/E/lt,"['felt', 'veldt']"
+/@/rp,['earp']
+/@/rt,['airt']
+/@/rk,"['irk', 'erk']"
+b/O/rt,"['bort', 'boart']"
+b/O/rs,['bors']
+/@/rn,"['erne', 'urn', 'earn']"
+k/A/dz,['cods']
+/@/rl,"['earl', 'irl']"
+/@/rb,['herb']
+/S/O/rl,['schorl']
+dr/E/gz,['dregs']
+v/@/rn,"['verne', 'vern']"
+/S/O/rt,['short']
+lw/i/,['louys']
+gw/E/n,['gwen']
+/dZ/I/p,"['gip', 'gyp']"
+d/Oi/tS/,['deutsch']
+gr/eI/n/dZ/,['grange']
+v/I/k,"['vic', 'vick']"
+h/I/st,['hist']
+v/I/l,['vill']
+v/I/m,['vim']
+gr/i/k,['greek']
+m/I/dZ/,['midge']
+h/A/rts,['herts']
+v/I/t,['witt']
+tr/E/s,"['tres', 'tress']"
+sk/AU/,['scow']
+g/O/r/dZ/d,['gorged']
+/dZ/I/b,['jib']
+h/U/vz,['hooves']
+kl/&/pt,['clapt']
+g/i/skAr,['guiscard']
+/S/Ar/i/,['chari']
+m/@/rk,"['murk', 'mirk']"
+/j/aI/p,['yipe']
+m/@/rl,['merle']
+pr/i/tS/,['preach']
+m/i/nz,['means']
+gr/i/r,['greer']
+b/@/z,['buzz']
+dAv/u/,['davout']
+g/A/rt,['gart']
+g/A/rn,['garn']
+tr/E/k,['trek']
+g/A/rm,['garm']
+g/A/rb,['garb']
+g/A/rd,['guard']
+h/@/N/k,['hunk']
+tr/eI/lz,['tralles']
+br/i/D/,['breathe']
+b/@/l,['beall']
+plA/Z/,"['plage', 'plages']"
+p/i/nAr,['pinard']
+t/E/t,['teth']
+/D/I/s,['this']
+t/E/s,['tess']
+f/O/rkt,['forked']
+t/E/d,['ted']
+t/E/f,['teff']
+t/E/l,['tell']
+t/E/n,['ten']
+t/E/k,['tech']
+tw/I/nd,['twinned']
+tr/A/n/S/,['tranche']
+skw/A/b,['squab']
+g/u/ldz,['goulds']
+dr/aI/,['dry']
+skw/A/t,['squat']
+fl/E/dZ/,['fledge']
+gl/E/n,"['glen', 'glenn']"
+gl/E/g,['gleg']
+gl/E/d,['gled']
+tr/E/b?l,['treble']
+bl/oU/,['blow']
+st/aI/p,['stipe']
+Af/O/N,['a_fond']
+st/aI/l,"['stijl', 'stile', 'style']"
+st/aI/m,['stime']
+st/aI/n,['stein']
+k/A/A/,"[""cha'ah""]"
+t/@/sk,['tusk']
+d/A/,['dah']
+/S/@/rt,['shirt']
+r/&/nd,['rand']
+n/I/tS/,['niche']
+/dZ/eI/mz,['james']
+b/A/sZAlp,['basses-alpes']
+/tS/aI/v,['chive']
+r/&/nt,['rant']
+snt,['sleipnir']
+/tS/aI/m,"['chime', 'chimb']"
+h/E/mp,['hemp']
+r/&/ns,['rance']
+/tS/aI/d,['chide']
+r/AU/,['row']
+/i/D/,['eath']
+n/@/ts,['nuts']
+p/&/kt,['pact']
+p/&/ks,['pax']
+l/Oi/s,['loyce']
+sk/j/u/t,['scute']
+l/oU/Z/,['loge']
+/j/A/N/ks,['yonks']
+dr/I/b,['drib']
+l/Oi/n,['loin']
+l/Oi/k,['luik']
+b/E/rg,['berg']
+b/&/T/,['bath']
+h/@/rdzgras,"[""herd's-grass""]"
+gr/aI/nd,['grind']
+/S/j/A/,['hsia']
+b/&/D/z,['baths']
+b/u/ts,['boots']
+mAlgr/eI/,['malgre']
+skw/O/l,['squall']
+skw/O/k,['squawk']
+b/Oi/ld,['boiled']
+/E/nd,['end']
+b/I/n/dZ/,['binge']
+s/@/p,['sup']
+f/E/ns,['fence']
+/E/nz,['ens']
+spl/I/t,['split']
+skr/u/,['screw']
+s/@/m,"['sum', 'some']"
+spl/I/f,['spliff']
+br/oU/z,['brose']
+dr/&/ft,"['draught', 'draft']"
+n/j/O/rd,['njord']
+br/oU/k,['broke']
+br/oU/m,['brome']
+s/&/mp,['samp']
+br/oU/g,['brogue']
+p/aI/aI/d,['pie-eyed']
+dr/E/d,['dread']
+dr/E/g,['dreg']
+n/&/S/,['gnash']
+dr/E/k,"['drek', 'dreck']"
+p/oU/st,['post']
+dr/E/s,['dress']
+g/oU/z,['goes']
+sl/aI/aI/d,['sly-eyed']
+d/@/T/,['doth']
+sk/j/u/,['skew']
+d/A/dz,['dodds']
+kr/&/n,['cran']
+/T/I/N/,['thing']
+kr/&/k,['crack']
+kr/&/g,['crag']
+fr/&/N/k,"['franc', 'frank']"
+g/A/N,['gand']
+pl/&/S/,['plash']
+p/U/t/S/,['putsch']
+/T/&/tS/,"['thatch', 'thach']"
+bAz/E/n,['bazaine']
+kr/&/s,['crass']
+kr/&/p,['crap']
+g/A/b,['gob']
+p/&/T/,['path']
+g/A/g,['gog']
+b/I/N/,"['bing', 'byng']"
+g/A/d,['god']
+g/A/r,['gar']
+katskl/O/,"[""cat's-claw""]"
+g/A/t,['got']
+w/U/ps,['whoops']
+f/I/S/,['fish']
+d/&/dburnd,['dad-burned']
+/&/lps,['alps']
+sk/@/lk,"['sculk', 'skulk']"
+fl/AU/t,['flout']
+kl/i/r,['clear']
+/T/r/oU/n,"['throne', 'thrown']"
+kl/i/p,['clepe']
+k/&/st,['caste']
+/T/r/oU/t,['throat']
+f/j/u/,"['few', 'feu', 'phew']"
+/T/r/oU/v,['throve']
+kl/i/t,"['cleat', 'clete']"
+bl/u/z,['blues']
+d/&/ft,['daft']
+/AU/ns,['ounce']
+bl/u/m,"['blum', 'bloom']"
+s/I/n/T/,['synth']
+fl/AU/r,['flour']
+l/eI/ks,['leix']
+sl/@/rp,['slurp']
+SAVWA,['savoie']
+l/A/N,['laon']
+f/E/st,['fest']
+/dZ/I/st,['gist']
+tr/I/p,['trip']
+l/A/k,"['lock', 'loch', 'lac', 'lough', 'locke']"
+l/A/l,['loll']
+l/A/n,['lon']
+h/j/u/m,"['home', 'hume']"
+l/A/b,['lob']
+h/j/u/n,['hewn']
+kr/&/N/k,['crank']
+tr/I/g,['trig']
+l/A/p,['lop']
+l/A/r,['lar']
+tr/I/m,['trim']
+h/j/u/z,['hughes']
+p/oU/lt,['poult']
+d/i/nAr,['dinard']
+h/U/k,"['hook', 'hooke', 'huk']"
+g/&/t,['gat']
+h/U/d,['hood']
+h/U/f,['hoof']
+h/j/u/d,['hued']
+mAks/i/m,"['maximes', 'maxime']"
+st/i/r,"['styr', 'steer']"
+st/i/p,['steep']
+st/i/v,"['steve', 'steeve']"
+/tS/I/mp,['chimp']
+sm/j/u/,['smew']
+st/i/b,['stieb']
+/S/r/I/mp,['shrimp']
+gAb/O/N,['gabon']
+st/i/d,['steed']
+st/i/k,['steek']
+st/i/n,['steen']
+st/i/l,"['steel', 'steal', 'steele']"
+st/i/m,['steam']
+/j/oU/st,['yost']
+w/O/rv,['wharve']
+sp/O/l,['spall']
+sp/O/n,['spawn']
+w/O/rd,['ward']
+w/O/rf,['wharf']
+w/O/rm,['warm']
+w/O/rn,['warn']
+st/I/N/k,['stink']
+sw/I/s,['swiss']
+p/I/ks,['pyx']
+p/I/kt,['pict']
+h/aI/ks,['hoicks']
+sw/I/g,['swig']
+sw/I/m,['swim']
+sw/I/l,['swill']
+/S/E/d,['shed']
+/S/E/f,['chef']
+/S/E/l,"['shell', 'samuelson']"
+m/@/tS/,['much']
+/tS/e/N/dZ/u/,"[""ch'eng-chu""]"
+tr/I/k,['trick']
+m/eI/dZ/,['mage']
+/dZ/O/,['jaw']
+l/A/t,"['lat', 'lot']"
+p/I/nsk,['pinsk']
+b/i/rz,['beers']
+pr/I/g,['prig']
+b/i/rs,['bierce']
+tr/@/st,"['trussed', 'trust']"
+p/eI/r,['pare']
+vwA/j/y/z,"['voyeuse', 'voyeuses']"
+/S/i/T/,['sheath']
+h/@/rzbred/T/,"[""hair's-breadth""]"
+fr/E/md,['fremd']
+kr/E/st,['crest']
+w/@/rnt,"[""weren't""]"
+d/oU/rn,['doorn']
+d/oU/s,['dose']
+/S/At/O/N,['chaton']
+l/&/T/,['lath']
+b/A/ts,['bots']
+sn/aI/,['sny']
+t/u/m,"['tomb', 'toom']"
+st/I/N/,['sting']
+n/oU/,"['noh', 'know', 'no']"
+g/O/rs,['gorse']
+k/U/dst,['couldst']
+/j/i/n,['yean']
+/j/i/r,['year']
+/j/i/s,"[""ye'se""]"
+h/O/rst,['horst']
+r/@/sk,['rusk']
+pl/i/d,['plead']
+w/A/sp,['wasp']
+p/@/ks,['pecs']
+d/I/N/k,['dink']
+pl/A/N/k,"['plonk', 'planck']"
+st/E/m,['stem']
+d/@/t/S/,['dutch']
+AdrWAt,['a_droite']
+st/E/d,['stead']
+st/E/t,['stet']
+/@/b/ju/z,['abuse']
+f/I/kst,"['fixed', 'fixt']"
+v/E/st,['vest']
+/tS/&/ps,['chaps']
+kl/U/Z/,['cluj']
+sl/&/b,['slab']
+w/E/st,['west']
+kAZAb/j/A/NkA,['casabianca']
+nAtAl/i/,['nathalie']
+sl/&/k,['slack']
+sw/A/v,['suave']
+w/u/S/,"['whoosh', 'woosh']"
+d/eI/z,"['days', 'daze']"
+d/eI/v,['dave']
+d/eI/t,['date']
+g/eI/dZ/,"['gage', 'gauge']"
+d/eI/s,['dace']
+r/oU/st,['roast']
+d/eI/n,"['deign', 'dane']"
+d/eI/l,['dale']
+d/eI/m,['dame']
+d/eI/d,['dade']
+r/I/sk,['risk']
+dr/oU/g,['drogue']
+t/i/D/,['teethe']
+bl/aI/nd,['blind']
+dr/oU/n,['drone']
+dr/oU/m,['drome']
+h/@/rdz,['hurds']
+dr/oU/v,['drove']
+mA/S/E/r,['ma_chere']
+/S/m/oU/,"['shmo', 'schmo']"
+l/oU/,"['lo', 'lowe', 'low', 'loewe']"
+/T/r/i/,['three']
+s/E/k,['sec']
+s/E/n,['sen']
+s/E/m,['sem']
+st/eI/dZ/,['stage']
+/A/ks,['ox']
+s/E/z,['says']
+t/oU/dzmou/T/,"[""toad's-mouth""]"
+s/E/s,['cess']
+Ap/j/eI/,['a_pied']
+s/E/v,['seve']
+s/E/t,"['sett', 'set']"
+b/&/st,['bast']
+gl/j/E/r,['gliere']
+/D/aI/,['thy']
+/tS/A/rlz,['charles']
+fl/&/N/k,['flank']
+b/&/sk,"['bask', 'basque']"
+sn/A/t,['snot']
+sn/A/b,['snob']
+sn/A/d,['snod']
+/S/AVAn,['chavannes']
+kr/I/sp,['crisp']
+b/u/st,['boost']
+w/oU/rn,['worn']
+t/u/,"['to', 'tew', 'too', 'two']"
+w/oU/rp,['warp']
+/tS/I/pt,['chipped']
+h/eI/z,"['hase', 'haze', 'haise', 'hays', 'hayes']"
+dYnWA,['dunois']
+/Z/w/E/n,['juin']
+h/eI/t,"['haet', 'hate']"
+h/eI/k,['hake']
+h/eI/n,['haen']
+h/eI/l,"['hale', 'hail']"
+h/eI/m,['hame']
+h/eI/g,"['hague', 'haig']"
+h/eI/d,['hade']
+bl/I/ts,['blitz']
+mAt/j/y/,['mathieu']
+st/A/dZ/,['stodge']
+pr/A/g,"['prog', 'prague']"
+pr/A/f,['prof']
+/S/p/O/r,['spohr']
+pr/A/m,"['prom', 'praam', 'prahm']"
+Apw/&/N,['a_point']
+pr/A/s,['pross']
+t/Oi/l,['toil']
+t/I/N/,"['ting', 'tinge']"
+k/U/rsk,['kursk']
+k/U/rsh,['qursh']
+l/j/AU/,['liao']
+dr/I/N/k,['drink']
+w/O/rt,['wart']
+/eI/dwAr,['edouard']
+k/A/,"['ka', ""ca'""]"
+her/@/nzbil,"[""heron's-bill""]"
+f/&/dZ/,['fadge']
+k/@/rnz,"['cairns', 'kearns']"
+g/I/ld,"['gild', 'guild']"
+AkAd/i/,['acadie']
+n/i/pt,['neaped']
+g/I/lt,"['gilt', 'guilt']"
+t/@/k,['tuck']
+t/@/m,['tum']
+skr/A/g,['scrog']
+skr/A/d,['scrod']
+t/@/n,"['tonne', 'ton', 'tun']"
+t/A/r/dZ/,['targe']
+w/I/sk,['whisk']
+t/@/b,['tub']
+d/i/d,['deed']
+t/@/g,['tug']
+t/@/f,"['tough', 'tuff']"
+w/I/sp,['wisp']
+w/I/st,"['whist', 'wist']"
+d/i/p,['deep']
+d/i/r,"['dear', 'dere', 'deer']"
+t/@/r,"['tear', 'ter', 'tare']"
+d/i/v,['deave']
+st/&/mp,['stamp']
+mAlArm/eI/,['mallarme']
+/j/@/N/,['young']
+fl/I/n/tS/,['flinch']
+/dZ/&/z,['jazz']
+/dZ/&/p,['jap']
+kAlv/eI/,['calve']
+/S/r/I/l,['shrill']
+/dZ/&/m,"['jam', 'jamb']"
+tw/aI/t,['twite']
+/dZ/&/k,"['jak', 'jack', 'jac']"
+/dZ/&/g,['jag']
+/dZ/&/b,['jab']
+m/eI/z,"['maize', 'mays', 'maze']"
+sw/I/S/,['swish']
+m/eI/s,['mace']
+m/eI/r,['mair']
+m/@/n/tS/,['munch']
+m/eI/k,['make']
+m/eI/m,['maim']
+m/eI/l,"['mail', 'male', 'mael', 'maill']"
+m/eI/n,"['main', 'maine', 'mane']"
+m/eI/d,"['maid', 'made']"
+mWAs/A/N,['moissan']
+w/E/l/S/,['welsh']
+str/@/N/,['strung']
+st/I/ks,['styx']
+fl/I/k,['flick']
+fl/I/p,['flip']
+fl/I/t,['flit']
+m/&/st,['mast']
+s/@/kl,['suckle']
+r/I/t,['writ']
+r/I/ft,['rift']
+vAl/E/,['valais']
+kl/oU/D/,['clothe']
+f/U/t,"['foot', 'foote']"
+/S/I/l,['shill']
+p/O/S/Ad,['pochade']
+f/U/l,"['ful', 'full']"
+/Oi/,"['oe', 'oy']"
+p/I/mp,['pimp']
+/U/mf,['oomph']
+gl/@/v,['glove']
+skr/u/d,['screwed']
+gl/@/t,['glut']
+f/I/ts,['fitz']
+gl/@/r,"['glair', 'glare', 'glaire']"
+dAm/A/,['damas']
+dr/E/n/tS/,['drench']
+s/I/ft,['sift']
+m/U/N/k,['munch']
+bi/S/@/pskap,"[""bishop's-cap""]"
+psk/O/f,['pskov']
+k/@/tS/,"['cutch', 'kutch']"
+kr/AU/tS/,['crouch']
+h/u/ts,['hoots']
+d/U/n/j/k,['denike']
+sm/eI/z,['smaze']
+m/I/mz,['mims']
+h/&/ns,"['hance', 'hanse']"
+k/I/t,['kit']
+k/I/s,['kiss']
+v/A/rl,['varl']
+h/&/nt,['hant']
+k/I/p,['kip']
+h/&/nz,['hans']
+d/E/,"['teh', 'de', 'des']"
+k/I/f,['kif']
+k/I/d,"['kid', 'kidd', 'kyd']"
+h/&/nd,['hand']
+w/I/T/,['withe']
+k/I/n,['kin']
+k/I/m,['kim']
+k/I/ln,"['kill', 'kiln']"
+/S/r/aI/n,['shrine']
+v/A/rv,['varve']
+w/@/rld,"['world', 'whorled']"
+Af/i/S/,"['affiches', 'affiche']"
+drAm/@/k,['drammock']
+k/A/n,"['kahn', 'khan', 'caen', 'conn', 'con']"
+k/A/m,['calm']
+k/A/l,['col']
+k/A/k,['cock']
+k/A/g,['cog']
+k/A/f,"['caph', 'qaf', 'kaph', 'coff']"
+k/A/d,['cod']
+k/A/b,"['kob', 'cobb', 'cob']"
+par/@/tsbil,"[""parrot's-bill""]"
+/T/aI/,['thigh']
+k/A/t,"['qat', 'cotte', 'cot', 'khat', 'kat']"
+dr/eI/,['dray']
+k/A/r,"['car', 'kerr']"
+k/A/p,"['cop', 'kop']"
+p/eI/n,['pane']
+n/@/dZ/,['nudge']
+/A/d,"['od', 'odd']"
+tw/&/N/,['twang']
+/A/b,['ob']
+/A/n,"['on', 'anne', 'an']"
+p/i/N/,['ping']
+kl/I/p,['clip']
+/A/k,['akh']
+/A/p,['op']
+/A/s,['os']
+/A/r,"['r', 'are', 'aar']"
+/oU/tlwAr,['haute-loire']
+r/aI/D/,['writhe']
+v/@/rst,"['werste', 'verst', 'versed']"
+sp/aI/,['spy']
+h/A/dZ/,['hodge']
+f/O/r,['for']
+f/O/t,['fought']
+m/u/min,"[""mu'min""]"
+m/@/N/k,"['monck', 'monk']"
+gw/A/S/,['gouache']
+f/O/l,['fall']
+f/O/n,"['fawn', 'faun']"
+d/i/rztu/N/,"[""deer's-tongue""]"
+b/E/nt,['bent']
+dr/O/s,['dross']
+dr/O/r,['drawer']
+k/A/S/k/j/S/,['cascais']
+b/E/nd,['bend']
+dr/O/n,['drawn']
+dr/O/l,['drawl']
+kl/I/f,['cliff']
+/S/Ard/&/N,['chardin']
+k/A/rts,['cartes']
+f/O/ks,['fawkes']
+/tS/Oi/,['choy']
+p/@/n,['pun']
+l/i/f,"['leaf', 'leif', 'lief']"
+p/@/k,['puck']
+p/@/g,['pug']
+p/@/f,['puff']
+sk/I/nt,['skint']
+p/@/b,['pub']
+n/E/st,['nest']
+p/@/t,['putt']
+sk/I/nd,['skinned']
+p/@/p,['pup']
+p/@/s,['pus']
+p/@/r,"['purr', 'pare', 'pear', 'per']"
+/I/l,['ill']
+/I/n,"['inn', 'in']"
+/I/k,['ich']
+/I/d,['id']
+/I/f,"['iff', 'if']"
+/I/z,['is']
+/I/t,['it']
+r/eI/zd,['raised']
+/T/r/O/N/,['throng']
+w/O/lts,['waltz']
+kr/AU/t,['kraut']
+kr/AU/s,"['crouse', 'kraus', 'krauss']"
+/j/&/f,['yaff']
+kr/AU/d,['crowd']
+kr/AU/n,['crown']
+pr/i/st,['priest']
+/dZ/O/r/dZ/,['george']
+sw/I/N/k,['swink']
+/dZ/O/nt,['jaunt']
+gr/@/dZ/,['grudge']
+kl/O/N/,['klong']
+dw/E/l,['dwell']
+sk/O/f,['scoff']
+/eI/lz,['ailes']
+nesp/A/,"[""n'est-ce_pas""]"
+m/u/,"['moues', 'moo', 'moue']"
+l/U/r,['lure']
+s/@/N/,['sung']
+l/U/k,['look']
+/A/mz,['alms']
+dr/A/p,['drop']
+z/E/st,['zest']
+d/I/tS/,['ditch']
+/S/A/NtA/Z/,['chantage']
+m/@/l/tS/,['mulch']
+b/I/nt,['bint']
+/u/z,['ooze']
+v/&/s,['vas']
+v/&/t,['vat']
+/S/O/m,['shawm']
+/S/O/l,['shawl']
+p/U/t,['put']
+s/&/l,['sal']
+sl/I/k,['slick']
+sl/I/m,['slim']
+s/&/d,['sad']
+s/&/g,['sag']
+sl/I/d,['slid']
+l/i/p,['leap']
+s/&/t,['sat']
+sl/I/p,['slip']
+s/&/p,['sap']
+sl/I/t,['slit']
+s/&/s,['sass']
+h/oU/l,"['hole', 'whole']"
+h/oU/m,"['home', 'holm', 'heaume', 'hom']"
+h/oU/n,['hone']
+h/oU/k,"['hoc', 'hoch']"
+h/oU/d,['hoad']
+h/oU/z,['hose']
+sn/eI/k,['snake']
+h/oU/v,['hove']
+h/oU/p,['hope']
+br/eI/,"['braies', 'bray', 'brae']"
+mAs/eI/nA,['massena']
+h/@/d,['hud']
+h/@/g,['hug']
+h/@/f,"['hough', 'huff']"
+/j/i/st,['yeast']
+h/@/b,['hub']
+h/@/m,['hum']
+h/@/l,['hull']
+h/@/n,"['hon', 'hun']"
+f/aI/nd,['find']
+h/@/t,['hut']
+h/@/s,['huss']
+h/@/r,"['hair', 'hare', 'her']"
+z/i/l,['zeal']
+z/i/k,['zeke']
+n/aI/n/T/,['ninth']
+sw/eI/d,['suede']
+fr/E/n/tS/,['french']
+w/eI/,"['hue', 'wei', 'way', 'weigh', 'wey', 'whey']"
+skw/E/l/tS/,['squelch']
+r/i/D/,['wreathe']
+st/oU/ks,['stokes']
+b/u/S/,['bouche']
+skr/oU/l,['scroll']
+/dZ/@/st,['just']
+b/i/kt,['beaked']
+v/E/n/dZ/,['venge']
+f/I/N/k,['fink']
+r/A/t,"['rotte', 'rot', 'rath']"
+stagzh/O/rn,"[""stag's-horn""]"
+z/oU/ld,['szold']
+/eI/tS/,"['h', 'aitch']"
+r/A/d,['rod']
+r/A/b,['rob']
+h/&/sp,['hasp']
+b/eI/lz,['beals']
+r/A/n,['ran']
+r/A/m,['rhomb']
+m/aI/nd,['mind']
+r/A/k,"['roc', 'rok', 'rock']"
+s/A/ks,['sox']
+sp/@/n/dZ/,['sponge']
+/j/@/k,['yuk']
+/S/A/p,"['shop', 'gschopf']"
+/S/A/s,['chasse']
+/S/A/t,['shot']
+sk/O/r/tS/,['scorch']
+/S/A/v,['schav']
+gr/@/mp,['grump']
+/S/A/k,['shock']
+/S/A/l,['chasles']
+/j/@/p,['yup']
+/j/@/r,"['yare', 'yar']"
+/S/A/d,['shod']
+/S/A/g,['shog']
+AZh/@/nWA,['agenois']
+d/oU/md,['domed']
+pl/eI/,['play']
+br/&/s,['brass']
+br/&/t,['brat']
+st/O/rk,['stork']
+spr/O/l,['sprawl']
+/T/&/k,['thwack']
+st/O/rm,['storm']
+st/&/kt,['stacked']
+br/&/d,['brad']
+setAd/i/r,"[""c'est-a-dire""]"
+br/&/g,"['bragg', 'brag']"
+st/O/rz,['storrs']
+br/&/k,['brack']
+br/&/m,['bram']
+f/@/N/kt,['funked']
+l/AU/t,['lout']
+l/AU/r,['lour']
+l/AU/s,['louse']
+l/AU/d,['loud']
+sw/U/S/,['swoosh']
+l/i/T/,['leith']
+sn/&/p,['snap']
+p/eI/,"['pay', 'peh']"
+sn/&/g,['snag']
+sn/&/k,['snack']
+/j/&/S/t,['yasht']
+lAmArt/i/n,['lamartine']
+h/@/n/tS/,['hunch']
+kr/&/S/,['crash']
+spr/u/s,['spruce']
+f/Oi/,['foy']
+spr/u/t,['spruit']
+spr/u/k,['spruik']
+Ad/O/lf,['adolphe']
+/S/AU/t,['shout']
+s/i/i/r,"['sea-ear', 'sea_ear']"
+/tS/O/k,['chalk']
+s/i/i/l,['sea_eel']
+s/eI/m,"['sejm', 'same']"
+n/O/r/T/,['north']
+s/eI/k,['sake']
+kAfAr,['cafard']
+f/I/rn,['firn']
+v/@/lnd,['vulned']
+nAd/Z/A,['nadja']
+g/y/ts,"['goetz', 'gotz']"
+ot/@/nt,"[""oughtn't""]"
+b/i/vz,['beeves']
+n/ju/n/@/s,['newness']
+/S/n/U/k,"['shnook', 'schnook']"
+/Z/@/n,['jen']
+f/A/ndz,['fonds']
+l/O/N/,['long']
+h/E/kt,['hecht']
+h/E/ks,['hex']
+dr/aI/aI/d,['dry-eyed']
+sm/E/lt,['smelt']
+f/j/oU/rd,"['fiord', 'fjord']"
+dr/aI/aI/s,['dry_ice']
+/oU/st,"['hoste', 'oast', 'oost']"
+sk/oU/ld,['scold']
+m/aI/s,['mice']
+m/aI/r,['mire']
+m/aI/m,['mime']
+m/aI/l,['mile']
+m/aI/n,['mine']
+m/aI/k,['mike']
+kr/&/kt,['cracked']
+fr/&/N/ks,['francs']
+k/aI/nd,['kind']
+bl/oU/k,['bloke']
+bl/oU/n,['blown']
+bl/oU/t,['bloat']
+l/oU/D/,['loathe']
+bl/eI/,['blae']
+g/&/S/,['gash']
+sk/i/,"['skee', 'ski']"
+br/O/dz,['broads']
+b/E/ld,['beld']
+kw/oU/T/,['quoth']
+/j/i/ld,['yield']
+sk/I/ld,['skilled']
+st/&/ns,['stance']
+sm/I/tS/,['smitch']
+fl/aI/,['fly']
+sf/i/r,['sphere']
+v/E/tS/,['vetch']
+sf/i/n,['sphene']
+skr/&/g,['scrag']
+b/u/N/,['boong']
+skr/&/m,['scram']
+skr/&/n,['scran']
+skr/&/p,['scrap']
+sm/aI/t,['smite']
+d/O/r,"['dor', 'dorr']"
+w/aI/t,"['wite', 'wight', 'white', 'wyte']"
+d/O/t,"['dawt', 'daut']"
+d/O/z,['dawes']
+b/@/r/dZ/,['berge']
+d/O/b,['daub']
+l/eI/T/,['laith']
+d/O/g,['dog']
+d/O/d,['daud']
+spl/A/tS/,['splotch']
+kl/E/pt,['clept']
+d/O/n,['dawn']
+d/O/l,['dail']
+d/eI/mAr/S/,['demarche']
+pr/E/p,['prep']
+pr/E/s,"['press', 'pres']"
+spl/oU/r,['splore']
+hl/j/O/d,['hliod']
+/eI/ns,['anes']
+/eI/nt,"[""ain't""]"
+p/A/r/tS/,['parch']
+/eI/n/dZ/,['ainge']
+pArAV/A/NS,['par_avance']
+g/eI/nz,['gaines']
+kr/aI/,['cry']
+sk/&/lp,['scalp']
+hwuts/ut,"[""what's_what""]"
+w/I/lts,['wilts']
+h/&/T/,['hath']
+/T/&/k,"['thak', 'thack']"
+b/I/lt,['built']
+b/I/ld,['build']
+b/I/lk,['bilk']
+g/u/rd,"['gourdes', 'gourde']"
+kl/I/st,['khlyst']
+w/A/st,['wast']
+b/oU/,"['beau', 'bo']"
+fl/u/t,['flute']
+kAl/E/S/,['caleche']
+fl/u/z,['flews']
+f/E/rmA,['fermat']
+fl/u/m,['flume']
+l/I/vd,['lived']
+fl/u/k,['fluke']
+sl/&/N/k,['slank']
+p/&/N/,['pang']
+m/E/j/Ak,['meilhac']
+t/i/,"['tee', 'tea', 't', 'ti']"
+sm/&/S/t,['smashed']
+gl/oU/,['glow']
+m/AU/nt,['mount']
+m/AU/nd,['mound']
+v/&/st,['vast']
+m/O/Ns,['mons']
+h/oU/,"['hoe', 'ho']"
+n/U/k,['nook']
+n/E/lt,['knelt']
+k/I/st,['kist']
+bAr/E/s,['barres']
+t/S/I/d,['chid']
+d/U/r,"['dour', 'dure']"
+st/A/pt,['stopt']
+gr/oU/oU/ld,['grow_old']
+/j/U/rz,['yours']
+gl/I/mps,['glimpse']
+d/U/k,['doek']
+g/O/nAV,['gonave']
+w/E/lk,['whelk']
+st/E/p,"['step', 'steppe']"
+/S/pr/eI/,['spree']
+lA,['la']
+v/i/tS/,['veitch']
+t/E/mp,['temp']
+b/oU/rn,"['bourne', 'bourn', 'borne']"
+t/E/mz,['thames']
+b/oU/rd,['board']
+t/@/ft,['tuft']
+h/A/lz,['hols']
+gr/i/vz,['greaves']
+t/u/mz,['toombs']
+t/&/N/k,['tank']
+h/A/ls,['hals']
+w/i/rd,['weird']
+sn/I/tS/,['snitch']
+h/@/lk,['hulk']
+h/@/ls,['hulce']
+pr/I/nz,['prinz']
+pr/I/ns,['prince']
+pr/I/nt,['print']
+Ap/j/A,['appia']
+/S/w/A/,"['shwa', 'schwa']"
+g/aI/,['guy']
+/aI/st,['iced']
+/D/i/,['thee']
+g/oU/,"['go', 'gogh']"
+/S/oU/rn,['shorn']
+pr/i/n,['preen']
+n/&/ns,['nance']
+fr/AU/st,['frowst']
+t/O/rs,['torse']
+t/O/rt,['tort']
+t/O/rk,['torque']
+tr/@/dZ/,['trudge']
+t/O/rn,['thorn']
+/D/@/s,['thus']
+/D/@/r,"['thir', 'there', 'their']"
+/D/@/rz,['theirs']
+k/@/l/tS/,"['cultch', 'culch']"
+m/aI/ld,['mild']
+m/aI/lz,['miles']
+/T/O/,['thaw']
+/T/r/O/,['thraw']
+w/A/nt,['want']
+l/&/S/t,['lashed']
+haruz,"[""harrah's""]"
+k/I/lt,['kilt']
+t/aI/ld,['tiled']
+/&/dz,"['adz', 'adze']"
+l/@/rnd,['learned']
+f/@/dZ/,['fudge']
+l/@/rnt,['learnt']
+pl/&/nt,['plant']
+r/oU/dz,['rhodes']
+k/i/S/,['quiche']
+z/&/k,"['zack', 'zach']"
+z/&/p,['zap']
+/E/b,"['ebb', 'eb']"
+/E/d,['ed']
+/E/g,['egg']
+/E/f,['f']
+/E/k,"['egk', 'eck']"
+/E/m,"['em', 'm']"
+/E/l,"['el', 'l', 'ell']"
+/E/n,"['en', 'n']"
+/E/s,"['s', 'ess']"
+/E/t,['et']
+loidzlist,"[""lloyd's_list""]"
+n/A/ts,['notts']
+w/E/dZ/,['wedge']
+sm/I/t,['smit']
+d/I/bz,['dibs']
+sm/&/t/S/,['smatch']
+r/&/ft,['raft']
+m/A/r/T/,['marth']
+/@/j/lts,['eilts']
+st/oU/,"['stow', 'stowe']"
+/S/@/S/,['shush']
+/j/i/,"['yi', 'ye']"
+kr/eI/ps,['crepes']
+kr/&/mp,['cramp']
+sw/I/T/,['swith']
+prinsizp/aI/n,"[""prince's-pine""]"
+k/&/nst,['canst']
+/tS/i/sd,['cheesed']
+/T/r/E/d,['thread']
+/T/r/E/t,['threat']
+kr/&/b,"['crabb', 'crab', 'crabbe']"
+h/oU/r,"['hoar', 'hoare', 'whore']"
+/S/,['shh']
+kl/&/N/k,['clank']
+l/oU/bd,['lobed']
+tr/oU/v,['trove']
+tr/oU/s,['tros']
+l/A/rz,['lars']
+tr/oU/n,['trone']
+tr/oU/l,['troll']
+tr/oU/k,['troke']
+kr/eI/nzbil,"[""crane's-bill""]"
+pr/aI/m,['prime']
+pr/aI/d,['pride']
+pr/aI/z,"['prise', 'prize']"
+pr/aI/s,['price']
+s/&/NgAl,['st_gall']
+d/O/gztu/N/,"[""dog's-tongue""]"
+st/A/mp,['stomp']
+tw/I/N/,['thwing']
+f/oU/,"['foe', 'fo']"
+l/A/rk,['lark']
+l/@/g,['lug']
+l/@/f,['luff']
+l/@/k,['luck']
+l/@/l,['lull']
+l/@/r,['lair']
+/S/U/,['cheux']
+f/Oi/st,['foist']
+l/@/v,['love']
+sm/u/tS/,['smooch']
+/T/i/vz,['thieves']
+s/A/rd,['sard']
+r/u/S/,['ruche']
+pl/aI/t,['plight']
+/y/r,['eure']
+n/i/,['knee']
+dr/oU/l,['droll']
+str/E/s,['stress']
+str/E/p,['strep']
+sk/&/nt,['scant']
+m/i/,"['me', 'mi']"
+w/aI/rd,['wired']
+l/A/Nd,['landes']
+k/ju/p/@/d,['cupid']
+/T/O/rt,['thwart']
+/tS/AU/s,"['chouse', 'chiaus']"
+bl/i/k,['bleak']
+bl/i/tS/,['bleach']
+m/&/T/s,['maths']
+b/A/r/dZ/,['barge']
+d/A/lf,['dolph']
+/T/@/g,['thug']
+p/@/rk,['perk']
+p/@/rl,"['pearl', 'pairle', 'purl']"
+p/@/rm,['perm']
+p/@/rn,"['pirn', 'pern']"
+l/I/pt,['lipped']
+v/&/mp,['vamp']
+/AU/tS/,['ouch']
+p/eI/st,"['paste', 'paced']"
+fr/oU/r,['frore']
+sp/u/m,['spoom']
+p/@/rs,"['perse', 'purse']"
+p/@/rt,['pert']
+p/@/rv,['perv']
+fr/oU/z,"['froese', 'froze']"
+sp/@/r,"['spare', 'spur']"
+r/&/tS/,['ratch']
+sp/@/d,['spud']
+sp/@/n,['spun']
+m/I/ld,['milled']
+pl/&/N/k,['plank']
+gr/i/,['gree']
+kr/eI/v,['crave']
+kr/eI/t,['crate']
+kr/eI/p,"['crape', 'crepe']"
+w/eI/vd,['waved']
+kr/eI/z,['craze']
+kr/eI/g,['craig']
+w/eI/vz,['waves']
+f/i/st,['feast']
+kr/eI/n,['crane']
+b/O/ld,['bald']
+m/eI/,"['mai', 'may', 'mae', 'mee']"
+/T/i/f,['thief']
+st/A/rt,['start']
+/T/i/m,['theme']
+/T/i/v,['thieve']
+st/A/rk,['stark']
+m/I/lt,['milt']
+/tS/E/z,['czyz']
+/j/E/lp,['yelp']
+/tS/E/s,['chess']
+n/A/rld,['gnarled']
+/tS/E/t,['chet']
+/tS/E/k,"['czech', 'check', 'cheque']"
+gr/&/sp,['grasp']
+mA/S/oU/,['machaut']
+b/@/st,['bust']
+b/oU/lt,"['boult', 'bolt']"
+l/eI/st,['laced']
+b/oU/lz,['bowles']
+b/oU/ld,['bold']
+l/E/st,['lest']
+r/u/vz,['rooves']
+w/I/mp,['wimp']
+vwAlAt/u/,['voila_tout']
+l/O/rd,['lord']
+h/@/nt,['hunt']
+k/A/rS,['carse']
+/T/r/I/ft,['thrift']
+l/O/rn,['lorn']
+/T/O/t,['thought']
+k/A/rl,"['karl', 'carl']"
+k/A/rk,['cark']
+/T/O/r,['thor']
+/tS/O/,['chaw']
+k/A/rd,['card']
+k/A/rb,['carb']
+p/I/n/tS/,['pinch']
+k/A/rv,['carve']
+k/A/rt,"['cart', 'carte']"
+/oU/tzAlp,['hautes-alpes']
+k/A/rs,['kars']
+k/A/rp,['carp']
+/T/O/k,['thokk']
+p/aI/n,['pine']
+p/aI/l,['pile']
+p/aI/k,['pike']
+p/aI/d,['pied']
+/D/aI/n,['thine']
+p/aI/s,['pice']
+p/aI/p,['pipe']
+t/E/mpt,['tempt']
+bl/eI/m,['blame']
+/Z/y/npArk,['jeune_parque']
+bl/eI/n,"['blaine', 'blain']"
+dr/O/O/f,['draw_off']
+bl/eI/k,['blake']
+bl/eI/d,['blade']
+/T/r/eI/l,['thrale']
+/T/r/eI/v,['thrave']
+pr/A/mpt,['prompt']
+n/U/N/k,['nunc']
+bl/eI/z,"['blaze', 'blaise']"
+bl/eI/t,['blate']
+w/eI/dZ/,['wage']
+gr/O/S/,['grosz']
+s/@/mp,['sump']
+r/@/nt,['runt']
+skw/I/S/,['squish']
+s/E/l,"['cell', 'sell', 'sel']"
+t/A/ps,['tops']
+h/oU/lst,['holst']
+fl/AU/ns,['flounce']
+sl/oU/,"['sloe', 'slow']"
+st/eI/fAn,['stephane']
+v/oU/t,['vote']
+pl/I/n/T/,['plinth']
+f/I/nd,['finned']
+v/oU/l,['vole']
+fl/E/S/,['flesh']
+v/oU/g,['vogue']
+p/E/bl,['pebble']
+kr/I/l,['krill']
+/u/d,['oud']
+/tS/i/t,['cheat']
+/tS/i/r,"['chir', 'cheer']"
+/tS/i/p,"['cheep', 'cheap']"
+kr/I/k,['crick']
+m/I/ks,['mix']
+/tS/i/z,['cheese']
+kr/I/b,['crib']
+/tS/i/f,['chief']
+/O/rl,"['orl', 'orle']"
+k/O/Nt,"['conte', 'contes', 'comte', 'comtes']"
+/tS/i/l,['chiel']
+/tS/i/m,['cheam']
+/O/rb,['orb']
+br/aI/,['brei']
+kr/I/s,['chris']
+r/eI/,"['rae', 'ray']"
+tr/eI/s,['trace']
+tr/eI/t,['trait']
+tr/eI/v,['trave']
+tr/eI/l,['trail']
+tr/eI/n,['train']
+l/@/r/tS/,['lurch']
+tr/eI/d,['trade']
+tr/eI/f,['tref']
+sw/A/T/s,['swaths']
+br/eI/rd,['braird']
+n/A/rd,['nard']
+str/&/nd,['strand']
+n/A/rl,['gnarl']
+kr/A/,['kra']
+kw/aI/t,['quite']
+kw/aI/r,"['choir', 'quire']"
+/tS/AU/,['chow']
+t/U/r,"['tour', 'tours']"
+/T/r/i/i/rd,['three-eared']
+das/@/nt,"[""dassn't""]"
+gr/I/T/,['grith']
+fl/E/ns,['flense']
+sl/i/t,['sleet']
+w/I/N/,['wing']
+sw/E/pt,['swept']
+b/&/nt,['bant']
+g/I/N/k,['gink']
+sn/E/k,['sneck']
+b/&/nz,"['banns', 'bans']"
+b/&/nd,['band']
+d/I/gd,['digged']
+sp/aI/r,['spire']
+sp/aI/s,"['speiss', 'spice']"
+sp/aI/t,['spite']
+sp/aI/k,['spike']
+sp/aI/l,['spile']
+sp/aI/n,['spine']
+pl/i/,['plea']
+kl/O/z,['clause']
+m/U/r,"['moor', 'moore']"
+/S/k/i/n,['skean']
+/j/ls/U/n,['eielson']
+br/U/k,"['brooke', 'brook']"
+skr/AU/dZ/,['scrouge']
+lAvAr,"[""l'avare""]"
+p/A/D/z,['paths']
+tr/AU/ns,['trounce']
+lAvAl,['laval']
+b/&/,['baa']
+k/j/u/t,['cute']
+sk/&/t,"['scatt', 'scat']"
+sk/&/n,['scan']
+sk/&/m,['scam']
+sk/&/d,['scad']
+sk/&/b,['scab']
+w/I/z,"['whiz', 'wiz', 'whizz']"
+b/O/rts,['bortz']
+l/A/dZ/d,['lodged']
+w/I/p,['whip']
+w/I/t,"['whit', 'wit']"
+w/I/k,['wick']
+/dZ/I/n,"['jin', 'djin', 'jinn']"
+/dZ/I/m,"['gym', 'jim']"
+/dZ/I/l,['jill']
+w/I/n,"['whin', 'wynne', 'win', 'wynn', 'wyn']"
+w/I/m,['whim']
+w/I/l,['will']
+/dZ/I/g,['jig']
+/dZ/I/f,['jiff']
+w/I/g,"['wig', 'whig']"
+w/I/f,['whiff']
+b/O/NSWAr,['bonsoir']
+/AU/st,['oust']
+h/I/tS/,['hitch']
+skr/@/m,['scrum']
+skr/@/b,['scrub']
+skr/@/f,['scruff']
+p/j/U/r,['pure']
+/S/@/rk,['shirk']
+m/E/T/s,['meths']
+b/AU/ns,['bounce']
+/S/@/rd,['sherd']
+/S/@/rz,['schurz']
+b/AU/nd,['bound']
+k/oU/ld,['cold']
+k/oU/lz,['coles']
+bl/aI/,['bligh']
+k/oU/lt,['colt']
+f/E/nd,['fend']
+spr/eI/,['spray']
+/S/&/N/k,['shank']
+/j/A/d,['yad']
+k/E/r/tS/,['kerch']
+f/Oi/ld,['foiled']
+v/E/ks,['vex']
+s/aI/,"['sigh', 'cy', 'psi', 'sai']"
+m/u/tS/,['mooch']
+/D/@/,['the']
+/D/E/n,['then']
+/D/E/m,['them']
+k/O/st,['cost']
+/aI/,"['i', 'eye', 'ay/av']"
+kw/eI/l,['quail']
+k/E/pt,['kept']
+d/@/N/,['dung']
+/j/A/p,['yap']
+g/&/b,['gab']
+g/&/d,['gad']
+g/&/f,"['gaffe', 'gaff']"
+g/&/g,['gag']
+g/&/l,['gal']
+g/&/m,['gam']
+g/&/n,['gan']
+g/&/p,['gap']
+g/&/s,['gas']
+/S/t/oU/rm,['storm']
+/j/A/t,['yacht']
+gl/A/s,['gloss']
+gl/A/p,['glop']
+dr/E/mt,['dreamt']
+gl/A/b,['glob']
+t/&/mp,['tamp']
+p/i/tS/,['peach']
+r/A/nd,['ronde']
+br/@/n/tS/,['brunch']
+k/@/spt,['cusped']
+sl/&/g,['slag']
+skr/i/,['scree']
+r/I/st,['wrist']
+sl/&/m,['slam']
+l/@/mp,['lump']
+w/u/ts,['wootz']
+sl/&/p,['slap']
+sl/&/t,['slat']
+n/E/rVAl,['nerval']
+spr/I/nt,['sprint']
+g/@/S/,['gush']
+kAr/j/E/r,['carriere']
+f/I/z,"['phiz', 'fizz']"
+r/eI/n/dZ/d,['ranged']
+sl/&/ks,['slacks']
+/tS/A/r/dZ/d,['charged']
+fl/@/N/k,['flunk']
+g/AU/s,['gauss']
+g/AU/r,['gaur']
+d/&/lz,['dalles']
+gl/i/,"['glee', 'gley']"
+g/AU/t,['gout']
+k/A/rd/j/n,['cardijn']
+g/AU/d,['gowd']
+g/AU/k,['gowk']
+g/AU/n,['gown']
+s/A/mz,['psalms']
+spr/aI/t,['sprite']
+w/O/,"[""wa'"", 'waugh']"
+/D/er,"[""they're""]"
+/@/t,"['ut', 'at']"
+/@/v,['of']
+/@/p,['up']
+/@/r,"[""e'er"", 'err', 'eyre', 'heir', 'air', 'ere', 'ayre', 'ayer', 'ur', 'or', 'ayr']"
+/@/s,['us']
+/@/n,"['un', 'an']"
+b/oU/nd,['boned']
+/T/r/O/l,['thrall']
+/T/r/O/n,['thrawn']
+f/I/l,"['phil', 'fil', 'fill']"
+g/I/mp,"['jimp', 'gimp']"
+kl/O/,['claw']
+kl/@/N/k,['clunk']
+g/i/,"['gie', 'ghee']"
+g/E/mz,['gems']
+dr/eI/k,['drake']
+dr/eI/l,['drail']
+dr/eI/n,['drain']
+p/U/l,['pull']
+p/U/r,['poor']
+p/U/s,['puss']
+/A/r/tS/,['arch']
+dr/eI/p,['drape']
+k/A/ps,['copse']
+k/A/pt,"['copht', 'copt']"
+sk/@/f,['scuff']
+dr/eI/v,['drave']
+/j/@/,"['ya', 'yeah']"
+t/&/N/,['tang']
+Ab/A/,['a_bas']
+d/@/sk,['dusk']
+p/I/N/k,['pink']
+d/@/st,"['dust', 'dost']"
+p/eI/z,['peise']
+houndztu/N/,"[""hound's-tongue""]"
+h/E/n/dZ/,['henge']
+r/&/n/tS/,['ranch']
+t/A/rp,['tarp']
+m/O/rf,['morph']
+m/O/rg,['morgue']
+t/A/rt,['tart']
+m/&/ks,['max']
+p/&/nts,['pants']
+m/O/rs,['morse']
+m/O/rt,['mort']
+m/O/rz,['mors']
+t/A/rn,['tarn']
+bw/A/r,['bouar']
+kr/@/st,['crust']
+w/j/r/I/k,['weyrich']
+sl/&/N/,['slang']
+f/I/lm,['film']
+/T/r/A/b,['throb']
+m/A/n/tS/,"['maunche', 'manche']"
+p/E/lf,['pelf']
+b/E/rnAr,['bernard']
+p/E/lt,['pelt']
+dr/Oi/t,['droit']
+t/oU/rd,['toward/prp']
+t/oU/rn,['torn']
+dr/@/b,['drub']
+dr/@/g,['drug']
+dr/@/m,['drum']
+pr/A/d,"['prod', 'prodd']"
+sk/Oi/t,"['schuit', 'schuyt']"
+sp/eI/D/,['spathe']
+w/@/rts,['wirtz']
+/Z/An/E/,['janet']
+s/I/ks/T/,['sixth']
+fr/A/nk,['frank']
+m/j/u/z,"['mews', 'meuse', 'muse']"
+m/j/u/t,['mute']
+fr/A/nd,"['frond', 'fronde']"
+fr/A/nz,['frons']
+m/j/u/l,"['mewl', 'mule']"
+l/A/rd,['lard']
+bl/i/d,['bleed']
+kr/aI/n,['crine']
+mArg/oU/,['margaux']
+kr/aI/l,['crile']
+kr/aI/m,['crime']
+kr/aI/d,['cried']
+bl/i/t,['bleat']
+bl/i/p,['bleep']
+bl/i/r,['blear']
+gr/AU/nd,['ground']
+kr/aI/t,['krait']
+pr/A/p,['prop']
+m/A/NSAr,['mansard']
+f/j/u/md,['fumed']
+b/O/t,['bought']
+b/O/l,"['ball', 'bawl']"
+b/O/m,['baum']
+b/O/n,"['bonne', 'bonnes']"
+z/i/,"['z', 'zee']"
+b/O/k,"['baulk', 'balk']"
+b/O/d,"['baud', 'bawd']"
+sp/E/k,"['spec', 'speck']"
+h/Oi/z,['hoise']
+sp/E/l,['spell']
+h/Oi/t,['hoyt']
+sp/E/d,['sped']
+st/O/k,['stalk']
+h/Oi/l,['hoyle']
+v/O/lt,['vault']
+t/oU/st,['toast']
+g/eI/b,['gabe']
+dw/aI/t,['dwight']
+g/eI/n,"['gaine', 'gain']"
+g/eI/m,['game']
+g/eI/l,"['gayle', 'gail', 'gael', 'gale']"
+g/eI/p,['gape']
+p/I/tS/,"['pich', 'pitch']"
+g/eI/v,['gave']
+g/eI/t,"['gate', 'gait']"
+g/eI/z,['gaze']
+dw/aI/n,['dwine']
+spr/eI/nt,['spraint']
+skw/eI/l,['squail']
+k/y/ln,"['coln', 'koln']"
+l/aI/r,['lyre']
+l/aI/s,"['lice', 'lyse']"
+l/aI/v,['live']
+l/aI/t,['light']
+l/aI/k,['like']
+r/i/tS/,['reach']
+l/aI/n,['line']
+l/aI/l,"['lisle', 'lyle']"
+l/aI/m,['lime']
+lWAr/E/,['loiret']
+l/aI/f,['life']
+/S/@/r,"['cher', 'shirr', 'share']"
+/S/@/t,"['chut', 'shut']"
+kw/eI/k,['quake']
+sn/@/rk,['snark']
+/dZ/AU/st,['joust']
+/j/A/n,"['jan', 'yon']"
+m/A/r/tS/,['march']
+/j/A/s,['jass']
+/T/A/rm,['tharm']
+tArd/j/y/,['tardieu']
+/S/@/k,['shuck']
+/S/@/m,['sham']
+/S/@/n,['shun']
+l/U/rd,['lourdes']
+/tS/A/mp,['chomp']
+k/U/r,"['chur', 'kur']"
+sk/@/l,"['scull', 'skull']"
+sk/@/m,['scum']
+sl/A/t,['slot']
+p/eI/d,['paid']
+sk/@/d,['scud']
+p/eI/k,['paik']
+/D/eI/v,"[""they've""]"
+kr/U/ks,['crookes']
+p/eI/n,"['paine', 'payne', 'pain']"
+p/eI/l,"['pale', 'pail']"
+/D/eI/l,"[""they'll""]"
+p/eI/s,['pace']
+p/eI/v,['pave']
+sk/@/t,['scut']
+sk/@/p,['scup']
+sk/@/r,"['skirr', 'scare']"
+t/u/T/,['tooth']
+s/u/T/,['sooth']
+k/oU/rt,['court']
+r/oU/,"['roe', 'rowe']"
+k/oU/rs,"['course', 'coarse']"
+w/i/ld,"['weald', 'wield', 'wheeled']"
+wuz/@/nt,"[""wasn't""]"
+w@nt/aI/m,['onetime']
+m/Oi/st,['moist']
+g/eI/ts,['gates']
+t/@/rps,['turps']
+/dZ/@/rk,['jerk']
+/dZ/@/rm,['germ']
+n/A/S/,['nosh']
+p/aI/ld,['piled']
+w/aI/vz,['wives']
+p/aI/lz,['piles']
+s/E/rt,['sert']
+sp/eI/t,['spate']
+kr/oU/znest,"[""crow's-nest""]"
+k/Oi/,['coy']
+sp/eI/n,['spain']
+sp/eI/k,['spake']
+sp/eI/d,['spade']
+sp/eI/s,['space']
+t/I/lt,['tilt']
+vAlwA,['valois']
+/tS/A/rt,['chart']
+dr/E/st,['drest']
+b/E/S/t,['besht']
+t/&/ks,['tax']
+t/&/kt,['tact']
+/E/rg,['erg']
+r/A/lf,"['rolfe', 'rolph', 'rolf']"
+st/@/nt,['stunt']
+haz/@/nt,"[""hasn't""]"
+/Z/A/k,['jacques']
+/Z/A/n,['jeanne']
+v/E/t,['vet']
+sp/aI/rd,['spired']
+pl/E/bz,['plebs']
+v/E/l,['vel']
+sp/aI/rz,['spires']
+sw/O/rm,['swarm']
+/U/ps,['oops']
+sw/O/rf,['swarf']
+sw/O/rd,['sward']
+p/j/eI/nwAr,['pied_noir']
+d/@/lAnWA,['delannoy']
+k/@/r/tS/,"['kirch', 'curch']"
+ArmpArl/A/Nt,['armes_parlantes']
+p/E/t,['pet']
+sp/eI/l,['spale']
+g/I/bd,['gibbed']
+g/I/bz,['gibbs']
+d/i/l,"['diehl', 'deal', 'deil']"
+h/A/bz,"['hobbs', 'hobbes']"
+g/O/r/dZ/,['gorge']
+d/&/S/t,['dashed']
+d/i/n,"['dean', 'dene']"
+l/&/N/,['lang']
+fr/A/NswA,['francois']
+n/A/ks,['knox']
+/&/N,['ain']
+h/@/rs,['hearse']
+h/@/rt,['hurt']
+h/@/rz,['hers']
+b/oU/d/j/n,['bodine']
+h/@/rd,"['heard', 'herd', 'hurd']"
+k/i/k/j/,['kikai']
+mArk/A/NtWAn,['marc_antoine']
+h/@/rl,"['herl', 'hurl']"
+h/@/rm,['herm']
+h/@/rn,"['hearne', 'herne', 'hearn', 'hern', ""her'n""]"
+tr/I/st,['tryst']
+/&/n,['ann']
+/&/l,['al']
+/&/m,['am']
+kw/A/S/,['quash']
+/&/f,['aff']
+/&/d,"['add', 'ad']"
+d/I/S/t,['dished']
+spl/@/r/dZ/,['splurge']
+/&/z,['as']
+p/E/n,"['penn', 'pen']"
+/&/s,['ass']
+k/u/l/T/,['coolth']
+p/oU/,"['pow', 'poe', 'pau']"
+sk/A/t,"['scot', 'scott', 'skat']"
+m/I/tS/,['miche']
+sp/oU/d,['spode']
+d/@/mp,['dump']
+fl/oU/,"['flow', 'flo', 'floe']"
+t/I/p,['tip']
+k/@/rb,"['curb', 'kerb']"
+t/I/t,['tit']
+sp/oU/k,['spoke']
+t/I/v,['tiv']
+t/I/k,"['tick', 'tic']"
+sp/oU/r,['spore']
+t/I/n,['tin']
+p/@/N/,['pung']
+t/I/f,['tiff']
+t/I/g,['tyg']
+h/aI/t/T/,['heighth']
+/tS/I/ps,['chips']
+k/@/rn,"['cairn', 'curn', 'kirn', 'kurn', 'kern']"
+/&/sk,['ask']
+t/E/n/T/,['tenth']
+mA/j/Ar,['maillart']
+/S/WAZ/y/l,['choiseul']
+sp/oU/rts,['sports']
+b/eI/ts,['bates']
+h/i/rzhou,"[""here's_how""]"
+m/I/s,['miss']
+m/I/t,['mitt']
+m/I/z,['ms']
+m/I/b,['mib']
+/S/Arl/eI/dwAr,['charles_\x83douard']
+m/I/d,['mid']
+m/I/g,['mig']
+m/I/f,['miff']
+m/I/k,['mick']
+m/I/m,['mim']
+m/I/l,"['mill', 'mil']"
+p/E/nt,['pent']
+g/@/ts,['guts']
+pl/E/z,['pleas']
+br/I/t,['brit']
+br/I/k,['brick']
+p/E/nd,['pend']
+br/I/m,['brim']
+br/I/l,['brill']
+pl/E/d,['pled']
+br/I/g,['brig']
+pl/E/b,['pleb']
+s/I/n,['sin']
+s/I/m,['sim']
+s/I/l,['sill']
+s/I/k,"['sic', 'sick']"
+s/I/f,['syph']
+s/I/d,"['sid', 'cid', 'syd', 'cyd']"
+s/I/b,['sib']
+/I/n/tS/,['inch']
+b/@/sk,['busk']
+s/I/v,['sieve']
+s/I/t,['sit']
+s/I/s,['sis']
+s/I/p,['sip']
+k/A/S/,['cosh']
+w/E/t,"['whet', 'wet']"
+w/E/s,['wes']
+w/E/p,['wakayama']
+w/E/n,"['when', 'wen']"
+w/E/l,['well']
+sl/u/T/,['sleuth']
+w/E/d,['wed']
+w/E/b,"['webb', 'web']"
+/S/oU/,['shew']
+sw/A/t,"['swat', 'swot']"
+t/aI/D/,['tithe']
+b/j/u/t,"['butte', 'beaut', 'bute']"
+s/i/p,['seep']
+l/&/S/,['lash']
+/tS/ukwilzwid/oU/,"[""chuck-will's-widow""]"
+g/j/u/lz,['gules']
+tw/aI/n,['twine']
+t/E/tS/t,['tetched']
+wot/@/r,"[""whate'er""]"
+sn/u/l,['snool']
+/dZ/&/l,['jal']
+sn/u/k,['snook']
+sn/u/d,['snood']
+d/E/p/T/,['depth']
+sn/u/z,['snooze']
+f/I/ks,['fix']
+sn/u/t,['snoot']
+sn/u/p,['snoop']
+b/&/bz,['babs']
+f/&/t,['fat']
+b/E/v,['bev']
+l/i/st,['least']
+w/oU/r,['wore']
+f/&/d,['fad']
+f/&/g,['fag']
+sw/A/T/,['swath']
+t/A/S/,['tosh']
+f/&/n,['fan']
+/i/,['e']
+b/E/dz,['beds']
+dr/u/,['drew']
+w/@/r/T/,['worth']
+dr/E/sWAr,"['dressoir', 'dressoirs']"
+st/aI/,"['stye', 'sty']"
+pr/oU/,['pro']
+str/O/,['straw']
+spr/eI/n,['sprain']
+p/@/r/dZ/,['purge']
+skw/I/z,['squiz']
+kr/aI/st,['christ']
+skw/I/t,['squit']
+skw/I/l,['squill']
+skw/I/d,['squid']
+skw/I/b,['squib']
+t/ju/n/@/p,['tune-up']
+r/aI/,"['rye', 'rij', 'wry']"
+r/O/T/,['wroth']
+st/A/n/tS/,['staunch']
+h/Oi/,['hoy']
+w/&/N/k,['wank']
+k/u/tS/,"['cootch', 'cooch']"
+kw/E/n/tS/,['quench']
+/S/O/,"['pshaw', 'shaw']"
+sl/eI/v,['slave']
+tAnAnAr/i/v,['tananarive']
+l/E/tS/,['letch']
+f/U/lk,['fulke']
+/tS/@/mp,['chump']
+/tS/j/enl/U/N/,"[""ch'ien_lung""]"
+kw/eI/nt,['quaint']
+/tS/eI/f,['chafe']
+l/I/sts,['lists']
+kl/&/spt,['claspt']
+/D/A/l,['dhal']
+t/I/l/T/,['tilth']
+m/@/n/T/,['month']
+kl/@/ts,['klutz']
+p/aI/nt,['pint']
+fr/@/mp,['frump']
+v/@/r/dZ/,['verge']
+p/aI/nz,['pines']
+k/A/ks,['cox']
+bl/A/N,"['blancs', 'blanc']"
+s/E/pt,['sept']
+s/E/ps,['seps']
+t/O/r/tS/,['torch']
+sp/oU/rt,['sport']
+bl/A/k,"['bloc', 'bloch', 'block']"
+t/I/nt,['tint']
+bl/A/b,['blob']
+bl/A/t,['blot']
+t/I/nd,['tinned']
+fl/&/sk,['flask']
+h/A/tS/,['hotch']
+p/i/ps,['pepys']
+k/u/dese,"[""coups_d'essai"", ""coup_d'essai""]"
+g/O/N/,['gong']
+fr/AU/,['frau']
+m/A/r/dZ/,['marge']
+/oU/T/,['oath']
+ant,"[""amn't"", ""an't""]"
+k/&/lb,['kalb']
+w/O/rvz,['wharves']
+sl/@/r,['slur']
+k/&/lk,"['khalq', 'calque']"
+sl/@/t,['slut']
+st/A/r/tS/,['starch']
+/U/rd,['urd']
+sl/@/m,['slum']
+l/i/z/j/O,['lisieux']
+sl/@/b,['slub']
+sl/@/g,['slug']
+sl/@/f,['sluff']
+gl/&/ns,['glance']
+s/aI/zd,['sized']
+gl/&/nz,['glans']
+vr/I/l,['vrille']
+gl/&/nd,['gland']
+r/O/ss,['rouse']
+r/O/st,['rost']
+h/U/ft,['hoofed']
+s/j/y/r,['sieur']
+n/i/dz,['needs']
+f/&/st,['fast']
+sp/u/k,['spook']
+sp/u/n,['spoon']
+sp/u/l,['spool']
+pwaNdespr/i/,"[""point_d'esprit""]"
+sp/u/f,['spoof']
+m/A/rz,['mars']
+l/A/ks,"['lox', 'lawks']"
+m/A/rt,['mart']
+/tS/u/,['chew']
+m/A/rv,['marv']
+r/eI/Z/An,['rejane']
+m/A/rs,['marse']
+m/A/rl,['marl']
+b/@/rnt,['burnt']
+m/A/rn,['marne']
+m/i/r,"['mear', 'mere', 'mir', 'meer']"
+m/A/rk,"['marque', 'marc', 'mark']"
+l/i/Nns,['lins']
+b/@/rnz,"['byrnes', 'burns']"
+g/O/d,['gaud']
+g/O/k,['gawk']
+g/O/l,"['gall', 'gaul']"
+g/O/n,"['gone', 'gaughan']"
+g/O/s,['gosse']
+g/O/r,['gor']
+g/O/t,['ghat']
+tr/O/mp,['tromp']
+g/O/z,['gauze']
+gl/eI/zd,['glazed']
+k/O/rnd,['corned']
+tr/E/t,['tret']
+z/A/r,"['tsar', 'saar', 'czar', 'tzar']"
+huntsm/@/nzkup,"[""huntsman's-cup""]"
+/tS/@/N/k,['chunk']
+/I/ts,['its']
+its,"[""it's""]"
+bl/AU/zd,"['blowsed', 'blowzed']"
+h/A/rdz,['hards']
+skr/u/p,['scroop']
+s/eI/lz,['sales']
+trw/A/,['trois']
+gl/@/m,['glum']
+/I/n/dZ/,['inge']
+t/aI/ts,['tights']
+kr/aI/nd,['crined']
+s/i/d,"['cede', 'seed']"
+r/i/v,"['reive', 'reave', 'reeve']"
+s/i/,"['c', 'see', 'si', 'sea']"
+r/i/r,['rear']
+r/i/s,['riis']
+p/AU/tS/,['pouch']
+r/i/l,"['riel', 'reel', 'rille']"
+r/i/m,"['ream', 'reem']"
+r/i/k,"['reek', 'wreak']"
+r/i/f,"['reif', 'reef']"
+r/i/g,['rigg']
+r/i/d,"['read', 'reade', 'reed', 'reid', 'rede']"
+gr/eI/d,['grade']
+gr/eI/n,['grain']
+gr/eI/l,['grail']
+gr/eI/s,"['grace', 'grayce']"
+gr/eI/p,"['graip', 'grape']"
+gr/eI/v,['grave']
+gr/eI/t,"['grate', 'great']"
+gr/eI/z,['graze']
+g/@/rt,"['girt', 'gert']"
+gr/u/v,['groove']
+gr/u/p,['group']
+gr/u/m,"['groom', 'grume']"
+g/@/rd,"['gird', 'gerd']"
+k/I/T/,['kith']
+g/@/rl,['girl']
+g/@/rn,['girn']
+/tS/@/rn,['churn']
+/tS/@/rl,['churl']
+/tS/@/rm,['chirm']
+/tS/@/rk,['chirk']
+m/oU/st,"['most', 'moste']"
+/tS/@/rt,['chert']
+/tS/@/rp,['chirp']
+sp/I/v,['spiv']
+sp/I/t,['spit']
+Al/j/eI/,['allier']
+Ag/oU/S/,['a_gauche']
+/eI/sk,"['yeisk', 'eisk', 'eysk']"
+sp/I/l,['spill']
+sp/I/k,"['spic', 'spick', 'spik']"
+br/@/nt,['brunt']
+sp/A/k,"['spaak', 'spock']"
+h/O/z,['hawse']
+h/O/g,"['hog', 'hogg']"
+h/O/l,"['haul', 'hall']"
+h/O/m,['halm']
+sp/A/r,['spar']
+h/O/k,['hawk']
+AdAmAr,['hadamard']
+s/E/mz,['semmes']
+spl/eI/,['splay']
+p/S/p/&/S/,['pish-pash']
+lets,"[""let's""]"
+kl/eI/,"['clay', 'klee']"
+lAr/u/s,['larousse']
+z/u/m,['zoom']
+z/u/s,['zeus']
+p/@/mp,['pump']
+r/E/k,"['reck', 'wreck']"
+r/E/n,"['rennes', 'wren']"
+r/E/m,['rem']
+r/E/b,['reb']
+kw/E/st,['quest']
+r/E/f,['ref']
+r/E/d,"['red', 'redd']"
+r/E/p,['repp']
+r/E/v,['rev']
+r/E/t,['ret']
+k/&/S/,"['cache', 'cash']"
+b/u/,['boo']
+/I/tS/,['itch']
+nAnA,['nana']
+kn/i/s,['knies']
+v/@/rd?nt,['verdant']
+sp/@/N/k,['spunk']
+kr/@/n/tS/,['crunch']
+h/@/rb,['herb']
+r/E/tS/,['retch']
+w/I/d/T/,['width']
+gr/I/st,['grist']
+t/@/tS/t,['touched']
+l/u/pt,['looped']
+br/A/mz,['brahms']
+/S/r/aI/v,['shrive']
+s/i/r,"['sear', 'cere', 'sere', 'ser', 'cyr']"
+h/@/,['huh']
+drAm,['drame']
+sl/aI/d,['slide']
+bent/dZ/ub/A/l,"[""bent_j'beil""]"
+sl/aI/m,['slime']
+g/eI/ps,['gapes']
+/A/lst,['aalst']
+sl/aI/t,"['sleight', 'slight']"
+br/@/sk,['brusque']
+sl/aI/p,['slype']
+sl/aI/s,['slice']
+h/oU/st,['host']
+k/j/u/,"['kew', 'q', 'cue', 'queue']"
+pr/u/,"['pru', 'prue']"
+/dZ/u/t,['jute']
+str/AU/s,"['straus', 'strauss']"
+sw/oU/ln,['swoln']
+str/AU/d,['stroud']
+/@/klok,"[""o'clock""]"
+/&/b,"['abb', 'ab']"
+br/&/nd,['brand']
+br/&/nz,['brans']
+/S/r/aI/k,['shrike']
+br/&/nt,"['brant', 'brandt']"
+vl/&/d,['vlad']
+/i/st,"['east', 'eist']"
+h/A/N/k,['honk']
+tr/@/N/k,['trunk']
+sw/&/N/k,['swank']
+k/I/k,['kick']
+/I/ks,['ickx']
+skw/I/nt,['squint']
+/dZ/u/d,['jude']
+/T/r/@/st,['thrust']
+p/i/rt,['peart']
+p/i/rs,"['pierce', 'peerce']"
+bl/aI/ndmanzbuf,"[""blindman's_buff""]"
+v/A/v,['vav']
+v/A/t,['waadt']
+hmm,"[""h'm""]"
+s/eI/st,['sayst']
+v/&/n,['van']
+v/A/l,"['vaal', 'waal']"
+/&/lb,['alb']
+d/E/d,['dead']
+d/E/f,['deaf']
+d/E/b,['deb']
+d/E/l,"['del', 'dell']"
+naNp/O/rt,"[""n'importe""]"
+d/E/n,['den']
+d/E/k,['deck']
+d/E/t,['debt']
+d/E/r,['der']
+sm/oU/t,['smote']
+k/&/nd,['canned']
+sm/oU/k,['smoke']
+k/&/nt,['kant']
+l/O/,"['law', 'la']"
+g/@/md,['gummed']
+g/@/mp,['gump']
+ked/O/rse,"[""quai_d'orsay""]"
+p/aI/,"['pi', 'pie', 'pye']"
+/oU/f,['oaf']
+/oU/d,"['aude', 'ode']"
+/oU/b,['aube']
+/oU/n,['own']
+/oU/m,"['ohm', 'aum']"
+/oU/k,"['oak', 'oke']"
+/oU/t,['oat']
+/oU/r,"['oar', ""o'er""]"
+/oU/p,['ope']
+mA/j/A/Ns,['mayence']
+r/u/nd,['runed']
+r/&/sp,['rasp']
+Am/i/,"['ami', 'amie', 'amies', 'amis']"
+k/O/rvz,['corves']
+vAn/j/eI/,['vanier']
+gr/A/ss,['grosse']
+br/E/t,['brett']
+kl/U/k,['kluck']
+dwAn,['douane']
+n/j/u/k,['neuk']
+gr/oU/vz,['groves']
+l/@/ks,"['lux', 'luks']"
+bl/AU/,['blaeu']
+devilztu/N/,"[""devil's-tongue""]"
+v/E/,['ve']
+k/A/s,['kas']
+/E/dgAr,['edgard']
+br/E/d,"['bred', 'bread']"
+r/@/ft,['ruffed']
+t/I/l,"['til', 'till']"
+k/E/b,['keb']
+k/oU/m,['comb']
+/dZ/aI/N/,['gyaing']
+f/@/N/k,['funk']
+str/eI/n/dZ/,['strange']
+pontl/@/vek,"[""pont_l'eveque""]"
+tr/aI/t,['trite']
+m/O/lt,['malt']
+tr/aI/p,['tripe']
+tr/aI/s,['trice']
+tr/@/nt,['triunitarian']
+s/eI/nt,['saint']
+tr/aI/d,['tried']
+kAl/oU/,['callot']
+tr/aI/b,['tribe']
+tr/aI/n,['trine']
+z/I/N/,['zing']
+tw/i/,['twee']
+fl/i/m,['fleam']
+fl/i/s,['fleece']
+fl/i/r,['fleer']
+fl/i/t,['fleet']
+r/&/S/,['rash']
+v/aI/,['vie']
+/E/tS/,['etch']
+vAls,['valse']
+w/u/nd,['wound']
+k/@/S/,['cush']
+m/@/lkt,['mulct']
+t/oU/ld,['told']
+skl/E/nt,"['sclent', 'sklent']"
+gr/I/ls,['grilse']
+r/E/n/tS/,['wrench']
+k/u/pt,['couped']
+k/O/rkt,['corked']
+/E/rnst,['ernst']
+k/&/sk,"['casque', 'cask']"
+/&/sp,['asp']
+/dZ/@/mp,['jump']
+n/O/tS/,['nautch']
+m/&/T/,['math']
+h/@/S/,['hush']
+/T/@/mp,['thump']
+d/oU/lt,['dolt']
+rA/u/l,['raoul']
+kw/I/k,['quick']
+k/O/f,"['qoph', 'koph', 'cough']"
+kw/I/l,['quill']
+kw/I/n,"['quin', 'quinn']"
+k/O/l,"['call', 'caul']"
+kr/eI/zd,['crazed']
+k/O/k,"['calk', 'caulk']"
+kw/I/f,['quiff']
+k/O/t,['caught']
+kw/I/z,['quiz']
+k/O/s,['cos']
+k/O/r,['cor']
+kw/I/p,['quip']
+s/E/ks,['sex']
+kw/I/t,['quit']
+k/O/z,['cause']
+f/u/l,['fool']
+str/I/N/d,['stringed']
+f/u/d,['food']
+g/oU/st,['ghost']
+t/S/A/,['cha']
+p/S/,['pish']
+t/&/ps,['taps']
+sl/oU/k,['sloke']
+sl/oU/n,"['sloan', 'sloane']"
+sl/oU/p,['slope']
+kats/aI/,"[""cat's-eye""]"
+sl/oU/t,"['sloat', 'slote']"
+h/@/rst,"['hearst', 'hurst']"
+h/eI/st,['haste']
+k/i/t,"['keet', 'keat']"
+k/i/s,['kies']
+k/i/r,"['keir', 'kier']"
+k/i/p,['keep']
+s/I/n/dZ/,['singe']
+dr/U/g,['drug']
+k/i/d,['keyed']
+k/i/n,"['keen', 'kean', 'kiehn', 'keene']"
+k/i/l,"['keel', 'kiel']"
+k/i/k,['keek']
+kr/eI/,"['cray', 'creagh', 'creil']"
+m/@/r/dZ/,['merge']
+sp/j/u/m,['spume']
+s/I/N/,"['sing', 'synge']"
+dr/Oi/ts,['droits']
+/j/U/N/,['jung']
+gr/&/ft,['graft']
+k/&/tS/,['catch']
+pr/O/N/,['prong']
+k/oU/ts,['coates']
+g/eI/VArt,['gevaert']
+p/@/r/S/,['perche']
+l/AU/T/,['louth']
+l/E/nt,"['leant', 'lent']"
+l/E/nz,['lens']
+l/E/nd,['lend']
+s/oU/l,"['sole', 'sol', 'soul']"
+/S/i/ld,['shield']
+s/oU/n,"['sewn', 'soane', 'sone']"
+st/O/rksbil,"[""stork's-bill""]"
+s/oU/k,"['soke', 'soak']"
+l/&/ps,['lapse']
+pr/&/N/k,['prank']
+m/O/NpArnAs,['montparnasse']
+s/oU/p,['soap']
+s/oU/r,"['sore', 'soar']"
+h/&/v,"['halve', 'have']"
+w/aI/lz,['whiles']
+fr/I/ts,"['fritz', 'frits']"
+Al/E/p,['alep']
+h/&/p,['hap']
+h/&/z,['has']
+h/&/g,['hag']
+h/&/f,['half']
+h/&/d,['had']
+h/&/m,['ham']
+h/&/l,['hal']
+h/&/k,"['haack', 'hack']"
+gr/i/i/,['graeae']
+fr/A/S/,['frosh']
+kAZAk,['casaque']
+/A/tst,['oughtst']
+spr/AU/t,['sprout']
+/j/eI/ts,['yeats']
+pl/A/t,['plot']
+z/aI/,['xi']
+loidz,"[""lloyd's""]"
+/T/r/@/m,['thrum']
+/I/mp,['imp']
+n/E/kst,['next']
+/i/m,['eme']
+/i/l,['eel']
+/i/n,"[""e'en""]"
+pl/oU/,['pleau']
+/i/k,['eke']
+g/@/N/k,['gunk']
+v/oU/lt,['volt']
+/i/z,['ease']
+/i/t,['eat']
+/i/v,"['yves', 'eave', 'eve']"
+/i/r,['ear']
+b/aI/nd,['bind']
+g/U/k,['gook']
+s/I/ks,['six']
+p/E/ns,['pence']
+g/U/d,['good']
+l/A/r/dZ/,['large']
+d/O/rm,['dorm']
+sArt,['sarthe']
+d/O/rp,['dorp']
+d/O/rs,['dorse']
+d/O/rt,['dort']
+/dZ/@/N/k,['junk']
+/j/E/zd,['yezd']
+sl/&/tS/,['slatch']
+k/Oi/p,"['kuyp', 'cuyp']"
+k/Oi/r,['coir']
+/Z/Ar/i/,['jarry']
+l/O/tA/Z/,"[""l'otage""]"
+r/E/ks,['rex']
+k/Oi/l,['coil']
+k/Oi/n,"['coign', 'coin', 'coigne', 'quoin']"
+h/&/dst,['hadst']
+spr/I/t,['sprit']
+fr/I/S/,['frisch']
+br/A/N/ks,['bronx']
+spr/I/g,['sprig']
+sm/@/r/tS/,['smirch']
+it/@/d,"[""it'd""]"
+bArt/u/,['barthou']
+it/@/l,"[""it'll""]"
+ps,['passel']
+l/AU/n/dZ/,['lounge']
+str/eI/,['stray']
+t/E/n/tS/,['tench']
+sw/oU/r,['swore']
+z/E/d,['zed']
+lw/O/f,['lwoff']
+bl/eI/md,['blamed']
+z/E/n,['zen']
+kw/I/lt,['quilt']
+w/i/mz,"['weems', 'wemyss']"
+sl/i/k,['sleek']
+gr/oU/ts,['groats']
+/S/U/s,['schuss']
+/S/U/r,['sure']
+fr/I/n/dZ/,['fringe']
+/D/&/n,['than']
+sl/i/z,['sleaze']
+/S/U/d,['should']
+/S/U/g,['sug']
+d/I/S/,['dish']
+w/j/S/,['wyche']
+/S/U/l,"['shul', 'schul']"
+sl/i/p,['sleep']
+sl/i/v,"['sleave', 'sleeve']"
+sn/i/r,['sneer']
+/S/U/k,['shook']
+s/i/N/,['singh']
+d/@/ks,['dux']
+d/@/kt,['duct']
+fr/&/n,['fran']
+fr/&/g,['frag']
+sn/i/k,['sneak']
+fr/&/t,['frat']
+fr/&/p,['frap']
+k/A/s/j/,['kasai']
+m/u/nd,['mooned']
+gr/@/m,['grum']
+f/A/nt,['font']
+gr/@/b,['grub']
+gr/@/f,['gruff']
+f/A/nd,['fond']
+gr/@/s,['grus']
+/Z/@/mAp,['jemappes']
+fl/E/n/tS/,['flench']
+bl/aI/p,['blype']
+sk/A/ns,['sconce']
+bl/aI/t,['blight']
+kv/A/nts,['quantz']
+dalb/@/rt,"[""d'albert""]"
+/dZ/I/lks,['gilkes']
+/S/m/A/lts,['schmaltz']
+sl/eI/,"['sleigh', 'sley', 'slay']"
+/S/Ark/oU/,['charcot']
+skr/i/n,['screen']
+/S/Am/i/nAd,['chaminade']
+t/oU/j/,['toy']
+/S/n/A/N/,['chnang']
+str/I/k,['strick']
+str/aI/pt,['striped']
+skw/aI/r,['squire']
+fl/u/,"['flu', 'flue', 'flew']"
+str/I/p,['strip']
+bl/A/,['blah']
+b/A/kst,['bakst']
+fl/&/n/tS/,['flanch']
+v/@/rs,['verse']
+v/@/rv,['verve']
+v/@/rt,['vert']
+l/I/tS/,"['lich', 'lych']"
+f/eI/nd,['feigned']
+kl/AU/t,['clout']
+v/@/rb,['verb']
+kl/AU/n,['clown']
+f/eI/nt,"['faint', 'feint']"
+kl/AU/d,['cloud']
+v/@/rl,['virl']
+/dZ/AU/,['jow']
+d/&/N/d,['danged']
+d/&/N/k,['dank']
+/tS/i/k,['cheek']
+h/E/l/T/,['health']
+sl/u/,"['slew', 'slue']"
+w/I/D/,['with']
+w/O/ld,"['wald', 'wold']"
+b/@/t,"['but', 'butt']"
+b/@/s,"['bus', 'buss']"
+b/@/r,"['buhr', 'baer', 'bur', 'birr', 'bear', 'bare', 'burr']"
+fr/I/dZ/,['fridge']
+b/@/n,"['bun', 'bunn']"
+b/@/m,['bum']
+f/O/,['foh']
+b/@/k,['buck']
+b/@/g,['bug']
+b/@/f,"['buffe', 'buff']"
+w/O/lt,['walt']
+b/@/d,"['bud', 'budd']"
+b/@/b,['bub']
+l/&/mp,['lamp']
+kr/@/ks,['crux']
+l/I/N/k,"['linc', 'link']"
+v/j/v,['vaive']
+/tS/A/r/dZ/,['charge']
+fw/A/,['foix']
+pr/AU/l,['prowl']
+pr/AU/d,['proud']
+b/j/u/l,['buhl']
+sw/I/ft,['swift']
+/S/m/I/t,['schmidt']
+kr/O/,['craw']
+n/A/tS/,['notch']
+dr/u/k,['drouk']
+m/I/kst,"['mixed', 'mixt']"
+/T/r/u/,"['thro', 'through', 'threw']"
+fr/eI/r,['freyr']
+sk/@/lp,['sculp']
+str/u/,['strew']
+fr/eI/t,['freight']
+tw/@/rl,['twirl']
+fr/eI/z,"['phrase', 'fraze', 'fraise']"
+sk/@/ld,['skuld']
+tw/@/rp,"['twirp', 'twerp']"
+k/E/dZ/,['kedge']
+fr/eI/m,['frame']
+fr/eI/l,['frail']
+Av/j/O/N,"['avion', 'avions']"
+kn/u/t,['knut']
+t/O/N/,['tong']
+v/&/lv,['valve']
+h/eI/mz,['hames']
+pr/I/m,['prim']
+b/I/S/,['bish']
+pr/I/n,['prynne']
+d/oU/l,"['dol', 'dole', 'dhole']"
+d/oU/m,['dome']
+d/oU/n,['doane']
+d/oU/b,['daube']
+m/I/N/k,['mink']
+d/oU/z,['doze']
+d/oU/p,['dope']
+d/oU/r,['door']
+str/E/tS/,['stretch']
+d/oU/t,"['doat', 'dote']"
+b/i/,"['be', 'b', 'bea', 'bee']"
+f/oU/ld,['fold']
+pr/AU/,"['prow', 'prau', 'prao']"
+/S/E/lvz,['shelves']
+r/I/N/,"['ring', 'wring']"
+kn/O/f,['knauf']
+l/oU/vz,['loaves']
+/A/rmd,['armed']
+z/oU/g,['zog']
+z/oU/n,['zone']
+sm/aI/l,['smile']
+r/i/D/z,['wreaths']
+w/i/dz,['weeds']
+g/Oi/,"['goi', 'goy']"
+/I/l/T/,['ilth']
+b/U/S/t,['bushed']
+w/aI/nd,"['wind/v', 'wynd']"
+t/Oi/lz,['toils']
+m/E/d,['med']
+kl/@/rk,['clerk']
+d/I/N/,['ding']
+k/A/mp,['comp']
+k/A/mz,['combs']
+/S/l/u/,['shluh']
+pr/i/,['pre']
+p/A/nz,['pons']
+d/A/b,['dob']
+d/A/d,['dodd']
+d/A/f,['doff']
+d/A/g,['dag']
+p/A/ns,['ponce']
+d/A/k,"['doc', 'dock']"
+d/A/l,['doll']
+d/A/m,['dom']
+d/A/n,['don']
+p/A/nt,['pont']
+d/A/p,['dop']
+d/A/s,['doss']
+d/A/t,['dot']
+kl/I/k,['click']
+p/A/nd,['pond']
+kr/u/p,['croup']
+sl/O/,['slaw']
+/&/nd,['and']
+p/i/vd,['peeved']
+sw/eI/m,['sveum']
+sw/eI/l,['swale']
+sw/eI/n,['swain']
+/&/ns,['anse']
+d/E/sk,['desk']
+/&/nt,"['ant', 'aunt']"
+r/eI/n/dZ/,['range']
+k/@/ran,"[""qur'an""]"
+/dZ/E/n,['gen']
+/S/r/@/g,['shrug']
+/S/r/@/b,['shrub']
+p/E/st,['pest']
+/dZ/E/l,"['gel', 'jell']"
+pAn/j/@/,"['pagnes', 'pagne']"
+w/aI/z,"[""why's"", 'wise']"
+rAs/i/n,['racine']
+w/aI/v,['wive']
+dr/&/m,"['dram', 'drachm']"
+w/aI/s,['weiss']
+w/aI/r,['wire']
+w/aI/p,['wipe']
+w/aI/n,"['whine', 'wine']"
+pt/A/,['ptah']
+w/aI/l,"['wile', 'while', 'weill']"
+w/aI/f,['wife']
+w/aI/d,['wide']
+k/A/N/,['kang']
+dr/&/f,['draff']
+/S/i/d,"[""she'd""]"
+sp/I/ts,['spitz']
+tr/&/s,['trass']
+tr/&/p,['trap']
+vwAtYr,['voiture']
+tr/&/k,['track']
+tr/&/m,['tram']
+tr/&/d,['trad']
+gAr/O/n,['garonne']
+t/i/nz,['teens']
+skw/i/l,['squeal']
+g/I/g,['gig']
+bl/aI/D/,"['blithe', 'blythe']"
+b/A/mz,['bombes']
+f/O/rbz,['forbes']
+t/i/nd,['teind']
+f/i/gl,['figl']
+r/&/N/k,['rank']
+/&/mt,['amt']
+k/oU/rst,['coursed']
+l/i/dz,['leeds']
+m/&/s,['mass']
+m/&/p,['map']
+m/&/t,"['matt', 'matte', 'mat']"
+m/&/k,['mac']
+m/&/n,['man']
+kn/I/S/,['knish']
+m/&/b,['mab']
+m/&/g,['mag']
+m/&/d,['mad']
+k/aI/b,['kibe']
+k/aI/f,['kaif']
+k/aI/k,['kike']
+sw/I/tS/,['switch']
+did/@/nt,"[""didn't""]"
+k/aI/n,['kain']
+k/aI/m,['chyme']
+k/aI/l,"['kyle', 'chyle']"
+k/aI/t,"['kite', 'kyte']"
+d/u/p,['dupe']
+d/u/r,['dur']
+d/u/s,"['deuce', 'douce']"
+m/&/dZ/,['madge']
+sf/A/ks,['sfax']
+d/u/d,['dude']
+d/u/m,['doom']
+d/u/n,"['doon', 'dune']"
+d/u/k,"['duke', 'dook']"
+sf/I/N/ks,['sphinx']
+du/tS/m/@/nzbri/tS/iz,"[""dutchman's-breeches""]"
+kl/O/D/z,['cloths']
+b/Oi/,['boy']
+kr/A/kt,['crocked']
+/S/i/D/z,['sheaths']
+bl/&/t,['blat']
+bl/&/g,['blagg']
+bl/&/b,['blab']
+bl/&/k,['black']
+b/@/kt,['bucked']
+b/@/ks,['bucks']
+/S/n/A/ps,"['shnaps', 'schnapps']"
+vr/eI/ns,['vranes']
+b/aI/k,['bike']
+b/aI/l,['bile']
+b/aI/n,['bine']
+b/aI/d,['bide']
+b/aI/r,['byre']
+b/aI/s,"['buice', 'bice']"
+b/aI/t,"['bite', 'bight', 'byte']"
+d/I/pt,['dipt']
+st/&/S/,['stash']
+f/eI/ld,['failed']
+sl/I/N/,['sling']
+fArS/y/r,['farceur']
+r/I/N/d,['ringed']
+r/I/N/k,['rink']
+br/i/tS/,"['breach', 'breech']"
+bl/@/d,['blood']
+bl/@/f,['bluff']
+tr/&/mp,['tramp']
+bl/@/b,['blub']
+f/I/t,"['fytte', 'fit']"
+f/I/k,"['fikh', 'fiqh']"
+f/I/n,"['finn', 'fin', 'fionn']"
+bl/@/r,"['blair', 'blare', 'blur']"
+f/I/b,['fib']
+fArS/y/Z,['farceuse']
+f/I/g,['fig']
+f/I/d,['fid']
+w/I/tS/,"['witch', 'which']"
+kw/O/rt,['quart']
+l/&/ks,['lax']
+br/E/kt,['brecht']
+t/aI/rd,['tired']
+gr/oU/n,"['grown', 'groan']"
+gr/oU/p,['grope']
+r/I/tS/,['rich']
+gr/oU/s,"['grosz', 'gross']"
+gr/oU/t,"['groat', 'grote']"
+gr/oU/v,['grove']
+b/u/k,['bouk']
+/D/oU/,"['tho', 'though']"
+n/aI/vz,['knives']
+/S/&/k,['shack']
+sl/A/p,['slop']
+sl/A/v,['slav']
+/S/&/l,['shall']
+/S/&/g,['shag']
+/S/&/d,['shad']
+sl/A/b,['slob']
+sl/A/g,['slog']
+k/U/d,['could']
+k/U/k,"['cook', 'coke', 'cooke']"
+gl/I/nt,['glint']
+/S/&/p,['chappe']
+k/U/n,['kun']
+v/Oi/st,['voiced']
+m/E/ld,['meld']
+p/eI/ld,['paled']
+m/E/lt,['melt']
+g/A/T/,['goth']
+sk/eI/p,['scape']
+t/@/tS/,['touch']
+p/O/,['paw']
+k/@/rd,"['caird', 'curd', 'kurd', 'koord']"
+k/@/rf,"['curf', 'kerf']"
+sk/A/r,['scar']
+k/@/rl,['curl']
+v/&/ns,['vance']
+k/@/rk,['kirk']
+k/@/rt,"['curt', 'kurt']"
+spr/aI/,['spry']
+k/@/rv,['curve']
+k/@/rs,['curse']
+sk/A/l,['scall']
+sk/A/n,['scone']
+bl/I/mp,['blimp']
+b/u/t,"['bhoot', 'boot', 'bhut']"
+mAr/O/k,['maroc']
+s/eI/,"['say', 'sei']"
+/S/O/n,"['shawn', 'shaun', 'dunston', 'sean']"
+r/O/NSAr,['ronsard']
+tr/O/T/,['troth']
+w/oU/v,['wove']
+f/oU/nz,['fons']
+w/oU/d,['woad']
+w/oU/k,"['woke', 'wouk']"
+pwAt/j/eI/,['poitiers']
+b/E/rnArt,['beernaert']
+p/@/r/tS/,['perch']
+s/&/m,['sam']
+bAb/y/f,['babeuf']
+dr/AU/T/,['drouth']
+sm/u/D/,['smooth']
+s/&/k,"['sac', 'sacque', 'sack']"
+/oU/oU/,['o-o']
+t/eI/st,['taste']
+p/AU/r,['paur']
+p/AU/t,['pout']
+sw/eI/dZ/,['swage']
+f/oU/n,['phone']
+k/A/st,['cast']
+f/oU/l,['foal']
+f/oU/m,['foam']
+f/oU/k,['folk']
+f/eI/T/,['faith']
+f/oU/v,['fauve']
+f/oU/r,"['four', 'fore']"
+b/E/T/,['beth']
+/E/D/,['edh']
+s/&/v,['salve']
+b/&/N/S/wA,['binchois']
+w/oU/nt,"['wont', ""won't""]"
+/&/lp,['alp']
+/S/r/I/ft,['shrift']
+/&/lf,['alf']
+/I/N/k,['ink']
+h/I/lt,['hilt']
+/S/r/&/N/k,"['schrank', 'shrank']"
+f/I/sk,"['fisc', 'fiske']"
+sn/AU/k,['snowk']
+spl/&/S/,['splash']
+sn/AU/t,['snout']
+fr/O/mAZh,['fromage']
+b/i/i/st,['be-east']
+f/@/r/T/,['firth']
+p/I/n/dZ/,['pinge']
+bl/@/nt,['blunt']
+dAk/O/r,"[""d'accord""]"
+pwaNdApw/i/,"[""points_d'appui"", ""point_d'appui""]"
+d/A/rg,['darg']
+d/A/rk,['dark']
+d/A/rn,['darn']
+sn/eI/l,['snail']
+d/A/rt,['dart']
+v/A/nthof,"[""van't_hoff""]"
+s/E/kt,['sect']
+/dZ/U/N/,['chung']
+str/E/N/k/T/,['strength']
+k/O/rps,['corpse']
+mAgr/i/t,['magritte']
+n/&/tS/,['natch']
+tr/u/,"['true', 'trew']"
+/S/U/ln,['shuln']
+r/Oi/l,['roil']
+b/A/sk,"['bosc', 'bosk']"
+mA/j/E/n,['mayenne']
+g/u/tS/,['gooch']
+sp/AU/z,['spouse']
+sp/AU/t,['spout']
+s/&/nz,['sans']
+/S/I/st,['schist']
+s/&/nd,['sand']
+h/i/T/,['heath']
+sk/E/p,['skep']
+l/i/ft,['leafed']
+/Z/i/d,['gide']
+l/&/d,"['lad', 'ladd']"
+/Z/i/g,['gigue']
+/j/zk/@/nz,['eyskens']
+m/eI/ps,['mapes']
+/S/E/lvd,['shelved']
+gr/&/b,['grab']
+kr/u/z,"['cruz', 'cruse', 'cruise']"
+d/i/,"['dee', 'die', 'd', 'di']"
+gr/&/f,['graph']
+gr/&/d,['grad']
+g/&/N/,"['gangue', 'gang']"
+kr/u/s,['crouse']
+gr/&/n,['gran']
+gr/&/m,"['gramme', 'gram']"
+gr/&/s,['grass']
+f/i/,"['fi', 'fee']"
+kr/u/n,"['croon', 'kroon']"
+kr/u/d,"['crude', 'crood']"
+skr/aI/b,['scribe']
+/T/I/g,['thig']
+/T/I/n,['thin']
+/T/I/l,['thill']
+/T/I/k,['thick']
+s/(@)f/r/I/N/,['suffering']
+kr/O/s,"['crosse', 'cross']"
+/j/eI/l,['yale']
+kr/O/l,['crawl']
+kw/I/S/,['cuish']
+d/oU/,"['doh', 'dough', 'doe']"
+/O/ld,['auld']
+h/@/tS/,['hutch']
+kw/&/k,['quack']
+kw/oU/t,['quote']
+sp/A/rks,['sparks']
+l/oU/p,['lope']
+b/u/n,"['boon', 'boone']"
+b/u/l,"['boole', 'boule', 'buhl', 'bul']"
+b/u/m,['boom']
+b/u/b,['boob']
+b/u/f,['bouffe']
+b/u/d,['bood']
+r/&/T/,['wrath']
+b/u/z,"['booze', 'bowse']"
+w/I/N/k,['wink']
+w/I/N/d,['winged']
+sAVA,['ca_va']
+/T/E/ft,['theft']
+gr/I/ft,['grift']
+d/I/rl,['dirl']
+dAlAd/j/eI/,['daladier']
+Al/A/Ns/j/en,"[""a_l'ancienne""]"
+sw/&/k,['swak']
+g/@/n/dZ/,['gunge']
+/S/m/u/z,"['schmoose', 'schmooze']"
+r/u/,"['roo', 'roux', 'rue']"
+bun/eI/bri/T/,"[""b'nai_b'rith""]"
+pl/E/dZ/,['pledge']
+st/A/rv,['starve']
+b/i/rd,['beard']
+gw/A/r,['guar']
+prinsizfe/T/@/r,"[""prince's-feather""]"
+l/@/N/,['lung']
+l/E/r,['ler']
+b/A/N/,['bong']
+l/oU/m,['loam']
+v/@/r,['vair']
+k/A/NtAl,['cantal']

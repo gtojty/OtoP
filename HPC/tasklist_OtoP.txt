@@ -1,0 +1,4 @@
+cd ~/MikeNet_new; ./msf.sh 1 0 _OtoP
+cd ~/MikeNet_new; ./msf.sh 2 0 _OtoP
+cd ~/MikeNet_new; ./msf.sh 3 0 _OtoP
+cd ~/MikeNet_new; ./msf.sh 4 0 _OtoP
