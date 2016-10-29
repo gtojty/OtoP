@@ -1,4 +1,8 @@
-cd ~/MikeNet_new; ./msf.sh 1 0 _OtoP
-cd ~/MikeNet_new; ./msf.sh 2 0 _OtoP
-cd ~/MikeNet_new; ./msf.sh 3 0 _OtoP
-cd ~/MikeNet_new; ./msf.sh 4 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 1 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 2 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 3 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 4 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 5 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 6 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 7 0 _OtoP
+cd /home/fas/braze/tg422/MikeNet_OP/H50L1e-1/ ; ./msf.sh 8 0 _OtoP
