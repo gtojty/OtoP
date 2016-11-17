@@ -52,7 +52,7 @@ getList <- function(te, exp1, exp2){
   return(rawList)
 }
 crtDF <- function(t){
-  wordList <- getList(t, "Word: ([a-z]+)", "Word: ") # get words
+  wordList <- getList(t, "Word: ([a-z\"]+)", "Word: ") # get words
   probList <- getList(t, "PROB ([0-9.]+)", "PROB ") # get probs
   phonoList <- getList(t, "Rep_P: ([_/a-zA-Z@&^]+)", "Rep_P: ") # get phonological representations
   orthoList <- getList(t, "Rep_O: ([_/a-zA-Z]+)", "Rep_O: ") # get orthographical representations
@@ -62,11 +62,11 @@ crtDF <- function(t){
   DF <- data.frame(word=wordList, prob=as.numeric(probList), phono=phonoList, ortho=orthoList, op=OPList)
   return(list(first=DF, second=OPList))
 }
-TrfileNam <- 'TrEm3_Harm1998.txt'; trf <- readLines(TrfileNam); head(trf, 50)
-TefileNam <- 'Te.txt'; tef <- readLines(TefileNam); head(tef, 50)
+TrfileNam <- 'TrEm4_Harm1998.txt'; trf <- readLines(TrfileNam); head(trf, 20)
+TefileNam <- 'Te2.txt'; tef <- readLines(TefileNam); head(tef, 20)
 
 r <- crtDF(trf)
-# noPh: 4008; noUniqueP: 3611; noOP: 4008 
+# noPh: 4017; noUniqueP: 3636; noOP: 4017 
 DFtr <- r$first; OPList_tr <- r$second
 write.csv(DFtr, './trainingexp.csv', row.names=FALSE)
 r <- crtDF(tef)
@@ -93,27 +93,23 @@ scinot <- function(x){
   if(is.numeric(x)){ format(x, scientific=TRUE)
   }else{ error("x must be numeric") }
 }
+
 # get OtoP accuracy data
 f <- dir(".", pattern="^output.txt$", recursive=TRUE)
 avgaccu <- ldply(f, readOutput); names(avgaccu) <- str_to_lower(names(avgaccu))
 write.csv(avgaccu, './AvgAcu_OtoP.csv', row.names=FALSE)
-# get PtoP accuracy data
-f <- dir(".", pattern="^output_ptop.txt$", recursive=TRUE)
-avgaccu_ptop <- ldply(f, readOutput); names(avgaccu_ptop) <- str_to_lower(names(avgaccu_ptop))
-write.csv(avgaccu_ptop, './AvgAcu_PtoP.csv', row.names=FALSE)
-
-# draw training error
-ggplot(avgaccu, aes(x=iter, y=err)) + scale_x_log10(labels=scinot) +  
+# draw OtoP training error
+ggplot(avgaccu, aes(x=iter, y=err_o2p)) + scale_x_log10(labels=scinot) +  
   coord_cartesian(xlim=errrange_otop) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Training Error x Trials (OtoP) \n Hid Layer & Learn Rate") +
   geom_point(alpha=.2, color="blue") + geom_smooth(span=.2, color="darkorange") + facet_grid(lrnrate~hlsize)
 ggsave('Error_OtoP.png', dpi = 300, height = 6, width = 12, units = 'in')
-# draw training error
-ggplot(avgaccu_ptop, aes(x=iter, y=err)) + scale_x_log10(labels=scinot) +  
-  coord_cartesian(xlim=errrange_ptop) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
+# for runmode=3 or 4, draw PtoP training error
+ggplot(avgaccu, aes(x=iter, y=err_p2p)) + scale_x_log10(labels=scinot) +  
+  coord_cartesian(xlim=errrange_otop) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Training Error x Trials (OtoP) \n Hid Layer & Learn Rate") +
   geom_point(alpha=.2, color="blue") + geom_smooth(span=.2, color="darkorange") + facet_grid(lrnrate~hlsize)
-ggsave('Error_PtoP.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('Error_PtoP_int.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 # draw training accuracy
 ggplot(avgaccu, aes(x=iter, y=acutr)) + scale_x_log10(labels=scinot) +  
@@ -128,8 +124,19 @@ ggplot(avgaccu, aes(x=iter, y=acute)) + scale_x_log10(labels=scinot) +
   geom_point(alpha=.2, color="blue") + geom_smooth(span=.2, color="darkorange") + facet_grid(lrnrate~hlsize)
 ggsave('AvgAcc_Te_OtoP.png', dpi = 300, height = 6, width = 12, units = 'in')
 
+# get PtoP accuracy data (only for runmode = 1 and 4)
+f <- dir(".", pattern="^output_ptop.txt$", recursive=TRUE)
+avgaccu_ptop <- ldply(f, readOutput); names(avgaccu_ptop) <- str_to_lower(names(avgaccu_ptop))
+write.csv(avgaccu_ptop, './AvgAcu_PtoP.csv', row.names=FALSE)
+# draw PtoP training error (only for runmode = 1 and 4)
+ggplot(avgaccu_ptop, aes(x=iter, y=err)) + scale_x_log10(labels=scinot) +  
+  coord_cartesian(xlim=errrange_ptop) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
+  ggtitle("Training Error x Trials (OtoP) \n Hid Layer & Learn Rate") +
+  geom_point(alpha=.2, color="blue") + geom_smooth(span=.2, color="darkorange") + facet_grid(lrnrate~hlsize)
+ggsave('Error_PtoP.png', dpi = 300, height = 6, width = 12, units = 'in')
 
-# calculate distribution of words in the traing example
+
+# calculate distribution of words in the OtoP traing example
 f <- dir(".", pattern="^trainfreq.txt$", recursive=TRUE)
 trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
 # draw distribution of occurrence of training examples
@@ -150,6 +157,7 @@ ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(h
   ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
 ggsave(paste('FreqDist_hist_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
 
+# calculate distribution of words in the PtoP traing example
 f <- dir(".", pattern="^trainfreq_ptop.txt$", recursive=TRUE)
 trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
 # draw distribution of occurrence of training examples
@@ -204,22 +212,23 @@ getItemAcuActPhon <- function(f1, f2, OPList){
   t$actphon <- tractp$actphon
   return(t)
 }
-# for training items
+# for OtoP training items
 f1 <- dir(".", pattern="^itemacu_tr.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTr.txt$", recursive=TRUE)
 tr <- getItemAcuActPhon(f1, f2, OPList_tr)
 write.csv(tr, './tr_allres_OtoP.csv', row.names=FALSE)
-# for testing items
+# for OtoP testing items
 f1 <- dir(".", pattern="^itemacu_te.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTe.txt$", recursive=TRUE)
 te <- getItemAcuActPhon(f1, f2, OPList_te)
 write.csv(te, './te_allres_OtoP.csv', row.names=FALSE)
-# for training items
+
+# for PtoP training items
 f1 <- dir(".", pattern="^itemacu_tr_ptop.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTr_ptop.txt$", recursive=TRUE)
 tr_ptop <- getItemAcuActPhon(f1, f2, OPList_tr)
 write.csv(tr_ptop, './tr_allres_PtoP.csv', row.names=FALSE)
-# for testing items
+# for PtoP testing items
 f1 <- dir(".", pattern="^itemacu_te_ptop.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTe_ptop.txt$", recursive=TRUE)
 te_ptop <- getItemAcuActPhon(f1, f2, OPList_te)
@@ -280,7 +289,7 @@ getCVCdata <- function(type, t){
 # tesub <- getCVCdata("Harm&Seidenberg1999", te)
 
 ## Based on Harm 1998
-trsub <- getCVCdata("Harm1998", tr) # noCVC:  1507 ; noCVCC:  802 ; noCCVC:  785 ; noCCVCC:  288
+trsub <- getCVCdata("Harm1998", tr) # noCVC:  1515 ; noCVCC:  814 ; noCCVC:  785 ; noCCVCC:  284
 tesub <- getCVCdata("Harm1998", te) # noCVC:  48 ; noCVCC:  0 ; noCCVC:  0 ; noCCVCC:  0 
 
 ## find phon forms that are CVC with simple vowels. This def will also include CV, where V is a diphthong (e.g., pay, buy).
@@ -399,23 +408,21 @@ unique(word1995A$O[word1995A$freq=="L" & word1995A$reg=="R"])
 unique(word1995A$O[word1995A$freq=="L" & word1995A$reg=="E"])
 # [1] blown  breast debt   dough  dove   dread  scarce suave  swamp  sword  wealth worm   wrath
 unique(strain1995A$O[!(strain1995A$O %in% word1995A$O)])
-# [1] blister   blunder   boulder   broader   doctor    district  building  greatest  mirror    mercy    
-# [11] monarch   mischief  market    manner    money     measure   mustard   mister    monkey    nowhere  
-# [21] morning   method    mother    nothing   pepper    parry     treasure  twofold   picture   training 
-# [31] people    pickle    pious     croquet   toughness teacher   trying    police    trouble   wont    
-
+# [1] blister   blunder   boulder   broader   doctor    district  building  greatest 
+# [9] mirror    mercy     monarch   mischief  market    manner    money     measure  
+# [17] mustard   mister    monkey    nowhere   morning   method    mother    nothing  
+# [25] pepper    parry     treasure  twofold   picture   training  people    pickle   
+# [33] pious     croquet   toughness teacher   trying    police    trouble   wont
 tr_1995A <- subset(tr, tr$O %in% strain1995A$O)
 tr_1995A <- merge(tr_1995A, strain1995A, by = c("O"), all.x = TRUE, all.y = FALSE)
 tr_freqreg <- subset(tr_1995A, freq == "H" | freq == "L")
 cat(length(unique(tr_freqreg$O)), '\n')
 # 56
-
 ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('AcuFreqReg_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
-
 
 # Taraban & McClelland 1987 case:
 TM1987A1 <- read.csv("Taraban-McClelland-1987-Appendix-A1.csv", na.strings='na')
@@ -424,8 +431,8 @@ word1987A1 <- subset(word1987A1, freq == "H" | freq == "L")
 xtabs(~freq+reg, data=word1987A1)
 # reg
 # freq  E  R
-# H 23 24
-# L 23 23
+# H 24 24
+# L 24 24
 unique(word1987A1$O[word1987A1$freq=="H" & word1987A1$reg=="R"])
 # [1] best  big   came  class dark  did   fact  got   group him   main  out   page  place
 # [15] see   soon  stop  tell  week  when  which will  with  write
@@ -433,26 +440,23 @@ unique(word1987A1$O[word1987A1$freq=="H" & word1987A1$reg=="E"])
 # [1] are    both   break  choose come   do     does   done   foot   give   great  have  
 # [13] move   pull   put    says   shall  want   watch  were   what   word   work  
 unique(word1987A1$O[word1987A1$freq=="L" & word1987A1$reg=="R"])
-# [1] beam  broke bus   deed  float grape lunch peel  pitch pump  ripe  sank  slam  slip 
-# [15] stunt swore trunk wake  wax   weld  wing  with  word 
+# [1] beam  broke bus   deed  dots  float grape lunch peel  pitch pump  ripe  sank  slam 
+# [15] slip  stunt swore trunk wake  wax   weld  wing  with  word 
 unique(word1987A1$O[word1987A1$freq=="L" & word1987A1$reg=="E"])
-# [1] bowl  broad bush  deaf  doll  flood gross lose  pear  phase pint  plow  rouse shoe 
-# [15] spook swamp swarm touch wad   wand  wash  wool  worm
+# [1] bowl  broad bush  deaf  doll  flood gross lose  pear  phase pint  plow  rouse sew  
+# [15] shoe  spook swamp swarm touch wad   wand  wash  wool  worm
 unique(TM1987A1$O[!(TM1987A1$O %in% word1987A1$O)])
-
 
 tr_1987A1 <- subset(tr, tr$O %in% TM1987A1$O)
 tr_1987A1 <- merge(tr_1987A1, TM1987A1, by = c("O"), all.x = TRUE, all.y = FALSE)
 tr_freqreg <- subset(tr_1987A1, freq == "H" | freq == "L")
 cat(length(unique(tr_freqreg$O)), '\n')
-# 91
-
+# 94
 ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('AcuFreqReg_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
-
 
 TM1987A2 <- read.csv("Taraban-McClelland-1987-Appendix-A2.csv", na.strings='na')
 word1987A2 <- merge(DFtr_merge, TM1987A2, by = c("O"), all.x=TRUE, all.y=FALSE)
@@ -461,35 +465,31 @@ xtabs(~freq+const, data=word1987A2)
 # const
 # freq  C  I
 # H 24 24
-# L 24 22
-
+# L 24 23
 unique(word1987A2$O[word1987A2$freq=="H" & word1987A2$const=="C"])
-# [1] bag   bird  by    clean corn  draw  dust  fast  feet  fine  fish  get   girl  gold  help  high  mile 
-# [18] piece plate rice  rod   sent  skin  such 
+# [1] bag   bird  by    clean corn  draw  dust  fast  feet  fine  fish  get   girl  gold 
+# [15] help  high  mile  piece plate rice  rod   sent  skin  such
 unique(word1987A2$O[word1987A2$freq=="H" & word1987A2$const=="I"])
-# [1] base  bone  but   catch cool  days  dear  five  flat  flew  form  go    goes  grow  here  home  meat 
-# [18] paid  plant roll  root  sand  small speak
+# [1] base  bone  but   catch cool  days  dear  five  flat  flew  form  go    goes  grow 
+# [15] here  home  meat  paid  plant roll  root  sand  small speak
 unique(word1987A2$O[word1987A2$freq=="L" & word1987A2$const=="C"])
-# [1] brisk cane  clang code  cope  dime  fawn  gong  hide  hike  leg   loom  luck  math  mist  mix   moist
-# [18] mole  pail  peach peep  reef  taps  tend 
+# [1] brisk cane  clang code  cope  dime  fawn  gong  hide  hike  leg   loom  luck  math 
+# [15] mist  mix   moist mole  pail  peach peep  reef  taps  tend 
 unique(word1987A2$O[word1987A2$freq=="L" & word1987A2$const=="I"])
-# [1] brood cook  cord  cove  cramp dare  fowl  gull  harm  hoe   lash  leaf  loss  mad   moth  mush  pork 
-# [18] pose  pouch rave  tint  toad 
+# [1] brood cook  cord  cove  cramp dare  fowl  gull  harm  hoe   lash  leaf  loss  mad  
+# [15] moth  mouse mush  pork  pose  pouch rave  tint  toad 
 unique(TM1987A2$O[!(TM1987A2$O %in% word1987A2$O)])
-# [1] moose mouse
-
+# [1] moose
 tr_1987A2 <- subset(tr, tr$O %in% TM1987A2$O)
 tr_1987A2 <- merge(tr_1987A2, TM1987A2, by = c("O"), all.x = TRUE, all.y = FALSE)
 tr_freqreg <- subset(tr_1987A2, freq == "H" | freq == "L")
 cat(length(unique(tr_freqreg$O)), '\n')
-# 94
-
+# 95
 ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
 ggsave('AcuFreqReg_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
-
 
 # nonwords: Treiman et al. 1990 case:
 treiman1990A <- read.csv("Treiman-etal-1990-Appendix.csv")
@@ -498,14 +498,12 @@ word1990A <- subset(word1990A, freq == "H" | freq == "L")
 xtabs(~freq, data=word1990A)
 # freq
 # H  L 
-# 24 24 
-
+# 24 24
 te_1990A <- subset(te, te$O %in% treiman1990A$O)
 te_1990A <- merge(te_1990A, treiman1990A, by = c("O"), all.x = TRUE, all.y = FALSE)
 te_freqreg <- subset(te_1990A, freq == "H" | freq == "L")
 cat(length(unique(te_freqreg$O)), '\n')
 # 48
-
 ggplot(te_freqreg, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +

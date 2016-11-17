@@ -927,7 +927,7 @@ wordDF['sqrt_freq'] = wordDF['sum_freq']
 wordDF.loc[(wordDF['sqrt_freq'] > 1000000), 'sqrt_freq'] = 1000000
 wordDF['sqrt_freq'] = np.sqrt(wordDF['sqrt_freq'])
 wordDF = wordDF[['wordform', 'sum_freq', 'norm_freq', 'log_freq', 'sqrt_freq', 'Moby_pron', 'Rep_P', 'Rep_O']]
-wordDF.to_csv('./extwords4_Harm1998.csv', index=False)
+wordDF.to_csv('./extwords3_Harm1998_cor.csv', index=False)
 # hand-correct the words: "true" and "false", and "nan"
 
 # create new Harm1998 training and testing examples
@@ -958,9 +958,9 @@ for i in range(len(cand)):
 LettDic['_'] = lettList # filler
 
 # create realwords training and testing data
-wordDF = pd.read_csv('./extwords4_Harm1998.csv')
-writeExp_OtoP(wordDF, './TrEm4_Harm1998.txt', 'sqrt_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
-writeExp_PtoP(wordDF, './TrEm4_PtoP_Harm1998.txt', 'sqrt_freq', 7, 0, 0, 2, 4, PhonDic)
+wordDF = pd.read_csv('./extwords3_Harm1998_cor.csv')
+writeExp_OtoP(wordDF, './TrEm3_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
+writeExp_PtoP(wordDF, './TrEm3_PtoP_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 0, 2, 4, PhonDic)
 
 # create nonwords testing data
 nonwordDF = pd.read_csv('./Treiman-etal-1990-Appendix.csv')
@@ -968,3 +968,119 @@ nonwordDF['sqrt_freq'] = 100.0
 nonwordDF.to_csv('./Treiman-etal-1990-Appendix.csv', index=False)
 writeExp_OtoP(nonwordDF, './Te2.txt', 'sqrt_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
 writeExp_PtoP(nonwordDF, './Te2_PtoP.txt', 'sqrt_freq', 7, 0, 0, 2, 4, PhonDic)
+
+# correcte extwords1, extwords2, and extwords3 based on Moby_pron, Rep_P, Rep_O of extwords4
+wordDF1 = pd.read_csv('./extwords1_Harm1998.csv')
+wordDF2 = pd.read_csv('./extwords2_Harm1998.csv')
+wordDF3 = pd.read_csv('./extwords3_Harm1998_cor.csv')
+cur = 1
+for i in range(len(wordDF3)):
+    print 'cur= ', cur; cur += 1
+    for j in range(len(wordDF1)):
+        if wordDF3.loc[i,'wordform'] == wordDF1.loc[j,'wordform']:
+            wordDF1.loc[j,'Moby_pron'] = wordDF3.loc[i,'Moby_pron']
+            wordDF1.loc[j,'Rep_P'] = wordDF3.loc[i,'Rep_P']
+            wordDF1.loc[j,'Rep_O'] = wordDF3.loc[i,'Rep_O']
+            break
+    for j in range(len(wordDF2)):
+        if wordDF3.loc[i,'wordform'] == wordDF2.loc[j,'wordform']:
+            wordDF2.loc[j,'Moby_pron'] = wordDF3.loc[i,'Moby_pron']
+            wordDF2.loc[j,'Rep_P'] = wordDF3.loc[i,'Rep_P']
+            wordDF2.loc[j,'Rep_O'] = wordDF3.loc[i,'Rep_O']
+            break
+        
+# calculate frequency
+wordDF1['norm_freq'] = wordDF1['sum_freq']/450.0 # frequency per million
+wordDF1['log_freq'] = np.log(wordDF1['norm_freq']+1)/np.log(max(wordDF1['norm_freq']))
+wordDF1.loc[(wordDF1['log_freq'] < 0.05), 'log_freq'] = 0.05
+wordDF1['sqrt_freq'] = wordDF1['sum_freq']
+wordDF1.loc[(wordDF1['sqrt_freq'] > 1000000), 'sqrt_freq'] = 1000000
+wordDF1['sqrt_freq'] = np.sqrt(wordDF1['sqrt_freq'])
+# calculate frequency
+wordDF2['norm_freq'] = wordDF2['sum_freq']/450.0 # frequency per million
+wordDF2['log_freq'] = np.log(wordDF2['norm_freq']+1)/np.log(max(wordDF2['norm_freq']))
+wordDF2.loc[(wordDF2['log_freq'] < 0.05), 'log_freq'] = 0.05
+wordDF2['sqrt_freq'] = wordDF2['sum_freq']
+wordDF2.loc[(wordDF2['sqrt_freq'] > 1000000), 'sqrt_freq'] = 1000000
+wordDF2['sqrt_freq'] = np.sqrt(wordDF2['sqrt_freq'])
+# calculate frequency
+wordDF3['norm_freq'] = wordDF3['sum_freq']/450.0 # frequency per million
+wordDF3['log_freq'] = np.log(wordDF3['norm_freq']+1)/np.log(max(wordDF3['norm_freq']))
+wordDF3.loc[(wordDF3['log_freq'] < 0.05), 'log_freq'] = 0.05
+wordDF3['sqrt_freq'] = wordDF3['sum_freq']
+wordDF3.loc[(wordDF3['sqrt_freq'] > 1000000), 'sqrt_freq'] = 1000000
+wordDF3['sqrt_freq'] = np.sqrt(wordDF3['sqrt_freq'])
+# save new results
+wordDF1.to_csv('./extwords1_Harm1998_cor.csv', index=False)
+wordDF2.to_csv('./extwords2_Harm1998_cor.csv', index=False)
+wordDF3.to_csv('./extwords3_Harm1998_cor.csv', index=False)
+# hand-correct the words: "true" and "false", and "nan"
+
+# create new Harm1998 training and testing examples
+phonDF = pd.read_csv('./phon_Harm1998.txt', sep=' ', header=None)
+phonDF.columns = ['Symbol', 'Labial', 'Dental', 'Alveolar', 'Palatal', 'Velar', 
+                  'Glottal' ,'Stop', 'Fricative', 'Affricate', 'Nasal', 'Liquid', 
+                  'Glide', 'Voice', 'Front', 'Center', 'Back', 'High', 'Mid', 'Low', 
+                  'Tense', 'Retroflex', 'Round', 'Pre y', 'Post y', 'Post w']
+PhonDic = dict()
+for i in range(len(phonDF)):
+    PhonDic[phonDF.loc[i, 'Symbol']] = list(phonDF.loc[i,phonDF.columns[1:]])
+
+import string
+cand = string.ascii_lowercase
+lettList = len(cand)*[0]
+LettDic = dict()
+for i in range(len(cand)):
+    lettListCopy = lettList[:]
+    lettListCopy[i] = 1     
+    LettDic[cand[i]] = lettListCopy
+LettDic['_'] = lettList # filler
+
+# create realwords training and testing data
+wordDF = pd.read_csv('./extwords1_Harm1998_cor.csv')
+writeExp_OtoP(wordDF, './TrEm1_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
+writeExp_PtoP(wordDF, './TrEm1_PtoP_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 0, 2, 4, PhonDic)
+wordDF = pd.read_csv('./extwords2_Harm1998_cor.csv')
+writeExp_OtoP(wordDF, './TrEm2_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
+writeExp_PtoP(wordDF, './TrEm2_PtoP_Harm1998_cor.txt', 'sqrt_freq', 7, 0, 0, 2, 4, PhonDic)
+
+# draw histogram of word frequencies
+import matplotlib.pyplot as plt
+import numpy as np
+wordDF = pd.read_csv('./extwords4_Harm1998.csv')
+plt.hist(wordDF['norm_freq'])
+plt.hist(wordDF['log_freq'])
+plt.hist(wordDF['sqrt_freq'])
+
+# create realwords training and testing data 
+phonDF = pd.read_csv('./phon_Harm1998.txt', sep=' ', header=None)
+phonDF.columns = ['Symbol', 'Labial', 'Dental', 'Alveolar', 'Palatal', 'Velar', 
+                  'Glottal' ,'Stop', 'Fricative', 'Affricate', 'Nasal', 'Liquid', 
+                  'Glide', 'Voice', 'Front', 'Center', 'Back', 'High', 'Mid', 'Low', 
+                  'Tense', 'Retroflex', 'Round', 'Pre y', 'Post y', 'Post w']
+PhonDic = dict()
+for i in range(len(phonDF)):
+    PhonDic[phonDF.loc[i, 'Symbol']] = list(phonDF.loc[i,phonDF.columns[1:]])
+
+import string
+cand = string.ascii_lowercase
+lettList = len(cand)*[0]
+LettDic = dict()
+for i in range(len(cand)):
+    lettListCopy = lettList[:]
+    lettListCopy[i] = 1     
+    LettDic[cand[i]] = lettListCopy
+LettDic['_'] = lettList # filler
+
+# get log-freq data
+wordDF = pd.read_csv('./extwords4_Harm1998.csv')
+writeExp_OtoP(wordDF, './TrEm4_Harm1998.txt', 'log_freq', 7, 0, 6, 4, 6, PhonDic, LettDic)
+writeExp_PtoP(wordDF, './TrEm4_PtoP_Harm1998.txt', 'log_freq', 7, 0, 0, 2, 4, PhonDic)
+
+# based on different lambda values of boxcox transformation
+wordDF = pd.read_csv('./extwords5_Harm1998.csv')
+bcLambda = [0.6, 0.7, 0.8, 0.9]
+for ll in bcLambda:
+    colname = 'bcLambda_' + str(ll)
+    writeExp_OtoP(wordDF, './TrEm_Harm1998_' + str(ll) + '.txt', colname, 7, 0, 6, 4, 6, PhonDic, LettDic)
+    writeExp_PtoP(wordDF, './TrEm_PtoP_Harm1998_' + str(ll) + '.txt', colname, 7, 0, 0, 2, 4, PhonDic)
