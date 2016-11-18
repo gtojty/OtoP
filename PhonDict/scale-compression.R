@@ -15,7 +15,7 @@ fdata <- read.csv('./extwords4_Harm1998.csv')
 lambda <- c(.6, .7, .8, .9)
 d <- data.frame(fdata$wordform)
 for(ll in lambda) {
-  d <- cbind(d, data.frame(y=bcPower(fdata$norm_freq, ll), x=fdata$wordform, lambda=ll))
+  d <- cbind(d, data.frame(y=bcPower(fdata$sum_freq, ll), x=fdata$wordform, lambda=ll))
 }
 newd <- d[,c(1,2,5,8,11)]
 names(newd) <- c('wordform', paste('bcLambda', lambda, sep='_'))
