@@ -12,13 +12,15 @@ library(ggplot2)
 # ggplot(d, aes(x=x, y=y, color=as.factor(lambda))) + geom_point()
 
 fdata <- read.csv('./extwords4_Harm1998.csv')
-lambda <- c(.6, .7, .8, .9)
+lambda <- seq(0.0,1.0,0.1)
 d <- data.frame(fdata$wordform)
 for(ll in lambda) {
-  d <- cbind(d, data.frame(y=bcPower(fdata$sum_freq, ll), x=fdata$wordform, lambda=ll))
+  d <- cbind(d, data.frame(y=bcPower(fdata$sum_freq, ll)/sum(bcPower(fdata$sum_freq, ll)), x=fdata$wordform, lambda=ll))
 }
-newd <- d[,c(1,2,5,8,11)]
+newd <- d[,c(1,2,5,8,11,14,17,20,23,26,29,32)]
 names(newd) <- c('wordform', paste('bcLambda', lambda, sep='_'))
 fdata <- merge(fdata, newd, by=c("wordform"))
-fdata <- fdata[,c(1:5,9:12,6:8)]
+fdata <- fdata[,c(1:6,10:20,7:9)]
+
 write.csv(fdata, './extwords5_Harm1998.csv', row.names=FALSE)
+# hand change column names: bcLambda_0 -> bcLambda_0.0 and bcLambda_1 -> bcLambda_1.0
