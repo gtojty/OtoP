@@ -309,14 +309,15 @@ Real calacu(Real *out, Real *target, char *transPhon)
 	else return 1.0;
 }
 
-Real getacu(Net *net, ExampleSet *examples, int ticks, int iter, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, char *fName3)
+Real getacu(Net *net, ExampleSet *examples, int ticks, int iter, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, char *fName3, FILE *f4, char *fName4)
 { // calculate accuracy of the network during otop training;
 	assert(net!=NULL); assert(examples!=NULL); assert(ticks!=0);
 	assert(f1!=NULL); assert(f2!=NULL); assert(fName1!=NULL); assert(fName2!=NULL); 
 	if(_recVec==1) { assert(f3!=NULL); assert(fName3!=NULL); }
+	assert(f4!=NULL); assert(fName4!=NULL);
 	int i, j;
 	Example *ex=NULL;
-  	Real *target=NULL, *out=NULL, accu, itemaccu, avgaccu;
+  	Real *target=NULL, *out=NULL, accu, itemaccu, avgaccu, error, itemerror, avgerror;
 	char *transPhon=NULL;	// record translated phonemes;
 	
 	if((f1=fopen(fName1,"a+"))==NULL) { printf("Can't open %s\n", fName1); exit(1); }
@@ -327,27 +328,33 @@ Real getacu(Net *net, ExampleSet *examples, int ticks, int iter, FILE *f1, char 
 		{ if((f3=fopen(fName3,"a+"))==NULL) { printf("Can't open %s\n", fName3); exit(1); }
 		  fprintf(f3,"%d\t%d", iter, examples->numExamples);
 		}
+	if((f4=fopen(fName4,"a+"))==NULL) { printf("Can't open %s\n", fName4); exit(1); }
+	fprintf(f4,"%d\t%d", iter, examples->numExamples);
 	
-	accu=0.0;
+	accu=0.0; error=0.0;
 	for(i=0;i<examples->numExamples;i++)
     	{ ex=&examples->examples[i];	// get each example;
       	  crbp_forward(net,ex);	// put to the network;
-	  	
+      	  
+		  itemerror=compute_error(net,ex); // calculate item training error;
+		  error+=itemerror;	// accumulate item error;
+
 		  // initialize out and target;
 		  out=malloc(_PhonoS*sizeof(Real)); assert(out!=NULL); 
 		  target=malloc(_PhonoS*sizeof(Real)); assert(target!=NULL);
 		  for(j=0;j<_PhonoS;j++)
 			{ out[j]=output->outputs[ticks-1][j];	// get output from the network;
 			  target[j]=get_value(ex->targets,output->index,ticks-1,j);	// get target from the example;
-			}
-		  
+			}		  
 		  // initialize transPhon;
 		  transPhon=malloc((int)(_PhonoS/(float)(_pho_features))*sizeof(char)); assert(transPhon!=NULL);
 		  for(j=0;j<(int)(_PhonoS/(float)(_pho_features));j++)
 		  	transPhon[j]='=';
 		  		  
 		  itemaccu=calacu(out,target,transPhon);	// caculate item accuracy;
-		  	
+		  accu+=itemaccu;	// accumulate item accuracy;
+
+		  // record results to files;
 		  fprintf(f1,"\t%5.3f", itemaccu);	// record item accuracy;
 		  
 		  // record transPhon; 
@@ -356,28 +363,30 @@ Real getacu(Net *net, ExampleSet *examples, int ticks, int iter, FILE *f1, char 
 		  	fprintf(f2,"%c", transPhon[j]);
 
 		  if(_recVec==1)
-		  	{ // record output vector
+		  	{ // record output vector;
 		  	  fprintf(f3,"\t");
 		  	  for(j=0;j<_PhonoS;j++)
 		  		fprintf(f3,"%2.1f ", out[j]);
-			}
-		  
-		  accu+=itemaccu;	// accumulate item accuracy;
+			}		  
 
+		  fprintf(f4, "\t%5.3f", itemerror);	// record item summed square error;
+		  
 		  free(out); out=NULL; free(target); target=NULL;	// release memory for out and target;
 		  free(transPhon); transPhon=NULL;	// release memory for transPhon; 
     	}
+	avgerror=error/(float)(examples->numExamples);	// calculate average error;
 	avgaccu=accu/(float)(examples->numExamples);	// calculate average accuracy;
 
 	fprintf(f1,"\t%5.3f\n", avgaccu); fclose(f1);	
 	fprintf(f2,"\n"); fclose(f2);
 	if(_recVec==1) { fprintf(f3,"\n"); fclose(f3); }
+	fprintf(f4,"\t%5.3f\n", avgerror); fclose(f4);
 
   	return avgaccu;
 }
 
 void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, char *fName3, FILE *f4, char *fName4, 
-		FILE *f5, char *fName5, FILE *f6, char *fName6, FILE *f7, char *fName7, FILE *f8, char *fName8)
+		FILE *f5, char *fName5, FILE *f6, char *fName6, FILE *f7, char *fName7, FILE *f8, char *fName8, FILE *f9, char *fName9, FILE *f10, char *fName10)
 { // train the network and record the training error and accuracies;
   	assert(net!=NULL); assert(f1!=NULL); assert(f2!=NULL); assert(f3!=NULL); assert(f4!=NULL); assert(f5!=NULL); assert(f6!=NULL); 
 	assert(fName1!=NULL); assert(fName2!=NULL); assert(fName3!=NULL); assert(fName4!=NULL); assert(fName5!=NULL); assert(fName6!=NULL);
@@ -385,6 +394,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 		{ assert(f7!=NULL); assert(f8!=NULL);
 		  assert(fName7!=NULL); assert(fName8!=NULL);
 		}
+	assert(f9!=NULL); assert(f10!=NULL);
+	assert(fName9!=NULL); assert(fName10!=NULL);
 	unsigned int iter, count, totiter, rep;
 	int rate_int;	// ratio between OtoP and interleaved PtoP training;
 	int i, ii, jj, loop, loop_out;	// for logarithm-like sampling;
@@ -412,9 +423,9 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 				for(iter=1;iter<=totiter;iter++)
 					{ // normal OtoP training;
 					  ex=get_random_example(train_exm); // randomly select a training example; 
-					  crbp_forward(net,ex); // feed the example to the network;
-					  crbp_compute_gradients(net,ex);	// compute gradients 
+					  crbp_forward(net,ex); // feed the example to the network; now, output is ready;
 					  error+=compute_error(net,ex); // accumulate training errors;
+					  crbp_compute_gradients(net,ex);	// compute gradients 
 					  bptt_apply_deltas(net);	// apply deltas in back propagation;
 				
 					  trainAct[ex->index]++;	// count the occurrence of each example during training;
@@ -424,8 +435,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 						  if(iter%rate_int==0)
 						  	{ ex=get_random_example(train_PtoP_exm); // randomly select a training example; 
 					  		  crbp_forward(net,ex); // feed the example to the network;
-					  		  crbp_compute_gradients(net,ex);	// compute gradients 
 					  		  error_int+=compute_error(net,ex); // accumulate training errors;
+					  		  crbp_compute_gradients(net,ex);	// compute gradients 
 					  		  bptt_apply_deltas(net);	// apply deltas in back propagation;
 						  	}
 					  	}
@@ -436,8 +447,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 							{ error=error/(float)count; // calculate average error;
 							  if((_runmode==3)||(_runmode==4)) error_int=error_int/(float)(count/rate_int);
 
-							  accuTr=getacu(net, train_exm, _tick_OtoP, iter, f2, fName2, f5, fName5, f7, fName7);	// calculate training accuracy;
-							  accuTe=getacu(net, test_exm, _tick_OtoP, iter, f3, fName3, f6, fName6, f8, fName8);	// calculate testing accuracy;
+							  accuTr=getacu(net, train_exm, _tick_OtoP, iter, f2, fName2, f5, fName5, f7, fName7, f9, fName9);	// calculate training accuracy;
+							  accuTe=getacu(net, test_exm, _tick_OtoP, iter, f3, fName3, f6, fName6, f8, fName8, f10, fName10);	// calculate testing accuracy;
 
 							  if((_runmode==0)||(_runmode==2)) printf("iter=%d\terr=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, accuTr, accuTe);	// display status on screen;
 							  if((_runmode==3)||(_runmode==4)) printf("iter=%d\terr_o2p=%5.3f\terr_p2p=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, error_int, accuTr, accuTe);	// display status on screen;
@@ -472,8 +483,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 							  error=error/(float)count; // calculate average error;
 							  if((_runmode==3)||(_runmode==4)) error_int=error_int/(float)(count/rate_int);
 
-							  accuTr=getacu(net, train_exm, _tick_OtoP, iter, f2, fName2, f5, fName5, f7, fName7);	// calculate training accuracy;
-							  accuTe=getacu(net, test_exm, _tick_OtoP, iter, f3, fName3, f6, fName6, f8, fName8);	// calculate testing accuracy;
+							  accuTr=getacu(net, train_exm, _tick_OtoP, iter, f2, fName2, f5, fName5, f7, fName7, f9, fName9);	// calculate training accuracy;
+							  accuTe=getacu(net, test_exm, _tick_OtoP, iter, f3, fName3, f6, fName6, f8, fName8, f10, fName10);	// calculate testing accuracy;
 				
 							  if((_runmode==0)||(_runmode==2)) printf("iter=%d\terr=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, accuTr, accuTe);	// display status on screen;
 							  if((_runmode==3)||(_runmode==4)) printf("iter=%d\terr_o2p=%5.3f\terr_p2p=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, error_int, accuTr, accuTe);	// display status on screen;
@@ -512,8 +523,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 					{ // normal PtoP training;
 					  ex=get_random_example(train_PtoP_exm); // randomly select a training example; 
 					  crbp_forward(net,ex); // feed the example to the network;
-					  crbp_compute_gradients(net,ex);	// compute gradients 
 					  error+=compute_error(net,ex); // accumulate training errors;
+					  crbp_compute_gradients(net,ex);	// compute gradients 
 					  bptt_apply_deltas(net);	// apply deltas in back propagation;
 				
 					  trainAct[ex->index]++;	// count the occurrence of each example during training;
@@ -522,8 +533,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 					  if(_samp_method==0)
 						{ if(count==rep)
 							{ error=error/(float)count; // calculate average error;
-							  accuTr=getacu(net, train_PtoP_exm, _tick_PtoP, iter, f2, fName2, f5, fName5, f7, fName7);	// calculate training accuracy;
-							  accuTe=getacu(net, test_PtoP_exm, _tick_PtoP, iter, f3, fName3, f6, fName6, f8, fName8);	// calculate testing accuracy;
+							  accuTr=getacu(net, train_PtoP_exm, _tick_PtoP, iter, f2, fName2, f5, fName5, f7, fName7, f9, fName9);	// calculate training accuracy;
+							  accuTe=getacu(net, test_PtoP_exm, _tick_PtoP, iter, f3, fName3, f6, fName6, f8, fName8, f10, fName10);	// calculate testing accuracy;
 
 							  printf("iter=%d\terr=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, accuTr, accuTe);	// display status on screen;
 				
@@ -552,8 +563,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 								}
 							  // record status; 
 							  error=error/(float)count; // calculate average error;
-							  accuTr=getacu(net, train_PtoP_exm, _tick_PtoP, iter, f2, fName2, f5, fName5, f7, fName7);	// calculate training accuracy;
-							  accuTe=getacu(net, test_PtoP_exm, _tick_PtoP, iter, f3, fName3, f6, fName6, f8, fName8);	// calculate testing accuracy;
+							  accuTr=getacu(net, train_PtoP_exm, _tick_PtoP, iter, f2, fName2, f5, fName5, f7, fName7, f9, fName9);	// calculate training accuracy;
+							  accuTe=getacu(net, test_PtoP_exm, _tick_PtoP, iter, f3, fName3, f6, fName6, f8, fName8, f10, fName10);	// calculate testing accuracy;
 				
 							  printf("iter=%d\terr=%5.3f\tacuTr=%5.3f\tacuTe=%5.3f\n", iter, error, accuTr, accuTe);	// display status on screen;
 				
@@ -607,7 +618,7 @@ void setF(char **fName, char *subDirect, char *name, FILE **f, char *format1, ch
 }
 
 void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuTrF, FILE **f3, char **itemacuTeF, FILE **f4, char **trainfreqF,  
-	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF)
+	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF)
 { // create file names, actual files, and file headers;
 	switch(_runmode)
 		{ case 0: case 2: case 3: case 4:
@@ -629,6 +640,9 @@ void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2,
 					{ setF(outPhonTrVecF, subDirect, "outphonTrVec.txt", f7, "ITER\tNoItem", "\tPV%d", train_exm->numExamples, "\n");		  
 		  	  		  setF(outPhonTeVecF, subDirect, "outphonTeVec.txt", f8, "ITER\tNoItem", "\tPV%d", test_exm->numExamples, "\n");
 					}
+				// record output errors of phonemes;
+				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_exm->numExamples, "\tAvg\n");		  
+		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_exm->numExamples, "\tAvg\n");
 				break;
 		  case 1: 
 		  		// record connection weights of the network;
@@ -648,13 +662,16 @@ void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2,
 					{ setF(outPhonTrVecF, subDirect, "outphonTrVec_ptop.txt", f7, "ITER\tNoItem", "\tPV%d", train_PtoP_exm->numExamples, "\n");		  
 		  	  		  setF(outPhonTeVecF, subDirect, "outphonTeVec_ptop.txt", f8, "ITER\tNoItem", "\tPV%d", test_PtoP_exm->numExamples, "\n");
 					}
+				// record output errors of phonemes;
+				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_exm->numExamples, "\tAvg\n");		  
+		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_exm->numExamples, "\tAvg\n");
 				break;
 		  default: break;		
 		}
 }
 
 void freeResF(char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuTrF, FILE **f3, char **itemacuTeF,  FILE **f4, char **trainfreqF, 
-	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF)
+	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF)
 { // free result file names and files;
 	// record connection weights of the network;
 	free(*weightF); *weightF=NULL;	
@@ -668,6 +685,8 @@ void freeResF(char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuT
 	free(*outPhonTrF); *outPhonTrF=NULL; *f5=NULL; free(*outPhonTeF); *outPhonTeF=NULL; *f6=NULL;	
 	// record output vectors of training and testing examples;
 	if(_recVec==1) { free(*outPhonTrVecF); *outPhonTrVecF=NULL; *f7=NULL; free(*outPhonTeVecF); *outPhonTeVecF=NULL; *f8=NULL; }
+	// record output errors of phonemes;
+	free(*outPhonErrTrF); *outPhonErrTrF=NULL; *f9=NULL; free(*outPhonErrTeF); *outPhonErrTeF=NULL; *f10=NULL;
 }
 
 void setupDirect(char **subDirect, int iseq)
@@ -705,9 +724,9 @@ void main(int argc,char *argv[])
 	unsigned int run;
 	char *subDirect=NULL;
 	char *weightF=NULL;
-	FILE *f1=NULL, *f2=NULL, *f3=NULL, *f4=NULL, *f5=NULL, *f6=NULL, *f7=NULL, *f8=NULL;
+	FILE *f1=NULL, *f2=NULL, *f3=NULL, *f4=NULL, *f5=NULL, *f6=NULL, *f7=NULL, *f8=NULL, *f9=NULL, *f10=NULL;
 	char *outF=NULL, *itemacuTrF=NULL, *itemacuTeF=NULL, *trainfreqF=NULL, 
-		*outPhonTrF=NULL, *outPhonTeF=NULL, *outPhonTrVecF=NULL, *outPhonTeVecF=NULL;
+		*outPhonTrF=NULL, *outPhonTeF=NULL, *outPhonTrVecF=NULL, *outPhonTeVecF=NULL, *outPhonErrTrF=NULL, *outPhonErrTeF=NULL;
 
 	readpara();	// reading network parameters and parameters for running;
 	readarg(argc, argv); // read runtime parameters from command line input;
@@ -755,19 +774,22 @@ void main(int argc,char *argv[])
 		}
 	
 	// 3) crete result file names and file headers;
-	setResF(subDirect, &weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, &f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF);
+	setResF(subDirect, &weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, 
+			&f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF);
 	
 	// 4) train the network;
 	switch(_runmode)
 		{ case 0: case 2: case 3: case 4:
 				if((_runmode==0)||(_runmode==2)) printf("Start OtoP training!\n");
 		  		else if((_runmode==3)||(_runmode==4)) printf("Start OtoP (interleave with PtoP) training!\n");
-		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF);
+		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, 
+					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF);
 		  		printf("Done OtoP training!\n");
 				break;
 		  case 1:
 				printf("Start PtoP training!\n");
-		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF);
+		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, 
+					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF);
 		  		printf("Done PtoP training!\n");  
 		  		break;
 		  default: break;		
@@ -777,7 +799,8 @@ void main(int argc,char *argv[])
 	save_weights(reading, weightF);	//another option: save_binary_weights(reading, weightF);
 				
 	// 6) free result file names and file pointers;
-	freeResF(&weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, &f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF);
+	freeResF(&weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, 
+			 &f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF);
 					
 	// 7) free train_exm and test_exm; 
 	switch(_runmode)

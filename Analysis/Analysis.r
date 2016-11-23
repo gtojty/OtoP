@@ -62,8 +62,8 @@ crtDF <- function(t){
   DF <- data.frame(word=wordList, prob=as.numeric(probList), phono=phonoList, ortho=orthoList, op=OPList)
   return(list(first=DF, second=OPList))
 }
-TrfileNam <- 'TrEm4_Harm1998.txt'; trf <- readLines(TrfileNam); head(trf, 20)
-TefileNam <- 'Te2.txt'; tef <- readLines(TefileNam); head(tef, 20)
+TrfileNam <- 'TrEm_Harm1998_0.0.txt'; trf <- readLines(TrfileNam); head(trf, 20)
+TefileNam <- 'Te_sqrt.txt'; tef <- readLines(TefileNam); head(tef, 20)
 
 r <- crtDF(trf)
 # noPh: 4017; noUniqueP: 3636; noOP: 4017 
@@ -136,47 +136,47 @@ ggplot(avgaccu_ptop, aes(x=iter, y=err)) + scale_x_log10(labels=scinot) +
 ggsave('Error_PtoP.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 
-# calculate distribution of words in the OtoP traing example
-f <- dir(".", pattern="^trainfreq.txt$", recursive=TRUE)
-trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
-# draw distribution of occurrence of training examples
-timepoint <- 100000; runID <- 1
-trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
-# timepoint <- 10000
-# trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
-wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
-freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
-
-ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +  
-  xlab("Training Examples") + ylab("Occurrence") + 
-  ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
-  facet_grid(lrnrate~hlsize)
-ggsave(paste('FreqDist_bar_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
-ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
-  xlab("Occurrence") + ylab("Count") + 
-  ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
-ggsave(paste('FreqDist_hist_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
-
-# calculate distribution of words in the PtoP traing example
-f <- dir(".", pattern="^trainfreq_ptop.txt$", recursive=TRUE)
-trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
-# draw distribution of occurrence of training examples
-timepoint <- 100000; runID <- 1
-trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
-# timepoint <- 10000
-# trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
-wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
-freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
-
-ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +  
-  xlab("Training Examples") + ylab("Occurrence") + 
-  ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
-  facet_grid(lrnrate~hlsize)
-ggsave(paste('FreqDist_bar_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
-ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
-  xlab("Occurrence") + ylab("Count") + 
-  ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
-ggsave(paste('FreqDist_hist_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+# # calculate distribution of words in the OtoP traing example
+# f <- dir(".", pattern="^trainfreq.txt$", recursive=TRUE)
+# trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
+# # draw distribution of occurrence of training examples
+# timepoint <- 100000; runID <- 1
+# trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
+# # timepoint <- 10000
+# # trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
+# wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
+# freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
+# 
+# ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +  
+#   xlab("Training Examples") + ylab("Occurrence") + 
+#   ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
+#   facet_grid(lrnrate~hlsize)
+# ggsave(paste('FreqDist_bar_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+# ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
+#   xlab("Occurrence") + ylab("Count") + 
+#   ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+# ggsave(paste('FreqDist_hist_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+# 
+# # calculate distribution of words in the PtoP traing example
+# f <- dir(".", pattern="^trainfreq_ptop.txt$", recursive=TRUE)
+# trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
+# # draw distribution of occurrence of training examples
+# timepoint <- 100000; runID <- 1
+# trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
+# # timepoint <- 10000
+# # trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
+# wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
+# freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
+# 
+# ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +  
+#   xlab("Training Examples") + ylab("Occurrence") + 
+#   ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
+#   facet_grid(lrnrate~hlsize)
+# ggsave(paste('FreqDist_bar_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+# ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
+#   xlab("Occurrence") + ylab("Count") + 
+#   ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+# ggsave(paste('FreqDist_hist_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
 
 
 ##################################################
@@ -185,7 +185,9 @@ ggsave(paste('FreqDist_hist_PtoP_', timepoint, '.png'), dpi = 300, height = 6, w
 ## relative to the current working directory.
 ## "itemacu_tr.txt" for item accuracy. 
 ## "outphonTr.txt" for item activated phonological representations
-getItemAcuActPhon <- function(f1, f2, OPList){
+## "outphonErrTr.txt" for item squared root errors
+getItemAcuActPhonErr <- function(f1, f2, f3, OPList){
+  ## read item accuracy data
   t <- ldply(f1, readOutput); names(t) <- str_to_lower(names(t))
   t <- t[-which(names(t) == "noitem")] # tidyr way to do this is ??
   ## re-label item columns, with wordforms (O.P) they represent
@@ -202,36 +204,56 @@ getItemAcuActPhon <- function(f1, f2, OPList){
   ## re-label item columns, with wordforms (O.P) they represent
   actp_pos <- which(str_detect(names(actphon), "^phon[0-9]+$")) # find the right columns
   names(actphon)[actp_pos] <- OPList # NB: wordforms (O-rep) are unique
-   
+  
   ## convert from wide to long format
   tractp <- tidyr::gather(actphon, actp_pos, key="OP", value="actphon")
   tractp <- tidyr::separate(tractp, OP, into=c("O", "P"), sep="[.]")
   tractp$actphon <- gsub("_", "", tractp$actphon)
-   
+  
   # merge tr with tractp
   t$actphon <- tractp$actphon
+  
+  if(!is.null(f3)){
+    ## read item squared root errors data
+    err <- ldply(f3, readOutput); names(err) <- str_to_lower(names(err))
+    err <- err[-which(names(err) == "noitem")] # tidyr way to do this is ??
+    ## re-label item columns, with wordforms (O.P) they represent
+    err_pos <- which(str_detect(names(err), "^err[0-9]+$")) # find the right columns
+    names(err)[err_pos] <- OPList # NB: wordforms (O-rep) are unique
+  
+    ## convert from wide to long format
+    trerr <- tidyr::gather(err, err_pos, key="OP", value="err")
+    trerr <- tidyr::separate(trerr, OP, into=c("O", "P"), sep="[.]")
+    trerr$err <- gsub("_", "", trerr$err)
+  
+    # merge tr with trerr
+    t$err <- trerr$err
+  }
+  
   return(t)
 }
 # for OtoP training items
 f1 <- dir(".", pattern="^itemacu_tr.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTr.txt$", recursive=TRUE)
-tr <- getItemAcuActPhon(f1, f2, OPList_tr)
+f3 <- dir(".", pattner="^outphonErrTr.txt$", recursive=TRUE)
+tr <- getItemAcuActPhonErr(f1, f2, f3, OPList_tr)
 write.csv(tr, './tr_allres_OtoP.csv', row.names=FALSE)
 # for OtoP testing items
 f1 <- dir(".", pattern="^itemacu_te.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTe.txt$", recursive=TRUE)
-te <- getItemAcuActPhon(f1, f2, OPList_te)
+f3 <- dir(".", pattern="^outphonErrTe.txt$", recursive=TRUE)
+te <- getItemAcuActPhonErr(f1, f2, f3, OPList_te)
 write.csv(te, './te_allres_OtoP.csv', row.names=FALSE)
 
 # for PtoP training items
 f1 <- dir(".", pattern="^itemacu_tr_ptop.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTr_ptop.txt$", recursive=TRUE)
-tr_ptop <- getItemAcuActPhon(f1, f2, OPList_tr)
+tr_ptop <- getItemAcuActPhonErr(f1, f2, NULL, OPList_tr)
 write.csv(tr_ptop, './tr_allres_PtoP.csv', row.names=FALSE)
 # for PtoP testing items
 f1 <- dir(".", pattern="^itemacu_te_ptop.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTe_ptop.txt$", recursive=TRUE)
-te_ptop <- getItemAcuActPhon(f1, f2, OPList_te)
+te_ptop <- getItemAcuActPhonErr(f1, f2, NULL, OPList_te)
 write.csv(te_ptop, './te_allres_PtoP.csv', row.names=FALSE)
 
 # subsample accuracy outputs ?
@@ -387,8 +409,7 @@ ggsave('CVCAcc_te.png', dpi = 300, height = 6, width = 12, units = 'in')
 #################### accuracy based on different types of words
 DFtr <- read.csv('./trainingexp.csv'); DFtr_merge <- DFtr[,c('word', 'prob')]; names(DFtr_merge) <- c("O", "log_freq")
 DFte <- read.csv('./testingexp.csv'); DFte_merge <- DFte[,c('word', 'prob')]; names(DFte_merge) <- c("O", "log_freq")
-tr <- read.csv('./tr_allres_OtoP.csv')
-te <- read.csv('./te_allres_OtoP.csv')
+tr <- read.csv('./tr_allres_OtoP.csv'); te <- read.csv('./te_allres_OtoP.csv')
 
 # strain et al. 1995 case:
 strain1995A <- read.csv("Strain-etal-1995-Appendix-A.csv")
@@ -415,14 +436,22 @@ unique(strain1995A$O[!(strain1995A$O %in% word1995A$O)])
 # [33] pious     croquet   toughness teacher   trying    police    trouble   wont
 tr_1995A <- subset(tr, tr$O %in% strain1995A$O)
 tr_1995A <- merge(tr_1995A, strain1995A, by = c("O"), all.x = TRUE, all.y = FALSE)
-tr_freqreg <- subset(tr_1995A, freq == "H" | freq == "L")
-cat(length(unique(tr_freqreg$O)), '\n')
+tr_FR <- subset(tr_1995A, freq == "H" | freq == "L")
+cat(length(unique(tr_FR$O)), '\n')
 # 56
-ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
+# draw accuracy
+ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
-ggsave('AcuFreqReg_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('AcuFR_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
+# draw squared root error
+ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  ggtitle("Err x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
+ggsave('ErrFR_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
+
 
 # Taraban & McClelland 1987 case:
 TM1987A1 <- read.csv("Taraban-McClelland-1987-Appendix-A1.csv", na.strings='na')
@@ -449,14 +478,22 @@ unique(TM1987A1$O[!(TM1987A1$O %in% word1987A1$O)])
 
 tr_1987A1 <- subset(tr, tr$O %in% TM1987A1$O)
 tr_1987A1 <- merge(tr_1987A1, TM1987A1, by = c("O"), all.x = TRUE, all.y = FALSE)
-tr_freqreg <- subset(tr_1987A1, freq == "H" | freq == "L")
-cat(length(unique(tr_freqreg$O)), '\n')
+tr_FR <- subset(tr_1987A1, freq == "H" | freq == "L")
+cat(length(unique(tr_FR$O)), '\n')
 # 94
-ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
+# draw accuracy
+ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
-ggsave('AcuFreqReg_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('AcuFR_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
+# draw squared root error
+ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  ggtitle("Err x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
+  geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
+ggsave('ErrFR_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
+
 
 TM1987A2 <- read.csv("Taraban-McClelland-1987-Appendix-A2.csv", na.strings='na')
 word1987A2 <- merge(DFtr_merge, TM1987A2, by = c("O"), all.x=TRUE, all.y=FALSE)
@@ -482,14 +519,22 @@ unique(TM1987A2$O[!(TM1987A2$O %in% word1987A2$O)])
 # [1] moose
 tr_1987A2 <- subset(tr, tr$O %in% TM1987A2$O)
 tr_1987A2 <- merge(tr_1987A2, TM1987A2, by = c("O"), all.x = TRUE, all.y = FALSE)
-tr_freqreg <- subset(tr_1987A2, freq == "H" | freq == "L")
-cat(length(unique(tr_freqreg$O)), '\n')
+tr_FR <- subset(tr_1987A2, freq == "H" | freq == "L")
+cat(length(unique(tr_FR$O)), '\n')
 # 95
-ggplot(tr_freqreg, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
+# draw accuracy
+ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
-ggsave('AcuFreqReg_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('AcuFR_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+# draw squared root error
+ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  ggtitle("Err x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
+  geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
+ggsave('ErrFR_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+
 
 # nonwords: Treiman et al. 1990 case:
 treiman1990A <- read.csv("Treiman-etal-1990-Appendix.csv")
@@ -501,11 +546,18 @@ xtabs(~freq, data=word1990A)
 # 24 24
 te_1990A <- subset(te, te$O %in% treiman1990A$O)
 te_1990A <- merge(te_1990A, treiman1990A, by = c("O"), all.x = TRUE, all.y = FALSE)
-te_freqreg <- subset(te_1990A, freq == "H" | freq == "L")
-cat(length(unique(te_freqreg$O)), '\n')
+te_F <- subset(te_1990A, freq == "H" | freq == "L")
+cat(length(unique(te_F$O)), '\n')
 # 48
-ggplot(te_freqreg, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot) + 
+# draw accuracy
+ggplot(te_F, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=freq)) + facet_grid(lrnrate~hlsize)
-ggsave('AcuFreq_Treimanetal1990A.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('AcuF_Treimanetal1990A.png', dpi = 300, height = 6, width = 12, units = 'in')
+# draw squared root error
+ggplot(te_F, aes(x=iter, y=err, color=freq)) + scale_x_log10(labels=scinot) + 
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  ggtitle("Err x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +
+  geom_smooth(span=.2, aes(color=freq)) + facet_grid(lrnrate~hlsize)
+ggsave('ErrF_Treimanetal1990A.png', dpi = 300, height = 6, width = 12, units = 'in')
