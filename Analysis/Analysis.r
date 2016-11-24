@@ -4,12 +4,14 @@ library(tidyr)
 library(ggplot2)
 library(hexbin)
 library(plyr)
+library(Rmisc)
 
 options(max.print=10000)
 
 drawrange <- c(1e4,1e7)
 errrange_ptop <- c(10, 1e7)
 errrange_otop <- c(10, 1e7)
+pd <- position_dodge(0.1)
 ##################################################
 ## Get training data (O to P mappings).
 
@@ -235,7 +237,7 @@ getItemAcuActPhonErr <- function(f1, f2, f3, OPList){
 # for OtoP training items
 f1 <- dir(".", pattern="^itemacu_tr.txt$", recursive=TRUE)
 f2 <- dir(".", pattern="^outphonTr.txt$", recursive=TRUE)
-f3 <- dir(".", pattner="^outphonErrTr.txt$", recursive=TRUE)
+f3 <- dir(".", pattern="^outphonErrTr.txt$", recursive=TRUE)
 tr <- getItemAcuActPhonErr(f1, f2, f3, OPList_tr)
 write.csv(tr, './tr_allres_OtoP.csv', row.names=FALSE)
 # for OtoP testing items
@@ -273,7 +275,6 @@ ggplot(tmp, aes(x=iter, y=avg)) + scale_x_log10(labels=scinot) +
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +
   ggtitle("Training Acc x Trials\n Hid Layer & Learn Rate") +
   geom_point(alpha=.2, color="blue") + geom_smooth(span=.2, color="darkorange") + facet_grid(lrnrate~hlsize)
-
 tmp <- te[,c("hlsize", "lrnrate", "iter", "avg")]; tmp <- unique(tmp)
 ggplot(tmp, aes(x=iter, y=avg)) + scale_x_log10(labels=scinot) +
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +
@@ -320,12 +321,12 @@ ggplot(trsub, aes(x=iter, y=accuracy)) + scale_x_log10(labels=scinot) +
   ggtitle("Training Phon CVC vs. CCVC vs. CVCC vs. CCVCC") +
   geom_smooth(aes(color=as.factor(syl)), span=.2) + facet_grid(lrnrate~hlsize)
 ggsave('CVCAcc_tr.png', dpi = 300, height = 6, width = 12, units = 'in')
-
 ggplot(tesub, aes(x=iter, y=accuracy)) + scale_x_log10(labels=scinot) +
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +
   ggtitle("Testing Phon CVC vs. CCVC vs. CVCC vs. CCVCC") +
   geom_smooth(aes(color=as.factor(syl)), span=.2) + facet_grid(lrnrate~hlsize)
 ggsave('CVCAcc_te.png', dpi = 300, height = 6, width = 12, units = 'in')
+
 
 # ##### split items randomly into 4 groups
 # doGroups <- function(d){
@@ -447,10 +448,17 @@ ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_l
 ggsave('AcuFR_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
 # draw squared root error
 ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
-  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Err x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('ErrFR_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
+tr_FR_avg <- summarySE(tr_FR, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FR_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Reg: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFRavg_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 
 # Taraban & McClelland 1987 case:
@@ -489,10 +497,17 @@ ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_l
 ggsave('AcuFR_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
 # draw squared root error
 ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + 
-  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Err x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('ErrFR_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
+tr_FR_avg <- summarySE(tr_FR, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FR_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Reg: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFRavg_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 
 TM1987A2 <- read.csv("Taraban-McClelland-1987-Appendix-A2.csv", na.strings='na')
@@ -519,21 +534,28 @@ unique(TM1987A2$O[!(TM1987A2$O %in% word1987A2$O)])
 # [1] moose
 tr_1987A2 <- subset(tr, tr$O %in% TM1987A2$O)
 tr_1987A2 <- merge(tr_1987A2, TM1987A2, by = c("O"), all.x = TRUE, all.y = FALSE)
-tr_FR <- subset(tr_1987A2, freq == "H" | freq == "L")
-cat(length(unique(tr_FR$O)), '\n')
+tr_FC <- subset(tr_1987A2, freq == "H" | freq == "L")
+cat(length(unique(tr_FC$O)), '\n')
 # 95
 # draw accuracy
-ggplot(tr_FR, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
+ggplot(tr_FC, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
   ggtitle("Acc x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
-ggsave('AcuFR_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('AcuFC_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
 # draw squared root error
-ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
-  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+ggplot(tr_FC, aes(x=iter, y=err, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + 
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Err x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
-ggsave('ErrFR_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave('ErrFC_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+tr_FC_avg <- summarySE(tr_FC, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FC_avg, aes(x=freq, y=err, linetype=const, group=const)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Const: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFCavg_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 
 # nonwords: Treiman et al. 1990 case:
@@ -557,7 +579,7 @@ ggplot(te_F, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot)
 ggsave('AcuF_Treimanetal1990A.png', dpi = 300, height = 6, width = 12, units = 'in')
 # draw squared root error
 ggplot(te_F, aes(x=iter, y=err, color=freq)) + scale_x_log10(labels=scinot) + 
-  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +  
+  coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Err") +  
   ggtitle("Err x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=freq)) + facet_grid(lrnrate~hlsize)
 ggsave('ErrF_Treimanetal1990A.png', dpi = 300, height = 6, width = 12, units = 'in')
