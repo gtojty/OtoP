@@ -11,6 +11,7 @@ options(max.print=10000)
 drawrange <- c(1e4,1e7)
 errrange_ptop <- c(10, 1e7)
 errrange_otop <- c(10, 1e7)
+drawpoint <- 1e7
 pd <- position_dodge(0.1)
 ##################################################
 ## Get training data (O to P mappings).
@@ -452,14 +453,42 @@ ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(
   ggtitle("Err x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('ErrFR_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
+# anova test (for results under a single setting!)
+fit <- aov(err ~ freq*reg, data=tr_FR)
+summary(fit)
+# Df Sum Sq Mean Sq F value   Pr(>F)    
+# freq            1   1499    1499  32.056 1.53e-08 ***
+#   reg             1  12571   12571 268.804  < 2e-16 ***
+#   freq:reg        1    261     261   5.577   0.0182 *  
+#   Residuals   13884 649293      47                     
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
 tr_FR_avg <- summarySE(tr_FR, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(tr_FR_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 12.0)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
   ggtitle("Freq x Reg: Strain etal 1995 \n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave('ErrFRavg_Strainetal1995A.png', dpi = 300, height = 6, width = 12, units = 'in')
-
+# drawpoint
+fit2 <- aov(err ~ freq*reg, data=tr_FR[tr_FR$iter==drawpoint, ])
+summary(fit2)
+# Df Sum Sq Mean Sq F value   Pr(>F)    
+# freq          1    1.0   0.979   0.952     0.33    
+# reg           1   19.1  19.142  18.609 1.98e-05 ***
+#   freq:reg      1    0.7   0.700   0.681     0.41    
+# Residuals   444  456.7   1.029                     
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+tr_FR_last <- summarySE(tr_FR[tr_FR$iter==drawpoint,], measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FR_last, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 1.0)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Reg: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFRavg_Strainetal1995A_1e7.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 # Taraban & McClelland 1987 case:
 TM1987A1 <- read.csv("Taraban-McClelland-1987-Appendix-A1.csv", na.strings='na')
@@ -501,14 +530,42 @@ ggplot(tr_FR, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(
   ggtitle("Err x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave('ErrFR_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
+# anova test (for results under a single setting!)
+fit <- aov(err ~ freq*reg, data=tr_FR)
+summary(fit)
+# Df  Sum Sq Mean Sq F value   Pr(>F)    
+# freq            1    1738    1738  40.510 1.99e-10 ***
+#   reg             1    8744    8744 203.810  < 2e-16 ***
+#   freq:reg        1     339     339   7.895  0.00496 ** 
+#   Residuals   23804 1021270      43                     
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
 tr_FR_avg <- summarySE(tr_FR, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(tr_FR_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 10.0)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
   ggtitle("Freq x Reg: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave('ErrFRavg_TarabanMcClelland1987A1.png', dpi = 300, height = 6, width = 12, units = 'in')
-
+# drawpoint
+fit2 <- aov(err ~ freq*reg, data=tr_FR[tr_FR$iter==drawpoint,])
+summary(fit2)
+# Df Sum Sq Mean Sq F value   Pr(>F)    
+# freq          1    0.9   0.913   0.804 0.370126    
+# reg           1   17.3  17.291  15.226 0.000104 ***
+#   freq:reg      1    0.9   0.927   0.817 0.366453    
+# Residuals   764  867.6   1.136                     
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+tr_FR_last <- summarySE(tr_FR[tr_FR$iter==drawpoint,], measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FR_last, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 1.0)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Reg: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFRavg_TarabanMcClelland1987A1_1e7.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 TM1987A2 <- read.csv("Taraban-McClelland-1987-Appendix-A2.csv", na.strings='na')
 word1987A2 <- merge(DFtr_merge, TM1987A2, by = c("O"), all.x=TRUE, all.y=FALSE)
@@ -549,13 +606,42 @@ ggplot(tr_FC, aes(x=iter, y=err, color=interaction(freq, const))) + scale_x_log1
   ggtitle("Err x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
 ggsave('ErrFC_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+# anova test (for results under a single setting!)
+fit <- aov(err ~ freq*const, data=tr_FC)
+summary(fit)
+# Df  Sum Sq Mean Sq F value   Pr(>F)    
+# freq            1       3     2.6   0.055 0.813906    
+# const           1     565   565.2  12.243 0.000468 ***
+#   freq:const      1     398   397.7   8.613 0.003341 ** 
+#   Residuals   23556 1087579    46.2                     
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
 tr_FC_avg <- summarySE(tr_FC, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(tr_FC_avg, aes(x=freq, y=err, linetype=const, group=const)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + xlab("Frequency") + ylab("Sum Squared Err") +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 9.0)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
   ggtitle("Freq x Const: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave('ErrFCavg_TarabanMcClelland1987A2.png', dpi = 300, height = 6, width = 12, units = 'in')
+# drawpoint
+fit2 <- aov(err ~ freq*const, data=tr_FC[tr_FC$iter==drawpoint,])
+summary(fit2)
+# Df Sum Sq Mean Sq F value Pr(>F)  
+# freq          1   0.29 0.28764   3.121 0.0777 .
+# const         1   0.30 0.30206   3.278 0.0706 .
+# freq:const    1   0.30 0.30309   3.289 0.0701 .
+# Residuals   756  69.67 0.09215                 
+# ---
+#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+tr_FC_last <- summarySE(tr_FC[tr_FC$iter==drawpoint,], measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
+ggplot(tr_FC_last, aes(x=freq, y=err, linetype=const, group=const)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 0.2)) + 
+  xlab("Frequency") + ylab("Sum Squared Err") +
+  ggtitle("Freq x Const: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
+  facet_grid(lrnrate~hlsize)
+ggsave('ErrFCavg_TarabanMcClelland1987A2_1e7.png', dpi = 300, height = 6, width = 12, units = 'in')
 
 
 # nonwords: Treiman et al. 1990 case:
