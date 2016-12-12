@@ -31,21 +31,29 @@ aovSub <- function(hlsize, lrnrate, drawpoint, data, txtName, aovtype){
 }
 
 # calculate and draw figures
-drawSub <- function(hlsize, lrnrate, drawpoint, data, picName, limits, aovtype){
+drawSub <- function(hlsize, lrnrate, drawpoint, data, picName, limits, title, aovtype){
   # get subdata
   subdata <- subset(data, hlsize == hlsize & lrnrate==lrnrate & iter==drawpoint)
   # anova test
-  if(aovtype=="freq*reg"){ subdata_SE <- summarySE(subdata, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+  if(aovtype=="freq*reg"){ 
+    subdata_SE <- summarySE(subdata, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
+    # draw figure
+    ggplot(subdata_SE, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+      geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+      geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=limits) + 
+      xlab("Frequency") + ylab("SSE") + ggtitle(paste("F x R: ", title, "\n Hid Layer & Learn Rate at ", drawpoint, sep="")) +
+      facet_grid(lrnrate~hlsize)
   }else{ 
-    if(aovtype=="freq*const"){ subdata_SE <- summarySE(subdata, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
+    if(aovtype=="freq*const"){ 
+      subdata_SE <- summarySE(subdata, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
+      # draw figure
+      ggplot(subdata_SE, aes(x=freq, y=err, linetype=const, group=const)) + 
+        geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+        geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=limits) + 
+        xlab("Frequency") + ylab("SSE") + ggtitle(paste("F x C: ", title, "\n Hid Layer & Learn Rate at ", drawpoint, sep="")) +
+        facet_grid(lrnrate~hlsize)
     }
   }
-  # draw figure
-  ggplot(subdata_SE, aes(x=freq, y=err, linetype=reg, group=reg)) + 
-    geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-    geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=limits) + 
-    xlab("Frequency") + ylab("SSE") + ggtitle("Freq x Reg: Strain etal 1995 \n Hid Layer & Learn Rate") +
-    facet_grid(lrnrate~hlsize)
   ggsave(paste(figDir, picName, sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 }
 
@@ -65,41 +73,61 @@ cat(length(unique(frStr1995A$O)), '\n')
 
 # draw accuracy
 ggplot(frStr1995A, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 1.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Acc") + ggtitle("Acc x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'Str1995A_acu.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 # draw sum squared error
 ggplot(frStr1995A, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 20.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Err") + ggtitle("Err x Trials: Strain etal 1995 \n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'Str1995A_sse.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # anova test (for results under a single setting!)
 aovfit <- aov(err ~ freq*reg + hlsize*lrnrate, data=frStr1995A)
-summary(aovfit)
-# Df Sum Sq Mean Sq F value   Pr(>F)    
-# freq            1   1499    1499  32.056 1.53e-08 ***
-#   reg             1  12571   12571 268.804  < 2e-16 ***
-#   freq:reg        1    261     261   5.577   0.0182 *  
-#   Residuals   13884 649293      47                     
-# ---
-#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+s <- summary(aovfit); capture.output(s, file=paste(figDir, 'Str1995A_sseavg', '.txt', sep=""))
 frStr1995A_avg <- summarySE(frStr1995A, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(frStr1995A_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 12.0)) + 
-  xlab("Frequency") + ylab("SSE") + ggtitle("Freq x Reg: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 20.0)) + 
+  xlab("Frequency") + ylab("SSE") + ggtitle("F x R: Strain etal 1995 \n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'Str1995A_sseavg.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # drawpoints
-hlsize <- 100; lrnrate <- 5e-2; limits <- c(0.0, 2.0)
+hlsize <- 100; lrnrate <- 5e-2
+# get subdata across all drawpoints
+frStr1995A_cross <- subset(frStr1995A, iter %in% drawpoints)
+frStr1995A_cross <- frStr1995A_cross[frStr1995A_cross$hlsize==hlsize & frStr1995A_cross$lrnrate==lrnrate, ]
+# anova test
+aovfit2 <- aov(err ~ freq*reg + iter, data=frStr1995A_cross)
+s <- summary(aovfit2); capture.output(s, file=paste(figDir, 'Str1995A_sseavg_cross', '.txt', sep=""))
+frStr1995A_cross_avg <- summarySE(frStr1995A_cross, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate", "iter"), na.rm=TRUE)
+ggplot(frStr1995A_cross_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 4.0)) + 
+  xlab("Frequency") + ylab("SSE") + ggtitle("F x R: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  facet_wrap(~iter, nrow=2)
+ggsave(paste(figDir, 'Str1995A_sseavg_cross.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
+
+# draw each point
 for(drawpoint in drawpoints){
   txtName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.txt', sep="")
   aovSub(hlsize, lrnrate, drawpoint, frStr1995A, txtName, "freq*reg")
-  picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.png', sep="")
-  drawSub(hlsize, lrnrate, drawpoint, frStr1995A, picName, limits, "freq*reg")
 }
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[1], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[1], frStr1995A, picName, c(0.0, 7.0), 'Strain etal 1995A', "freq*reg")
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[2], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[2], frStr1995A, picName, c(0.0, 5.0), 'Strain etal 1995A', "freq*reg")
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[3], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[3], frStr1995A, picName, c(0.0, 4.0), 'Strain etal 1995A', "freq*reg")
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[4], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[4], frStr1995A, picName, c(0.0, 3.0), 'Strain etal 1995A', "freq*reg")
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[5], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[5], frStr1995A, picName, c(0.0, 3.0), 'Strain etal 1995A', "freq*reg")
+picName <- paste('Str1995A_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[6], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[6], frStr1995A, picName, c(0.0, 2.0), 'Strain etal 1995A', "freq*reg")
 
 
 # Taraban & McClelland 1987A1:
@@ -111,87 +139,127 @@ cat(length(unique(frTM1987A1$O)), '\n')
 
 # draw accuracy
 ggplot(frTM1987A1, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 1.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Acc") + ggtitle("Acc x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A1_acu.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 # draw sum squared error
 ggplot(frTM1987A1, aes(x=iter, y=err, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 20.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Err") + ggtitle("Err x Trials: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, reg))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A1_sse.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # anova test (for results under a single setting!)
-fit <- aov(err ~ freq*reg + hlsize*lrnrate, data=frTM1987A1)
-summary(fit)
-# Df  Sum Sq Mean Sq F value   Pr(>F)    
-# freq            1    1738    1738  40.510 1.99e-10 ***
-#   reg             1    8744    8744 203.810  < 2e-16 ***
-#   freq:reg        1     339     339   7.895  0.00496 ** 
-#   Residuals   23804 1021270      43                     
-# ---
-#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+aovfit <- aov(err ~ freq*reg + hlsize*lrnrate, data=frTM1987A1)
+s <- summary(aovfit); capture.output(s, file=paste(figDir, 'TM1987A1_sseavg', '.txt', sep=""))
 frTM1987A1_avg <- summarySE(frTM1987A1, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(frTM1987A1_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 10.0)) + 
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 15.0)) + 
   xlab("Frequency") + ylab("SSE") + ggtitle("Freq x Reg: Taraban & McClelland 1987 A1\n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A1_sseavg.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # drawpoints
-hlsize <- 100; lrnrate <- 5e-2; limits <- c(0.0, 2.0)
+hlsize <- 100; lrnrate <- 5e-2
+# get subdata across all drawpoints
+frTM1987A1_cross <- subset(frTM1987A1, iter %in% drawpoints)
+frTM1987A1_cross <- frTM1987A1_cross[frTM1987A1_cross$hlsize==hlsize & frTM1987A1_cross$lrnrate==lrnrate, ]
+# anova test
+aovfit2 <- aov(err ~ freq*reg + iter, data=frTM1987A1_cross)
+s <- summary(aovfit2); capture.output(s, file=paste(figDir, 'TM1987A1_sseavg_cross', '.txt', sep=""))
+frTM1987A1_cross_avg <- summarySE(frTM1987A1_cross, measurevar="err", groupvars=c("freq", "reg", "hlsize", "lrnrate", "iter"), na.rm=TRUE)
+ggplot(frTM1987A1_cross_avg, aes(x=freq, y=err, linetype=reg, group=reg)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 3.0)) + 
+  xlab("Frequency") + ylab("SSE") + ggtitle("F x R: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  facet_wrap(~iter, nrow=2)
+ggsave(paste(figDir, 'TM1987A1_sseavg_cross.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
+
+# draw each point
 for(drawpoint in drawpoints){
   txtName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.txt', sep="")
   aovSub(hlsize, lrnrate, drawpoint, frTM1987A1, txtName, "freq*reg")
-  picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.png', sep="")
-  drawSub(hlsize, lrnrate, drawpoint, frTM1987A1, picName, limits, "freq*reg")
 }
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[1], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[1], frTM1987A1, picName, c(0.0, 5.0), 'Taraban&McClelland 1987A1', "freq*reg")
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[2], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[2], frTM1987A1, picName, c(0.0, 4.0), 'Taraban&McClelland 1987A1', "freq*reg")
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[3], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[3], frTM1987A1, picName, c(0.0, 3.0), 'Taraban&McClelland 1987A1', "freq*reg")
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[4], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[4], frTM1987A1, picName, c(0.0, 3.0), 'Taraban&McClelland 1987A1', "freq*reg")
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[5], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[5], frTM1987A1, picName, c(0.0, 2.0), 'Taraban&McClelland 1987A1', "freq*reg")
+picName <- paste('TM1987A1_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[6], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[6], frTM1987A1, picName, c(0.0, 2.0), 'Taraban&McClelland 1987A1', "freq*reg")
 
 
 # Taraban-McClelland-1987-Appendix-A2:
 TM1987A2 <- read.csv("Taraban-McClelland-1987-Appendix-A2.csv", na.strings='na')
-trTM1987A2 <- subset(tr, tr$O %in% TM1987A2$O); trTM1987A2 <- merge(tr1987A2, TM1987A2, by = c("O"), all.x = TRUE, all.y = FALSE)
+trTM1987A2 <- subset(tr, tr$O %in% TM1987A2$O); trTM1987A2 <- merge(trTM1987A2, TM1987A2, by = c("O"), all.x = TRUE, all.y = FALSE)
 fcTM1987A2 <- subset(trTM1987A2, freq == "H" | freq == "L")
 cat(length(unique(fcTM1987A2$O)), '\n')
 # 95
 
 # draw accuracy
 ggplot(fcTM1987A2, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 1.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Acc") + ggtitle("Acc x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A2_acu.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 # draw summed square error
 ggplot(fcTM1987A2, aes(x=iter, y=err, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 20.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Err") + ggtitle("Err x Trials: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=interaction(freq, const))) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A2_sse.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # anova test (for results under a single setting!)
-fit <- aov(err ~ freq*const + hlsize*lrnrate, data=fcTM1987A2)
-summary(fit)
-# Df  Sum Sq Mean Sq F value   Pr(>F)    
-# freq            1       3     2.6   0.055 0.813906    
-# const           1     565   565.2  12.243 0.000468 ***
-#   freq:const      1     398   397.7   8.613 0.003341 ** 
-#   Residuals   23556 1087579    46.2                     
-# ---
-#   Signif. codes:  0 ?**?0.001 ?*?0.01 ??0.05 ??0.1 ??1
+aovfit <- aov(err ~ freq*const + hlsize*lrnrate, data=fcTM1987A2)
+s <- summary(aovfit); capture.output(s, file=paste(figDir, 'TM1987A2_sseavg', '.txt', sep=""))
 fcTM1987A2_avg <- summarySE(fcTM1987A2, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate"), na.rm=TRUE)
 ggplot(fcTM1987A2_avg, aes(x=freq, y=err, linetype=const, group=const)) + 
   geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
-  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(6.0, 9.0)) + 
-  xlab("Frequency") + ylab("SSE") + ggtitle("Freq x Const: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 15.0)) + 
+  xlab("Frequency") + ylab("SSE") + ggtitle("F x C: Taraban & McClelland 1987 A2\n Hid Layer & Learn Rate") +
   facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'TM1987A2_sseavg.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 # drawpoints
 hlsize <- 100; lrnrate <- 5e-2
+# get subdata across all drawpoints
+fcTM1987A2_cross <- subset(fcTM1987A2, iter %in% drawpoints)
+fcTM1987A2_cross <- fcTM1987A2_cross[fcTM1987A2_cross$hlsize==hlsize & fcTM1987A2_cross$lrnrate==lrnrate, ]
+# anova test
+aovfit2 <- aov(err ~ freq*const + iter, data=fcTM1987A2_cross)
+s <- summary(aovfit2); capture.output(s, file=paste(figDir, 'TM1987A2_sseavg_cross', '.txt', sep=""))
+fcTM1987A2_cross_avg <- summarySE(fcTM1987A2_cross, measurevar="err", groupvars=c("freq", "const", "hlsize", "lrnrate", "iter"), na.rm=TRUE)
+ggplot(fcTM1987A2_cross_avg, aes(x=freq, y=err, linetype=const, group=const)) + 
+  geom_errorbar(aes(ymin=err-se, ymax=err+se), size=1.5, width=.1, position=pd) +
+  geom_line(position=pd, size=1.5) + geom_point(position=pd) + scale_y_continuous(limits=c(0.0, 1.0)) + 
+  xlab("Frequency") + ylab("SSE") + ggtitle("F x R: Strain etal 1995 \n Hid Layer & Learn Rate") +
+  facet_wrap(~iter, nrow=2)
+ggsave(paste(figDir, 'TM1987A2_sseavg_cross.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
+
+# draw each point
 for(drawpoint in drawpoints){
   txtName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.txt', sep="")
-  aovSub(hlsize, lrnrate, drawpoint, TM1987A2, txtName, "freq*const")
-  picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoint, '.png', sep="")
-  drawSub(hlsize, lrnrate, drawpoint, fcTM1987A2, picName, limits, "freq*const")
+  aovSub(hlsize, lrnrate, drawpoint, fcTM1987A2, txtName, "freq*const")
 }
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[1], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[1], fcTM1987A2, picName, c(0.0, 3.0), 'Taraban&McClelland 1987A2', "freq*const")
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[2], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[2], fcTM1987A2, picName, c(0.0, 2.0), 'Taraban&McClelland 1987A2', "freq*const")
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[3], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[3], fcTM1987A2, picName, c(0.0, 1.0), 'Taraban&McClelland 1987A2', "freq*const")
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[4], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[4], fcTM1987A2, picName, c(0.0, 1.0), 'Taraban&McClelland 1987A2', "freq*const")
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[5], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[5], fcTM1987A2, picName, c(0.0, 1.0), 'Taraban&McClelland 1987A2', "freq*const")
+picName <- paste('TM1987A2_sseavg_H', hlsize, 'L', lrnrate, '_', drawpoints[6], '.png', sep="")
+drawSub(hlsize, lrnrate, drawpoints[6], fcTM1987A2, picName, c(0.0, 1.0), 'Taraban&McClelland 1987A2', "freq*const")
 
 
 # nonwords: Treiman et al. 1990 case:
@@ -201,19 +269,21 @@ xtabs(~freq, data=wordTr1990A)
 # freq
 # H  L 
 # 24 24
-teTr1990A <- subset(te, te$O %in% trTr1990A$O)
-teTr1990A <- merge(teTr1990A, trTr1990A, by = c("O"), all.x = TRUE, all.y = FALSE)
+teTr1990A <- subset(te, te$O %in% wordTr1990A$O)
+teTr1990A <- merge(teTr1990A, Tr1990A, by = c("O"), all.x = TRUE, all.y = FALSE)
 fTr1990A <- subset(teTr1990A, freq == "H" | freq == "L")
 cat(length(unique(fTr1990A$O)), '\n')
 # 48
 
 # draw accuracy
 ggplot(fTr1990A, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 1.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Acc") + ggtitle("Acc x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=freq)) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'Tr1990A_acu.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 # draw sum squared error
 ggplot(fTr1990A, aes(x=iter, y=err, color=freq)) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
+  scale_y_continuous(limits=c(0.0, 20.0)) +
   xlab("Training Trials (log10)") + ylab("Avg Err") + ggtitle("Err x Trials: Treiman etal 1990\n Hid Layer & Learn Rate") +
   geom_smooth(span=.2, aes(color=freq)) + facet_grid(lrnrate~hlsize)
 ggsave(paste(figDir, 'Tr1990A_sse.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')

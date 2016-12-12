@@ -13,6 +13,7 @@ scinot <- function(x){
   }else{ error("x must be numeric") }
 }
 figDir <- './figure/'
+dir.create(figDir)
 
 ##################################################
 # read from TrEm.txt
@@ -108,43 +109,53 @@ ggsave(paste(figDir, 'Error_PtoP.png', sep=""), dpi = 300, height = 6, width = 1
 f <- dir(".", pattern="^trainfreq.txt$", recursive=TRUE)
 trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
 # draw distribution of occurrence of training examples
-timepoint <- 100000; runID <- 1
+timepoint <- 1e6; runID <- 1
 trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
-# timepoint <- 10000
+# timepoint <- 1e6
 # trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
-wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
+wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4017
 freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
 
 ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +
   xlab("Training Examples") + ylab("Occurrence") +
   ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
   facet_grid(lrnrate~hlsize)
-ggsave(paste('FreqDist_bar_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+ggsave(paste(figDir, 'FBar_OtoP_', timepoint, '.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
 ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
   xlab("Occurrence") + ylab("Count") +
-  ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
-ggsave(paste('FreqDist_hist_OtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+  ggtitle(paste("Histogram of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+ggsave(paste(figDir, 'FHist_OtoP_', timepoint, '.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
+# log scale
+ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
+  xlab("Occurrence") + ylab("Count") + scale_x_log10() +
+  ggtitle(paste("Histogram of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+ggsave(paste(figDir, 'FHist_OtoP_', timepoint, '_log.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
 
 # calculate distribution of words in the PtoP traing example
 f <- dir(".", pattern="^trainfreq_ptop.txt$", recursive=TRUE)
 trainfreq <- ldply(f, readOutput); names(trainfreq) <- str_to_lower(names(trainfreq))
 # draw distribution of occurrence of training examples
-timepoint <- 100000; runID <- 1
+timepoint <- 1e6; runID <- 1
 trainfreq_sub <- trainfreq[trainfreq$iter==timepoint & trainfreq$run==runID,]
-# timepoint <- 10000
+# timepoint <- 1e6
 # trainfreq_sub <- trainfreq[trainfreq$iter==timepoint,]
-wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4008
+wrd <- which(str_detect(names(trainfreq_sub), "^f[0-9]+$")); names(wrd) <- 1:4017
 freqdist <- tidyr::gather(trainfreq_sub, wrd, key="item", value="occur")
 
 ggplot(freqdist, aes(x=item, y=occur, color=run)) + geom_bar(stat="identity", width=0.1, color=freqdist$run) +
   xlab("Training Examples") + ylab("Occurrence") +
   ggtitle(paste("Occurrence of Training Examples\nat ", timepoint, " training; Run ", runID, sep="")) +
   facet_grid(lrnrate~hlsize)
-ggsave(paste('FreqDist_bar_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+ggsave(paste(figDir, 'FBar_PtoP_', timepoint, '.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
 ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
   xlab("Occurrence") + ylab("Count") +
-  ggtitle(paste("Histogram of Occurrence of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
-ggsave(paste('FreqDist_hist_PtoP_', timepoint, '.png'), dpi = 300, height = 6, width = 18, units = 'in')
+  ggtitle(paste("Histogram of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+ggsave(paste(figDir, 'FHist_PtoP_', timepoint, '.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
+# log scale
+ggplot(freqdist, aes(occur, color=run)) + geom_histogram(bins=50) + facet_grid(hlsize~lrnrate) +
+  xlab("Occurrence") + ylab("Count") + scale_x_log10() +
+  ggtitle(paste("Histogram of Training Examples\n at ", timepoint, " Run ", runID, sep=""))
+ggsave(paste(figDir, 'FHist_PtoP_', timepoint, '_log.png', sep=""), dpi = 300, height = 6, width = 18, units = 'in')
 
 
 ##################################################
@@ -269,12 +280,12 @@ ggplot(trsub, aes(x=iter, y=accuracy)) + scale_x_log10(labels=scinot) +
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +
   ggtitle("Training Phon CVC vs. CCVC vs. CVCC vs. CCVCC") +
   geom_smooth(aes(color=as.factor(syl)), span=.2) + facet_grid(lrnrate~hlsize)
-ggsave('CVCAcc_tr.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave(paste(figDir, 'CVCAcc_tr.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 ggplot(tesub, aes(x=iter, y=accuracy)) + scale_x_log10(labels=scinot) +
   coord_cartesian(xlim=drawrange) + xlab("Training Trials (log10)") + ylab("Avg Acc") +
   ggtitle("Testing Phon CVC vs. CCVC vs. CVCC vs. CCVCC") +
   geom_smooth(aes(color=as.factor(syl)), span=.2) + facet_grid(lrnrate~hlsize)
-ggsave('CVCAcc_te.png', dpi = 300, height = 6, width = 12, units = 'in')
+ggsave(paste(figDir, 'CVCAcc_te.png', sep=""), dpi = 300, height = 6, width = 12, units = 'in')
 
 
 # ##### split items randomly into 4 groups
