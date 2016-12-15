@@ -70,6 +70,8 @@ trStr1995A <- subset(tr, tr$O %in% Str1995A$O); trStr1995A <- merge(trStr1995A, 
 frStr1995A <- subset(trStr1995A, freq == "H" | freq == "L")
 cat(length(unique(frStr1995A$O)), '\n')
 # 56
+# save frStr1995A
+write.csv(frStr1995A, "Str1995A.csv", row.names=FALSE)
 
 # draw accuracy
 ggplot(frStr1995A, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
@@ -136,6 +138,8 @@ trTM1987A1 <- subset(tr, tr$O %in% TM1987A1$O); trTM1987A1 <- merge(trTM1987A1, 
 frTM1987A1 <- subset(trTM1987A1, freq == "H" | freq == "L")
 cat(length(unique(frTM1987A1$O)), '\n')
 # 94
+# save frTM1987A1
+write.csv(frTM1987A1, "TM1987A1.csv", row.names=FALSE)
 
 # draw accuracy
 ggplot(frTM1987A1, aes(x=iter, y=accuracy, color=interaction(freq, reg))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
@@ -202,6 +206,8 @@ trTM1987A2 <- subset(tr, tr$O %in% TM1987A2$O); trTM1987A2 <- merge(trTM1987A2, 
 fcTM1987A2 <- subset(trTM1987A2, freq == "H" | freq == "L")
 cat(length(unique(fcTM1987A2$O)), '\n')
 # 95
+# save fcTM1987A2
+write.csv(fcTM1987A2, "TM1987A2.csv", row.names=FALSE)
 
 # draw accuracy
 ggplot(fcTM1987A2, aes(x=iter, y=accuracy, color=interaction(freq, const))) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
@@ -274,6 +280,8 @@ teTr1990A <- merge(teTr1990A, Tr1990A, by = c("O"), all.x = TRUE, all.y = FALSE)
 fTr1990A <- subset(teTr1990A, freq == "H" | freq == "L")
 cat(length(unique(fTr1990A$O)), '\n')
 # 48
+# save fTr1990A
+write.csv(fTr1990A, "Tr1990A.csv", row.names=FALSE)
 
 # draw accuracy
 ggplot(fTr1990A, aes(x=iter, y=accuracy, color=freq)) + scale_x_log10(labels=scinot) + coord_cartesian(xlim=drawrange) + 
