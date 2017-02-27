@@ -151,6 +151,10 @@ There are two ways of running the model:
    
    * outphonTeVec\_ptop.txt: vector values of activation for each PtoP testing example at each sampling point. This file is created when RECVEC is 1;
    
+   * outphonErrTr.txt: activation error for each OtoP training example at each sampling point.
+   
+   * outphonErrTe.txt: activation error for each OtoP training example at each sampling point.
+   
    While the model runs, it will also print to the screen overall
    error and average training/testing accuracies at each sampling
    point. Sampling points are places where the performances of 
