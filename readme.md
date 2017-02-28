@@ -79,7 +79,7 @@ There are two ways of running the model:
 
    * SEED: random seed to be used in that run. Default value is 0 (randomly assigning a seed during the run);
 
-   * RUNMODE: mode of running: 0, directly OtoP training; 1, directly PtoP training; 2, OtoP training after PtoP training;
+   * RUNMODE: mode of running: 0, directly OtoP training; 1, directly PtoP training; 2, OtoP training after PtoP training; 3, directly OtoP training with interleave StoS training; 4, OtoP training interleaving with StoS training by loading weights from StoS training results;
    
    * ITER: number of total iterations (trainings). Default value is 50000;
 
