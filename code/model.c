@@ -112,9 +112,9 @@ void load_phoneme(char *PhoF)
 	// print PhoDic
 	int i, j;
 	for(i=0;i<_pho_number;i++)
-		{ printf("Phoneme %c: ", _phon[i].name);
+		{ printf("Phoneme %c:", _phon[i].name);
 		  for(j=0;j<_pho_features;j++)
-	  		printf("%2.1f ", _phon[i].vec[j]);
+	  		printf(" %2.1f", _phon[i].vec[j]);
 	     	  printf("\n");
 		}
 	*/

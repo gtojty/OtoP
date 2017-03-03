@@ -663,8 +663,8 @@ void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2,
 		  	  		  setF(outPhonTeVecF, subDirect, "outphonTeVec_ptop.txt", f8, "ITER\tNoItem", "\tPV%d", test_PtoP_exm->numExamples, "\n");
 					}
 				// record output errors of phonemes;
-				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_exm->numExamples, "\tAvg\n");		  
-		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_exm->numExamples, "\tAvg\n");
+				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_PtoP_exm->numExamples, "\tAvg\n");		  
+		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_PtoP_exm->numExamples, "\tAvg\n");
 				break;
 		  default: break;		
 		}

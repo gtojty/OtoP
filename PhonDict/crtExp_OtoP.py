@@ -287,7 +287,7 @@ def writeExp(wordDF, expFileName, probcol, epoch, typ1, st1, end1, typ2, st2, en
             elif typ1 == "Sem": writeOPS(exp_file, wordDF.wordform, i, Dic1, 0)
             exp_file.write("\n")
             # TARGET line
-            if st2 == end2: line = "CLAMP " + typ2 + " " + str(st2) + " EXPANDED"
+            if st2 == end2: line = "TARGET " + typ2 + " " + str(st2) + " EXPANDED"
             else: line = "TARGET " + typ2 + " " + str(st2) + "-" + str(end2) + " EXPANDED"
             exp_file.write(line + "\n")
             # encoding
