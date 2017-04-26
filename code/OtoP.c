@@ -386,7 +386,8 @@ Real getacu(Net *net, ExampleSet *examples, int ticks, int iter, FILE *f1, char 
 }
 
 void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, char *fName3, FILE *f4, char *fName4, 
-		FILE *f5, char *fName5, FILE *f6, char *fName6, FILE *f7, char *fName7, FILE *f8, char *fName8, FILE *f9, char *fName9, FILE *f10, char *fName10)
+		FILE *f5, char *fName5, FILE *f6, char *fName6, FILE *f7, char *fName7, FILE *f8, char *fName8, FILE *f9, char *fName9, FILE *f10, char *fName10,
+		char *intWeiFName)
 { // train the network and record the training error and accuracies;
   	assert(net!=NULL); assert(f1!=NULL); assert(f2!=NULL); assert(f3!=NULL); assert(f4!=NULL); assert(f5!=NULL); assert(f6!=NULL); 
 	assert(fName1!=NULL); assert(fName2!=NULL); assert(fName3!=NULL); assert(fName4!=NULL); assert(fName5!=NULL); assert(fName6!=NULL);
@@ -402,7 +403,8 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 	int *trainAct=NULL;	// record frequency of occurrence of each example;
   	Real error, error_int, accuTr, accuTe;	// record error, training and testing accuracies;
 	Example *ex;
-		
+	char *interName=NULL, *digits=NULL;
+	
 	ii=1; jj=0; loop=20; loop_out=80; // for logarithm-like sampling;	
 	error=0.0; count=1; accuTr=0.0; accuTe=0.0;
 	
@@ -468,6 +470,15 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 							  
 							  error=0.0; accuTr=0.0; accuTe=0.0; count=1;	// reset error, accuTr, accuTe, and count;
 							  if((_runmode==3)||(_runmode==4)) error_int=0.0;
+
+							  if(iter>=totiter/100) 
+							  	{ interName=malloc(_FileLen*sizeof(char)); assert(interName!=NULL);
+								  digits=malloc(_FileLen*sizeof(char)); assert(digits!=NULL);								  
+							  	  strcpy(interName, intWeiFName); sprintf(digits, "%d", iter); strcat(interName, digits); strcat(interName, ".txt");
+							  	  save_weights(reading, interName);	// save weights of intermediate networks;
+								  free(interName); interName=NULL; 
+								  free(digits); digits=NULL;
+							  	}
 							}
 						  else count++;
 						}
@@ -504,6 +515,15 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 								  
 							  error=0.0; accuTr=0.0; accuTe=0.0; count=1;	// reset error, accuTr, accuTe, and count; 
 							  if((_runmode==3)||(_runmode==4)) error_int=0.0;
+
+							  if(iter>=totiter/100) 
+							  	{ interName=malloc(_FileLen*sizeof(char)); assert(interName!=NULL);
+								  digits=malloc(_FileLen*sizeof(char)); assert(digits!=NULL);								  
+							  	  strcpy(interName, intWeiFName); sprintf(digits, "%d", iter); strcat(interName, digits); strcat(interName, ".txt");
+							  	  save_weights(reading, interName);	// save weights of intermediate networks;
+								  free(interName); interName=NULL; 
+								  free(digits); digits=NULL;
+							  	}
 							}
 						  else count++;
 						}
@@ -550,6 +570,15 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 							  fprintf(f4,"\n"); fclose(f4);
 							  
 							  error=0.0; accuTr=0.0; accuTe=0.0; count=1;	// reset error, accuTr, accuTe, and count;
+
+							  if(iter>=totiter/100) 
+							  	{ interName=malloc(_FileLen*sizeof(char)); assert(interName!=NULL);
+								  digits=malloc(_FileLen*sizeof(char)); assert(digits!=NULL);								  
+							  	  strcpy(interName, intWeiFName); sprintf(digits, "%d", iter); strcat(interName, digits); strcat(interName, ".txt");
+							  	  save_weights(reading, interName);	// save weights of intermediate networks;
+								  free(interName); interName=NULL; 
+								  free(digits); digits=NULL;
+							  	}
 							}
 						  else count++;
 						}
@@ -580,6 +609,15 @@ void train(Net *net, FILE *f1, char *fName1, FILE *f2, char *fName2, FILE *f3, c
 							  fprintf(f4,"\n"); fclose(f4);
 							
 							  error=0.0; accuTr=0.0; accuTe=0.0; count=1;	// reset error, accuTr, accuTe, and count; 
+
+							  if(iter>=totiter/100) 
+							  	{ interName=malloc(_FileLen*sizeof(char)); assert(interName!=NULL);
+								  digits=malloc(_FileLen*sizeof(char)); assert(digits!=NULL);								  
+							  	  strcpy(interName, intWeiFName); sprintf(digits, "%d", iter); strcat(interName, digits); strcat(interName, ".txt");
+							  	  save_weights(reading, interName);	// save weights of intermediate networks;
+								  free(interName); interName=NULL; 
+								  free(digits); digits=NULL;
+							  	}
 							}
 						  else count++;
 						}
@@ -618,7 +656,8 @@ void setF(char **fName, char *subDirect, char *name, FILE **f, char *format1, ch
 }
 
 void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuTrF, FILE **f3, char **itemacuTeF, FILE **f4, char **trainfreqF,  
-	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF)
+	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF,
+	char **intWeiFName)
 { // create file names, actual files, and file headers;
 	switch(_runmode)
 		{ case 0: case 2: case 3: case 4:
@@ -643,6 +682,8 @@ void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2,
 				// record output errors of phonemes;
 				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_exm->numExamples, "\tAvg\n");		  
 		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_exm->numExamples, "\tAvg\n");
+				// record intermediate weights of the network;
+				crtFName(intWeiFName, subDirect, "intWei_");
 				break;
 		  case 1: 
 		  		// record connection weights of the network;
@@ -665,13 +706,16 @@ void setResF(char *subDirect, char **weightF, FILE **f1, char **outF, FILE **f2,
 				// record output errors of phonemes;
 				setF(outPhonErrTrF, subDirect, "outphonErrTr.txt", f9, "ITER\tNoItem", "\tErr%d", train_PtoP_exm->numExamples, "\tAvg\n");		  
 		  	  	setF(outPhonErrTeF, subDirect, "outphonErrTe.txt", f10, "ITER\tNoItem", "\tErr%d", test_PtoP_exm->numExamples, "\tAvg\n");
+				// record intermediate weights of the network;
+				crtFName(intWeiFName, subDirect, "intWei_ptop_");
 				break;
 		  default: break;		
 		}
 }
 
 void freeResF(char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuTrF, FILE **f3, char **itemacuTeF,  FILE **f4, char **trainfreqF, 
-	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF)
+	FILE **f5, char **outPhonTrF, FILE **f6, char **outPhonTeF, FILE **f7, char **outPhonTrVecF, FILE **f8, char **outPhonTeVecF, FILE **f9, char **outPhonErrTrF, FILE **f10, char **outPhonErrTeF, 
+	char **intWeiFName)
 { // free result file names and files;
 	// record connection weights of the network;
 	free(*weightF); *weightF=NULL;	
@@ -687,6 +731,8 @@ void freeResF(char **weightF, FILE **f1, char **outF, FILE **f2, char **itemacuT
 	if(_recVec==1) { free(*outPhonTrVecF); *outPhonTrVecF=NULL; *f7=NULL; free(*outPhonTeVecF); *outPhonTeVecF=NULL; *f8=NULL; }
 	// record output errors of phonemes;
 	free(*outPhonErrTrF); *outPhonErrTrF=NULL; *f9=NULL; free(*outPhonErrTeF); *outPhonErrTeF=NULL; *f10=NULL;
+	// record intermediate weights of the network;
+	free(*intWeiFName); *intWeiFName=NULL;
 }
 
 void setupDirect(char **subDirect, int iseq)
@@ -726,7 +772,8 @@ void main(int argc,char *argv[])
 	char *weightF=NULL;
 	FILE *f1=NULL, *f2=NULL, *f3=NULL, *f4=NULL, *f5=NULL, *f6=NULL, *f7=NULL, *f8=NULL, *f9=NULL, *f10=NULL;
 	char *outF=NULL, *itemacuTrF=NULL, *itemacuTeF=NULL, *trainfreqF=NULL, 
-		*outPhonTrF=NULL, *outPhonTeF=NULL, *outPhonTrVecF=NULL, *outPhonTeVecF=NULL, *outPhonErrTrF=NULL, *outPhonErrTeF=NULL;
+		*outPhonTrF=NULL, *outPhonTeF=NULL, *outPhonTrVecF=NULL, *outPhonTeVecF=NULL, *outPhonErrTrF=NULL, *outPhonErrTeF=NULL, 
+		*intWeiFName=NULL;
 
 	readpara();	// reading network parameters and parameters for running;
 	readarg(argc, argv); // read runtime parameters from command line input;
@@ -775,7 +822,8 @@ void main(int argc,char *argv[])
 	
 	// 3) crete result file names and file headers;
 	setResF(subDirect, &weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, 
-			&f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF);
+			&f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF, 
+			&intWeiFName);
 	
 	// 4) train the network;
 	switch(_runmode)
@@ -783,13 +831,13 @@ void main(int argc,char *argv[])
 				if((_runmode==0)||(_runmode==2)) printf("Start OtoP training!\n");
 		  		else if((_runmode==3)||(_runmode==4)) printf("Start OtoP (interleave with PtoP) training!\n");
 		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, 
-					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF);
+					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF, intWeiFName);
 		  		printf("Done OtoP training!\n");
 				break;
 		  case 1:
 				printf("Start PtoP training!\n");
 		  		train(reading, f1, outF, f2, itemacuTrF, f3, itemacuTeF, f4, trainfreqF, 
-					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF);
+					  f5, outPhonTrF, f6, outPhonTeF, f7, outPhonTrVecF, f8, outPhonTeVecF, f9, outPhonErrTrF, f10, outPhonErrTeF, intWeiFName);
 		  		printf("Done PtoP training!\n");  
 		  		break;
 		  default: break;		
@@ -800,7 +848,8 @@ void main(int argc,char *argv[])
 				
 	// 6) free result file names and file pointers;
 	freeResF(&weightF, &f1, &outF, &f2, &itemacuTrF, &f3, &itemacuTeF, &f4, &trainfreqF, 
-			 &f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF);
+			 &f5, &outPhonTrF, &f6, &outPhonTeF, &f7, &outPhonTrVecF, &f8, &outPhonTeVecF, &f9, &outPhonErrTrF, &f10, &outPhonErrTeF, 
+			 &intWeiFName);
 					
 	// 7) free train_exm and test_exm; 
 	switch(_runmode)
